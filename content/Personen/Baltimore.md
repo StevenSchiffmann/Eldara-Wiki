@@ -93,11 +93,3 @@ Ein verhüllter Mann befreit die SCs aus dem [[Unterirdisches Gefängnis]] und d
 > "Lauft jetzt. Fragen stellt ihr, wenn ihr noch lebt."
 
 > "Findet die fünf Männer. Alles andere ist Lärm."
-
----
-
-## Geheimnisse
-
-- Seine Hilfe wirkt ehrlich, bleibt aber undurchsichtig.
-    
-- Er betrachtet die SCs nicht als Freunde.

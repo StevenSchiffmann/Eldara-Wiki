@@ -91,13 +91,3 @@ Der gefürchtete Kopf hinter dem Kristallsystem und dem [[Axiom-Konklave]]. Viel
 > "Geschichte verzeiht keine Monster. Aber manchmal braucht sie eines."
 
 > "Ihr seht Blut. Ich sehe Zeit, die uns noch bleibt."
-
----
-
-## Geheimnisse
-
-- Er ist nicht der wahre Antagonist.
-    
-- Sein Projekt soll eine größere Katastrophe verhindern.
-    
-- Sein schlechter Ruf ist teilweise gewollt.

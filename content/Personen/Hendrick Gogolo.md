@@ -70,12 +70,3 @@ Ein toter Serienmörder aus der Nähe von [[Kharvos]]. Auf ihn war ein Kopfgeld 
 - Kopfgeld kann abgeholt werden.
     
 - Seine Opfer könnten noch Hinweise hinterlassen haben.
-    
-
----
-
-## DM-Notizen
-
-- Unwichtiger Nebencharakter.
-    
-- Ist bereits tot.

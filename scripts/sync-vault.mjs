@@ -10,9 +10,10 @@
  * Aufruf: node scripts/sync-vault.mjs
  */
 
-import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync, readdirSync, statSync } from 'fs'
-import { join, dirname, basename, extname, relative } from 'path'
+import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync, readdirSync, statSync, rmSync } from 'fs'
+import { join, dirname, extname, relative } from 'path'
 import { fileURLToPath } from 'url'
+import { execSync } from 'child_process'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(__dirname, '..')
@@ -51,20 +52,43 @@ function cleanFolderName(name) {
 
 // --- DM-Area Filterung ---
 
+// Datei komplett ausschließen wenn frontmatter 'geheim' tag enthält
+function isDMOnlyFile(content) {
+  const fm = content.match(/^---\n([\s\S]*?)\n---/)
+  if (!fm) return false
+  return fm[1].includes('geheim')
+}
+
 function stripDMArea(content) {
-  // Alles ab "> [!warning] DM-Area" (mit oder ohne vorangehendem ---)
-  // wird entfernt. Der Block geht bis zum Dateiende.
-  const patterns = [
-    /\n---\s*\n\s*>\s*\[!warning\]\s*DM-Area[\s\S]*/,
-    /\n>\s*\[!warning\]\s*DM-Area[\s\S]*/,
+  // Findet den frühesten DM-Marker und schneidet ab dort alles ab.
+  // Unterstützte Marker:
+  //   > [!warning] DM-Area       (mit oder ohne vorangehendem ---)
+  //   ## DM-Notizen              (Abschnitt ohne Callout, z. B. Hendrick Gogolo)
+  //   ## DM-Wissen
+  //   ## Geheimnisse             (immer DM-Content, z. B. Caelum Virex)
+  const DM_PATTERNS = [
+    /^(?:---\s*\n+\s*)?>\s*\[!warning\]\s*DM-Area/m,
+    /^#{1,6}\s+DM-Notizen\b/m,
+    /^#{1,6}\s+DM-Wissen\b/m,
+    /^#{1,6}\s+Geheimnisse\b/m,
   ]
-  for (const pat of patterns) {
-    const match = content.match(pat)
-    if (match) {
-      return content.substring(0, match.index).trimEnd() + '\n'
-    }
+
+  let cutPos = content.length
+  for (const pat of DM_PATTERNS) {
+    const m = content.match(pat)
+    if (m && m.index < cutPos) cutPos = m.index
   }
-  return content
+
+  if (cutPos >= content.length) return content
+
+  // Vorausgehenden '---' Trenner mit entfernen, falls direkt davor
+  let result = content.slice(0, cutPos)
+  const trimmed = result.trimEnd()
+  if (trimmed.endsWith('\n---') || trimmed === '---') {
+    result = trimmed.slice(0, -4)  // '\n---' hat 4 Zeichen
+  }
+
+  return result.trimEnd() + '\n'
 }
 
 // --- Leaflet-Block → Leaflet.js HTML ---
@@ -137,12 +161,20 @@ function convertLeafletBlocks(content) {
 
 // --- Datei verarbeiten ---
 
+// Gibt false zurück wenn die Datei übersprungen werden soll
 function processFile(srcPath, destPath) {
   let content = readFileSync(srcPath, 'utf8')
+
+  if (isDMOnlyFile(content)) {
+    console.log(`  EXCL ${relative(VAULT_DM, srcPath)} (tag: geheim)`)
+    return false
+  }
+
   content = stripDMArea(content)
   content = convertLeafletBlocks(content)
   mkdirSync(dirname(destPath), { recursive: true })
   writeFileSync(destPath, content, 'utf8')
+  return true
 }
 
 // --- Verzeichnis rekursiv durchgehen ---
@@ -169,8 +201,8 @@ function syncDir(srcDir, destDir) {
       }
       if (extname(entry.name) === '.md') {
         const dest = join(destDir, entry.name)
-        processFile(srcPath, dest)
-        console.log(`  OK   ${relative(VAULT_DM, srcPath)}`)
+        const ok = processFile(srcPath, dest)
+        if (ok) console.log(`  OK   ${relative(VAULT_DM, srcPath)}`)
       }
     }
   }
@@ -212,5 +244,34 @@ syncPics()
 console.log('\nMarkdown synchronisieren...')
 syncDir(VAULT_DM, CONTENT)
 
-console.log('\n✓ Fertig! content/ ist aktuell.')
+// --- Leak-Guard: sicherheitshalber content/ auf DM-Marker prüfen ---
+
+console.log('\nLeak-Check...')
+const LEAK_TERMS = ['DM-Area', 'DM-Notizen', 'DM-Wissen', '\\[!warning\\]']
+let leakFound = false
+
+function checkDirForLeaks(dir) {
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    const p = join(dir, entry.name)
+    if (entry.isDirectory()) { checkDirForLeaks(p); continue }
+    if (!entry.name.endsWith('.md')) continue
+    const text = readFileSync(p, 'utf8')
+    for (const term of LEAK_TERMS) {
+      if (new RegExp(term, 'i').test(text)) {
+        console.error(`  LEAK in ${relative(CONTENT, p)}: enthält "${term}"`)
+        leakFound = true
+        break
+      }
+    }
+  }
+}
+
+checkDirForLeaks(CONTENT)
+
+if (leakFound) {
+  console.error('\n✗ LEAK DETECTED — content/ enthält DM-Marker. Deploy NICHT starten!')
+  process.exit(1)
+}
+
+console.log('\n✓ Fertig! content/ ist sauber — kein DM-Content gefunden.')
 console.log('  Nächster Schritt: npx quartz build --serve')
