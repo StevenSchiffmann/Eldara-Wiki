@@ -4,6 +4,23 @@
 // ELDARA WIKI — DnD Theme
 // ===========================
 
+// Parchment background image (subtle overlay)
+body {
+  background-image: url("/static/background.png");
+  background-size: 600px auto;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+// Content panels get a semi-opaque backdrop so text stays readable
+#quartz-root > .page {
+  background: color-mix(in srgb, var(--light) 88%, transparent);
+}
+
+.sidebar {
+  background: color-mix(in srgb, var(--light) 92%, transparent);
+}
+
 // Decorative prefix before section headers
 h2::before {
   content: "⚔ ";
