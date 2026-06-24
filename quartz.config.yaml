@@ -6,8 +6,7 @@ configuration:
   enablePopovers: true
   analytics: null
   locale: de-DE
-  # WICHTIG: Anpassen! Format: dein-username.github.io/dein-repo-name
-  baseUrl: "dein-username.github.io/eldara-wiki"
+  baseUrl: "stevenschiffmann.github.io/Eldara-Wiki"
   ignorePatterns:
     - private
     - templates
