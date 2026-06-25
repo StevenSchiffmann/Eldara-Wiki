@@ -190,7 +190,6 @@ plugins:
     order: 50
   - source: github:quartz-community/note-properties
     enabled: false
-    order: 5
   - source: github:quartz-community/unlisted-pages
     enabled: true
     options: {}

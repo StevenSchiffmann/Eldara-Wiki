@@ -168,7 +168,8 @@ function stripPrivateProperties(content) {
 // Wenn Target nicht in validFiles → gibt nur den Display-Text aus
 
 function stripBrokenWikilinks(content, validFiles) {
-  return content.replace(/\[\[([^\]]+)\]\]/g, (match, inner) => {
+  // Match [[...]] but NOT ![[...]] (image/file embeds must be preserved as-is)
+  return content.replace(/(?<!\!)\[\[([^\]]+)\]\]/g, (match, inner) => {
     const pipeIdx = inner.indexOf('|')
     const ref = pipeIdx === -1 ? inner : inner.slice(0, pipeIdx)
     const display = pipeIdx === -1 ? ref : inner.slice(pipeIdx + 1)
@@ -176,8 +177,11 @@ function stripBrokenWikilinks(content, validFiles) {
     // Dateiname ohne #section-Anker
     const fileName = ref.split('#')[0].trim()
 
-    // Leer oder nur Section-Anker → behalten
+    // Leer oder nur Section-Anker → behalten (intra-page-link)
     if (!fileName) return match
+
+    // Link zu einer Bild-Extension → immer behalten
+    if (/\.(png|jpg|jpeg|gif|webp|svg|pdf)$/i.test(fileName)) return match
 
     // Existiert die Datei?
     if (validFiles.has(fileName) || validFiles.has(fileName.toLowerCase())) {
@@ -297,9 +301,31 @@ function processFile(srcPath, destPath, validFiles) {
 
 // --- Verzeichnis rekursiv durchgehen ---
 
+// Entfernt Dateien aus destDir, die in srcDir nicht (mehr) existieren.
+// Schützt manuell gepflegte Dateien (index.md in Kampagnen/).
+const PROTECTED_FILES = new Set(['index.md'])
+
+function removeStaleFiles(srcDir, destDir) {
+  if (!existsSync(destDir)) return
+  for (const entry of readdirSync(destDir, { withFileTypes: true })) {
+    if (!entry.name.endsWith('.md') || entry.isDirectory()) continue
+    if (PROTECTED_FILES.has(entry.name)) continue
+    const destFile = join(destDir, entry.name)
+    const srcFile  = join(srcDir, entry.name)
+    // Auch den rückbenannten Vault-Namen prüfen (Emoji-Ordner, andere Variante)
+    if (!existsSync(srcFile)) {
+      rmSync(destFile)
+      console.log(`  STALE  ${relative(CONTENT, destFile)}`)
+    }
+  }
+}
+
 function syncDir(srcDir, destDir, validFiles) {
   let entries
   try { entries = readdirSync(srcDir, { withFileTypes: true }) } catch { return }
+
+  // Stale .md-Dateien in Zielordner entfernen, die nicht mehr im Vault stehen
+  removeStaleFiles(srcDir, destDir)
 
   for (const entry of entries) {
     if (entry.name.startsWith('.')) continue
@@ -348,6 +374,26 @@ function syncPics() {
   }
 }
 
+// --- Stale/excluded Ordner in content/ bereinigen ---
+// Entfernt Unterordner, die im Vault als EXCLUDE_FOLDERS gelten.
+// Bewahrt manuell gepflegte Dateien (index.md, Kampagnen-Hubs).
+
+function cleanExcludedFolders(destDir) {
+  if (!existsSync(destDir)) return
+  for (const entry of readdirSync(destDir, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue
+    const name = entry.name
+    const cleanName = cleanFolderName(name)
+    if (EXCLUDE_FOLDERS.has(name) || EXCLUDE_FOLDERS.has(cleanName)) {
+      const p = join(destDir, name)
+      rmSync(p, { recursive: true, force: true })
+      console.log(`  CLEAN excluded folder: ${relative(CONTENT, p)}`)
+    } else {
+      cleanExcludedFolders(join(destDir, name))
+    }
+  }
+}
+
 // --- Hauptlauf ---
 
 console.log('=== Eldara Vault Sync ===')
@@ -357,7 +403,10 @@ console.log()
 
 mkdirSync(CONTENT, { recursive: true })
 
-console.log('Bilder kopieren...')
+console.log('Stale Ordner bereinigen...')
+cleanExcludedFolders(CONTENT)
+
+console.log('\nBilder kopieren...')
 syncPics()
 
 console.log('\nDatei-Index aufbauen (für Broken-Link-Erkennung)...')

@@ -1,6 +1,6 @@
 Die Schwarze Station existiert offiziell nicht.
 
-Tief unter ausgewählten Einrichtungen in [[Lighhtaven]] der [[Weiße Hand]] befinden sich verborgene Operationssäle, Forschungslabore und Verwahrungsbereiche. Nur ein kleiner Kreis von Ärzten kennt ihre Existenz. Selbst die meisten Mitglieder der Weißen Hand ahnen nichts von den Vorgängen unter ihren Füßen.
+Tief unter ausgewählten Einrichtungen in *Lighhtaven* der [[Weiße Hand]] befinden sich verborgene Operationssäle, Forschungslabore und Verwahrungsbereiche. Nur ein kleiner Kreis von Ärzten kennt ihre Existenz. Selbst die meisten Mitglieder der Weißen Hand ahnen nichts von den Vorgängen unter ihren Füßen.
 
 Hier werden die Geheimnisse der Kristalle erforscht. Neue Implantate werden entwickelt, Resonanzträger untersucht und Operationen durchgeführt, die außerhalb der Station als unmöglich gelten würden.
 

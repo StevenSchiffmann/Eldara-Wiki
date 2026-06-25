@@ -12,4 +12,4 @@ Bereiche:
 
 
 
-Zurück zu [[Andurin Map]], *Kharvos Map* 
+Zurück zu [[Andurin Map]], [[KharvosMap.png|Kharvos Map]] 
