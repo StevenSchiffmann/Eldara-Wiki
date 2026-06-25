@@ -1,6 +1,8 @@
 ---
 
 ---
+<figure class="eldara-portrait"><img src="Pics/portraits/varrek.webp" alt="Varrek Goldenberg" loading="lazy"/></figure>
+
 ## Kurzbeschreibung
 
 Ein wohlhabender Händler, Sammler und Netzwerker aus [[Kharvos]]. Viele halten ihn nur für einen erfolgreichen Geschäftsmann, doch Varrek weiß zu viel über die dunkle Seite der Stadt.

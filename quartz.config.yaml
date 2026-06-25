@@ -2,7 +2,10 @@
 configuration:
   pageTitle: "Eldara — Das Kompendium"
   pageTitleSuffix: " | Eldara"
-  enableSPA: true
+  # SPA aus: Vollseiten-Navigation löst relative Links + Alias-Redirects korrekt auf
+  # (SPA verlor unter Root-Alias-Redirects den /Eldara-Wiki/-Pfadpräfix → 404). Quartz
+  # feuert den nav-Event auch ohne SPA, daher initialisieren alle Komponenten normal.
+  enableSPA: false
   enablePopovers: true
   analytics: null
   locale: de-DE
@@ -127,15 +130,16 @@ plugins:
   - source: github:quartz-community/graph
     enabled: true
     options:
-      # Sidebar zeigt IMMER das komplette Beziehungsnetz (depth -1 = ganzer Graph)
+      # Inline-Graph wird per CSS ausgeblendet (nur Vollbild-Button bleibt). depth 1 hält
+      # das versteckte Rendering billig → kein Lag mehr (vorher -1 = Vollnetz pro Seite).
       localGraph:
-        depth: -1
+        depth: 1
         scale: 1.05
-        repelForce: 0.55
-        centerForce: 0.32
-        linkDistance: 34
+        repelForce: 0.5
+        centerForce: 0.3
+        linkDistance: 30
         fontSize: 0.32
-        opacityScale: 1.1
+        opacityScale: 1
         showTags: false
         focusOnHover: true
         enableRadial: false
@@ -202,15 +206,24 @@ plugins:
   - source: github:quartz-community/footer
     enabled: true
     options:
-      # Persistente Schnell-Links auf JEDER Seite. Volle URLs sind subpath-sicher
-      # (kein 404 unter /Eldara-Wiki/), funktionieren von jeder Seitentiefe aus.
+      # Persistente Schnell-Links + Karten-Schnellzugriff auf JEDER Seite (auch mobil).
+      # Volle URLs sind subpath-sicher (kein 404 unter /Eldara-Wiki/).
       links:
         "✦ Start": "https://stevenschiffmann.github.io/Eldara-Wiki/"
         "📜 Kampagne": "https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/dndhomies"
-        "🗺 Weltkarte": "https://stevenschiffmann.github.io/Eldara-Wiki/orte/eldara/andurin/andurin-map"
         "👥 Personen": "https://stevenschiffmann.github.io/Eldara-Wiki/personen"
+        "🗺 Andurin": "https://stevenschiffmann.github.io/Eldara-Wiki/orte/eldara/andurin/andurin-map"
+        "🏙 Kharvos": "https://stevenschiffmann.github.io/Eldara-Wiki/orte/eldara/andurin/kharvos/kharvos-map"
+        "🏛 Lighthaven": "https://stevenschiffmann.github.io/Eldara-Wiki/orte/eldara/andurin/lighthaven/lighthaven-map"
   - source: github:quartz-community/recent-notes
-    enabled: false
+    enabled: true
+    options:
+      title: "Letzte Änderungen"
+      limit: 6
+      showTags: false
+    layout:
+      position: right
+      priority: 40
   - source: github:quartz-community/spacer
     enabled: true
     options: {}

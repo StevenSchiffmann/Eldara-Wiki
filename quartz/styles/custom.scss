@@ -43,7 +43,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  z-index: 0;
+  z-index: -1;
   pointer-events: none;
   opacity: 0.05;
   mix-blend-mode: overlay;
@@ -55,7 +55,7 @@ body::after {
   content: "";
   position: fixed;
   inset: -20%;
-  z-index: 0;
+  z-index: -1;
   pointer-events: none;
   opacity: 0.5;
   background-image:
@@ -73,8 +73,9 @@ body::after {
   to   { transform: translate3d(-160px, -260px, 0); }
 }
 
-// Inhalt über den Atmosphäre-Ebenen halten
-#quartz-root, .page, header, footer, .sidebar { position: relative; z-index: 1; }
+// Atmosphäre liegt bei z-index:-1 hinter allem → KEIN z-index-Bump auf Content nötig.
+// (Der frühere `z-index:1` erzeugte Stacking-Contexts, die das Such-Modal hinter den
+//  Inhalt sperrten. Jetzt funktioniert das Such-Overlay (z-index 999) wieder korrekt.)
 
 // =============================================================
 //  Lesefläche — dunkle „Seite des Grimoires"
@@ -92,12 +93,10 @@ body::after {
     0 18px 50px -28px rgba(0,0,0,0.8),
     inset 0 1px 0 color-mix(in srgb, var(--secondary) 10%, transparent);
   padding: clamp(1.1rem, 3vw, 2.4rem) clamp(1rem, 3.5vw, 2.8rem);
-  backdrop-filter: blur(2px);
 }
 
 .sidebar {
   background: color-mix(in srgb, var(--light) 70%, transparent);
-  backdrop-filter: blur(3px);
   border-radius: 10px;
 }
 
@@ -292,13 +291,55 @@ button.explorer-toggle:hover, a.internal:hover { filter: none; }
   scrollbar-width: thin;
 }
 
-// Graph — leuchtende Knoten
+// Graph: Inline-Netz raus (Lag), nur noch ein Vollbild-Button.
+.graph > h3 { display: none; }
+.graph .graph-container { display: none !important; }   // kein Inline-Force-Graph mehr
 .graph .graph-outer {
+  height: auto;
+  min-height: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  overflow: visible;
+}
+// Der Vollbild-Trigger (.global-graph-icon) wird zum beschrifteten Button.
+.graph .global-graph-icon {
+  position: static;
+  inset: auto;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.6rem 0.85rem;
   border: 1px solid var(--hairline);
   border-radius: 10px;
-  background: color-mix(in srgb, #000 18%, transparent);
+  background: color-mix(in srgb, var(--secondary) 8%, transparent);
+  color: var(--secondary);
+  cursor: pointer;
+  font-family: var(--headerFont);
+  letter-spacing: 0.03em;
+  transition: border-color .18s ease, box-shadow .18s ease, color .18s ease;
 }
-.graph svg .node { filter: drop-shadow(0 0 4px color-mix(in srgb, var(--secondary) 50%, transparent)); }
+.graph .global-graph-icon::after {
+  content: "Beziehungsnetz · Vollbild";
+  font-size: 0.86rem;
+}
+.graph .global-graph-icon svg {
+  position: static;
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+.graph .global-graph-icon:hover {
+  border-color: var(--ring);
+  color: var(--tertiary);
+  box-shadow: 0 0 16px -4px var(--ring);
+}
+// Vollbild-Graph: leuchtende Knoten beibehalten
+.global-graph-outer svg .node { filter: drop-shadow(0 0 4px color-mix(in srgb, var(--secondary) 50%, transparent)); }
 
 // Suche
 .search .search-button {
@@ -348,8 +389,63 @@ pre { border: 1px solid var(--hairline); border-radius: 8px; }
 .eldara-hero {
   position: relative;
   text-align: center;
-  padding: clamp(2rem, 7vw, 5rem) 1rem clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(2.6rem, 8vw, 6rem) 1rem clamp(2rem, 5vw, 3.5rem);
   margin: -0.5rem 0 1.5rem;
+  border-radius: 14px;
+  overflow: hidden;
+  isolation: isolate;
+  border: 1px solid var(--hairline);
+  background-size: cover;
+  background-position: center 38%;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 90px -18px #000, 0 18px 50px -30px rgba(0,0,0,.85);
+}
+// Dunkler Schleier über dem Hero-Bild → Titel bleibt lesbar
+.eldara-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse at 50% 42%, rgba(8,6,12,0.55) 0%, rgba(8,6,12,0.35) 45%, rgba(8,6,12,0.88) 100%),
+    linear-gradient(180deg, rgba(8,6,12,0.25), color-mix(in srgb, var(--light) 70%, transparent));
+}
+.eldara-hero > * { position: relative; z-index: 1; }
+
+// Arkanes Emblem über dem Titel (transparentes Gold-Sigil)
+.eldara-hero__emblem {
+  width: clamp(78px, 15vw, 132px);
+  aspect-ratio: 1;
+  margin: 0 auto 0.2rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 16px color-mix(in srgb, var(--secondary) 55%, transparent));
+  animation: emblem-glow 5.5s ease-in-out infinite;
+}
+@keyframes emblem-glow {
+  0%, 100% { filter: drop-shadow(0 0 14px color-mix(in srgb, var(--secondary) 45%, transparent)); }
+  50%      { filter: drop-shadow(0 0 28px color-mix(in srgb, var(--secondary) 75%, transparent)); }
+}
+
+// Personen-Portrait (gerahmt, glühend)
+.eldara-portrait {
+  float: right;
+  width: clamp(150px, 30%, 230px);
+  margin: 0.2rem 0 1rem 1.4rem;
+  padding: 0;
+}
+.eldara-portrait img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--ring);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--secondary) 20%, transparent),
+              0 0 28px -8px color-mix(in srgb, var(--secondary) 50%, transparent),
+              0 16px 40px -22px rgba(0,0,0,.9);
+}
+@media all and ($mobile) {
+  .eldara-portrait { float: none; width: min(70%, 230px); margin: 0 auto 1.2rem; display: block; }
 }
 .eldara-hero__kicker {
   font-family: var(--bodyFont);
