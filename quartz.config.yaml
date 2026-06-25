@@ -189,7 +189,9 @@ plugins:
     options: {}
     order: 50
   - source: github:quartz-community/note-properties
-    enabled: false
+    enabled: true
+    options:
+      includedProperties: []
   - source: github:quartz-community/unlisted-pages
     enabled: true
     options: {}

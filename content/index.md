@@ -13,13 +13,13 @@ Wählt eure Kampagne, um zu euren Sessions, Orten, Personen und Fraktionen zu ge
 
 ## Kampagnen
 
-### [[Kampagnen/DnDHomies|DnDHomies]]
+### [[DnDHomies]]
 
 > Kharvos. Das Blutturnier. Die Axiom-Konklave.
 
 Die erste aktive Kampagne. Vier Abenteurer erwachen ohne Erinnerungen in einem Kerker — und entdecken eine Verschwörung, die tiefer geht als erwartet.
 
-**Status:** Aktiv · [[Kampagnen/DnDHomies|→ Zur Kampagne]]
+**Status:** Aktiv · [[DnDHomies|→ Zur Kampagne]]
 
 ---
 

@@ -238,8 +238,9 @@ function convertLeafletBlocks(content) {
     if(!el||el._lInit)return;
     el._lInit=true;
     var bounds=${boundsStr};
+    var basepath=(document.body.getAttribute('data-basepath')||'');
     var m=L.map('${divId}',{crs:L.CRS.Simple,minZoom:${minZoom},maxZoom:${maxZoom}});
-    L.imageOverlay('${imgPath}',bounds).addTo(m);
+    L.imageOverlay(basepath+'${imgPath}',bounds).addTo(m);
     m.fitBounds(bounds);
     m.setZoom(${defZoom});
   }
@@ -310,9 +311,11 @@ function removeStaleFiles(srcDir, destDir) {
   for (const entry of readdirSync(destDir, { withFileTypes: true })) {
     if (!entry.name.endsWith('.md') || entry.isDirectory()) continue
     if (PROTECTED_FILES.has(entry.name)) continue
+    // Schütze Folder-Hub-Seiten: DnDHomies.md neben DnDHomies/ (Geschwister-Ordner mit gleichem Namen)
+    const siblingDir = join(destDir, basename(entry.name, '.md'))
+    if (existsSync(siblingDir) && statSync(siblingDir).isDirectory()) continue
     const destFile = join(destDir, entry.name)
     const srcFile  = join(srcDir, entry.name)
-    // Auch den rückbenannten Vault-Namen prüfen (Emoji-Ordner, andere Variante)
     if (!existsSync(srcFile)) {
       rmSync(destFile)
       console.log(`  STALE  ${relative(CONTENT, destFile)}`)

@@ -13,8 +13,9 @@
     if(!el||el._lInit)return;
     el._lInit=true;
     var bounds=[[0,0],[1024,1536]];
+    var basepath=(document.body.getAttribute('data-basepath')||'');
     var m=L.map('leaflet-map-lighthaven',{crs:L.CRS.Simple,minZoom:-2,maxZoom:4});
-    L.imageOverlay('/Pics/lighthavenmap.png',bounds).addTo(m);
+    L.imageOverlay(basepath+'/Pics/lighthavenmap.png',bounds).addTo(m);
     m.fitBounds(bounds);
     m.setZoom(-1);
   }

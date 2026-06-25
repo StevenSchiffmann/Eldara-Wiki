@@ -7,4 +7,4 @@ aliases:
 
 # Personen
 
-Hier findet ihr alle bekannten Nicht-Spieler-Charaktere der Welt von Eldara.
+Alle bekannten Nicht-Spieler-Charaktere der Welt von Eldara.
