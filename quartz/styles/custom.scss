@@ -1,107 +1,505 @@
 @use "./variables.scss" as *;
 
-// ===========================
-// ELDARA WIKI — DnD Theme
-// ===========================
+// =============================================================
+//  ELDARA — DAS KOMPENDIUM
+//  „Dunkles Arkanes Grimoire" — Midnight Obsidian + glühendes Gold
+//  Asset-frei (Gradients + Inline-SVG-Rauschen) → kein 404-Risiko.
+// =============================================================
 
-// Parchment background image (subtle overlay)
-body {
-  background-image: url("/static/background.png");
-  background-size: 600px auto;
-  background-repeat: repeat;
-  background-attachment: fixed;
+// ---- Tunable arcane tokens -------------------------------------------------
+:root {
+  --arcane-glow: var(--secondary);            // glühendes Gold
+  --arcane-ember: var(--tertiary);            // Ember-Rot
+  --rune: "✦";
+  --ring: color-mix(in srgb, var(--secondary) 38%, transparent);
+  --panel: color-mix(in srgb, var(--light) 82%, #000 0%);
+  --hairline: color-mix(in srgb, var(--secondary) 22%, var(--lightgray));
 }
 
-// Content panels get a semi-opaque backdrop so text stays readable
-#quartz-root > .page {
-  background: color-mix(in srgb, var(--light) 88%, transparent);
+// =============================================================
+//  Atmosphäre: Vignette, Kerzenschein, treibende Funken
+// =============================================================
+
+body {
+  position: relative;
+  background-color: var(--light);
+  // Geschichtete radiale Schleier (Kerzenschein oben, Tiefe an den Rändern)
+  background-image:
+    radial-gradient(120% 80% at 50% -10%,
+      color-mix(in srgb, var(--secondary) 12%, transparent) 0%,
+      transparent 55%),
+    radial-gradient(100% 70% at 100% 0%,
+      color-mix(in srgb, var(--tertiary) 9%, transparent) 0%,
+      transparent 45%),
+    radial-gradient(140% 120% at 50% 120%,
+      color-mix(in srgb, #000 55%, transparent) 0%,
+      transparent 60%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+// Feines Pergament-/Tinten-Rauschen (Inline-SVG, kein externes Asset)
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+// Treibende Funken / Sternenstaub — zwei langsam wandernde Punktfelder
+body::after {
+  content: "";
+  position: fixed;
+  inset: -20%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image:
+    radial-gradient(1.4px 1.4px at 20% 30%, color-mix(in srgb, var(--secondary) 70%, transparent) 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 70% 65%, color-mix(in srgb, var(--tertiary) 60%, transparent) 50%, transparent 51%),
+    radial-gradient(1px 1px at 45% 85%, color-mix(in srgb, var(--secondary) 55%, transparent) 50%, transparent 51%),
+    radial-gradient(1.6px 1.6px at 88% 18%, color-mix(in srgb, var(--secondary) 50%, transparent) 50%, transparent 51%),
+    radial-gradient(1px 1px at 12% 70%, color-mix(in srgb, var(--tertiary) 50%, transparent) 50%, transparent 51%);
+  background-size: 600px 600px, 520px 520px, 480px 480px, 700px 700px, 560px 560px;
+  animation: arcane-drift 90s linear infinite;
+}
+
+@keyframes arcane-drift {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-160px, -260px, 0); }
+}
+
+// Inhalt über den Atmosphäre-Ebenen halten
+#quartz-root, .page, header, footer, .sidebar { position: relative; z-index: 1; }
+
+// =============================================================
+//  Lesefläche — dunkle „Seite des Grimoires"
+// =============================================================
+
+#quartz-root > .page .center,
+.page > #quartz-body .center {
+  background: linear-gradient(180deg,
+    color-mix(in srgb, var(--lightgray) 30%, transparent) 0%,
+    color-mix(in srgb, var(--lightgray) 14%, transparent) 100%);
+  border: 1px solid var(--hairline);
+  border-radius: 10px;
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--secondary) 8%, transparent),
+    0 18px 50px -28px rgba(0,0,0,0.8),
+    inset 0 1px 0 color-mix(in srgb, var(--secondary) 10%, transparent);
+  padding: clamp(1.1rem, 3vw, 2.4rem) clamp(1rem, 3.5vw, 2.8rem);
+  backdrop-filter: blur(2px);
 }
 
 .sidebar {
-  background: color-mix(in srgb, var(--light) 92%, transparent);
+  background: color-mix(in srgb, var(--light) 70%, transparent);
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
 }
 
-// Decorative prefix before section headers
-h2::before {
-  content: "⚔ ";
-  opacity: 0.35;
-  font-size: 0.8em;
+// =============================================================
+//  Typografie
+// =============================================================
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--headerFont);
+  color: var(--dark);
+  letter-spacing: 0.03em;
+  text-wrap: balance;
 }
 
-// Title styling
-.article-title h1 {
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  font-size: 1.9rem;
-  border-bottom: 2px solid var(--gray);
+.article-title,
+article h1:first-of-type {
+  font-size: clamp(1.9rem, 4.5vw, 3rem);
+  letter-spacing: 0.05em;
+  line-height: 1.12;
+  color: var(--dark);
+  text-shadow:
+    0 0 1px color-mix(in srgb, var(--secondary) 60%, transparent),
+    0 0 22px color-mix(in srgb, var(--secondary) 28%, transparent);
+  border-bottom: 1px solid var(--hairline);
   padding-bottom: 0.4em;
-  margin-bottom: 0.6em;
+  margin-bottom: 0.7em;
 }
 
-h1, h2, h3, h4 {
-  letter-spacing: 0.04em;
+// Schmuck-Rune vor H2-Abschnitten
+article h2::before {
+  content: var(--rune);
+  color: var(--arcane-glow);
+  opacity: 0.55;
+  font-size: 0.7em;
+  margin-right: 0.5em;
+  vertical-align: 0.12em;
+  text-shadow: 0 0 10px color-mix(in srgb, var(--secondary) 50%, transparent);
 }
 
-// Body text — Crimson Text slightly larger for readability
-article p {
-  font-size: 1.05rem;
-  line-height: 1.75;
+article h2 {
+  border-bottom: 1px solid color-mix(in srgb, var(--secondary) 16%, transparent);
+  padding-bottom: 0.25em;
 }
 
-// Blockquotes — scroll/parchment feel
+article p { font-size: 1.05rem; line-height: 1.78; text-wrap: pretty; }
+article { max-width: 75ch; }
+
+// Initialbuchstabe für den ersten Absatz langer Artikel
+article > p:first-of-type::first-letter {
+  font-family: var(--headerFont);
+  font-size: 3.1em;
+  float: left;
+  line-height: 0.78;
+  padding: 0.04em 0.12em 0 0;
+  color: var(--arcane-glow);
+  text-shadow: 0 0 18px color-mix(in srgb, var(--secondary) 40%, transparent);
+}
+
+// =============================================================
+//  Links — goldene, leise leuchtende Verweise
+// =============================================================
+
+a { color: var(--secondary); text-decoration: none; transition: color .18s ease, text-shadow .18s ease; }
+a:hover { color: var(--tertiary); text-shadow: 0 0 12px color-mix(in srgb, var(--tertiary) 45%, transparent); }
+
+a.internal {
+  color: var(--secondary);
+  background: linear-gradient(color-mix(in srgb, var(--secondary) 32%, transparent), color-mix(in srgb, var(--secondary) 32%, transparent)) left bottom / 100% 1px no-repeat;
+  padding-bottom: 1px;
+}
+a.internal:hover {
+  color: var(--tertiary);
+  background-image: linear-gradient(var(--tertiary), var(--tertiary));
+  background-size: 100% 1.5px;
+}
+
+// =============================================================
+//  Blockquotes — beschworene Schriftrollen
+// =============================================================
+
 blockquote {
-  border-left: 3px solid var(--secondary);
-  background: color-mix(in srgb, var(--lightgray) 60%, transparent);
-  padding: 0.6em 1em;
-  border-radius: 0 4px 4px 0;
+  position: relative;
+  margin: 1.6rem 0;
+  padding: 0.9rem 1.2rem 0.9rem 2.4rem;
+  border: 1px solid var(--hairline);
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--secondary) 6%, transparent);
+  font-style: italic;
+  color: color-mix(in srgb, var(--darkgray) 92%, var(--secondary));
+}
+blockquote::before {
+  content: "“";
+  position: absolute;
+  left: 0.5rem;
+  top: 0.1rem;
+  font-family: var(--headerFont);
+  font-size: 2.2rem;
+  line-height: 1;
+  color: var(--arcane-glow);
+  opacity: 0.4;
+}
+
+// =============================================================
+//  Interaktive Karten (iframe)
+// =============================================================
+
+.eldara-map {
+  margin: 1.8rem 0;
+  padding: 0;
+}
+.eldara-map__frame {
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  display: block;
+  box-shadow:
+    0 0 0 1px var(--ring),
+    0 0 26px -6px color-mix(in srgb, var(--secondary) 40%, transparent),
+    0 24px 60px -34px rgba(0,0,0,0.9);
+  background: #0b0a12;
+}
+.eldara-map__hint {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  color: var(--gray);
   font-style: italic;
 }
 
-// Internal wikilinks — gold tone
-a.internal {
-  color: var(--tertiary);
-  text-decoration: none;
-  border-bottom: 1px dotted var(--tertiary);
+// =============================================================
+//  Tabellen
+// =============================================================
 
-  &:hover {
-    color: var(--secondary);
-    border-bottom-color: var(--secondary);
-  }
-}
-
-// Interactive map wrapper (around Leaflet divs)
-.eldara-map-wrap {
-  border: 2px solid var(--gray);
-  border-radius: 6px;
+article table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.4rem 0;
+  border: 1px solid var(--hairline);
+  border-radius: 8px;
   overflow: hidden;
-  margin: 1.5rem 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
+article th {
+  background: color-mix(in srgb, var(--secondary) 16%, transparent);
+  color: var(--dark);
+  font-family: var(--headerFont);
+  letter-spacing: 0.03em;
+  text-align: left;
+  padding: 0.55rem 0.8rem;
+}
+article td { padding: 0.5rem 0.8rem; border-top: 1px solid color-mix(in srgb, var(--gray) 24%, transparent); }
+article tr:nth-child(even) td { background: color-mix(in srgb, var(--lightgray) 16%, transparent); }
 
-// Page title (site name in sidebar)
-.page-title {
+// =============================================================
+//  Sidebar-Komponenten
+// =============================================================
+
+.page-title, .page-title a {
   font-family: var(--headerFont);
   letter-spacing: 0.08em;
+  color: var(--dark);
+  text-shadow: 0 0 18px color-mix(in srgb, var(--secondary) 30%, transparent);
 }
 
-// Tags — rune-stone style
-.tag-container .tag-link {
-  border: 1px solid var(--gray);
-  border-radius: 3px;
-  padding: 0.1em 0.5em;
-  font-size: 0.8rem;
-  background: color-mix(in srgb, var(--lightgray) 70%, transparent);
-  color: var(--darkgray);
-  text-transform: lowercase;
+.explorer-ul .explorer-li { font-size: 0.92rem; }
+.explorer .folder-outer .explorer-ul { transition: max-height .3s ease; }
+button.explorer-toggle:hover, a.internal:hover { filter: none; }
 
-  &:hover {
-    background: var(--secondary);
-    color: var(--light);
-    border-color: var(--secondary);
-  }
+// FIX: Der Explorer scrollt das aktive Element via scrollIntoView in den Blick.
+// Ohne einen eigenen Scroll-Container scrollte das GANZE Fenster (Seite lud ~700px
+// nach unten). Hier wird der Explorer eine begrenzte Flex-Spalte, deren Liste
+// INTERN scrollt → das Fenster bleibt oben.
+.sidebar.left { overflow: hidden; }
+.sidebar.left .explorer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+.sidebar.left .explorer-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+}
+.sidebar.left .explorer-ul.overflow {
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: none;
+  overflow-y: auto;
+  scrollbar-width: thin;
 }
 
-// Explorer sidebar — slightly smaller text
-.explorer-ul .explorer-li {
+// Graph — leuchtende Knoten
+.graph .graph-outer {
+  border: 1px solid var(--hairline);
+  border-radius: 10px;
+  background: color-mix(in srgb, #000 18%, transparent);
+}
+.graph svg .node { filter: drop-shadow(0 0 4px color-mix(in srgb, var(--secondary) 50%, transparent)); }
+
+// Suche
+.search .search-button {
+  border: 1px solid var(--hairline);
+  background: color-mix(in srgb, var(--lightgray) 20%, transparent);
+  border-radius: 8px;
+}
+.search .search-button:hover { border-color: var(--ring); box-shadow: 0 0 14px -4px var(--ring); }
+
+// Breadcrumbs
+.breadcrumb-container { opacity: 0.85; font-size: 0.86rem; }
+
+// Footer — Schnell-Links als persistente Portale
+footer { border-top: 1px solid var(--hairline); margin-top: 2rem; }
+footer ul { gap: 0.4rem 1.3rem; }
+footer a {
+  font-family: var(--headerFont);
+  letter-spacing: 0.04em;
   font-size: 0.92rem;
+}
+
+// =============================================================
+//  Code & Callouts (leichte Anpassung an die Palette)
+// =============================================================
+
+code { background: color-mix(in srgb, var(--secondary) 10%, transparent); border-radius: 4px; padding: 0.1em 0.35em; }
+pre { border: 1px solid var(--hairline); border-radius: 8px; }
+
+// =============================================================
+//  Scrollbar
+// =============================================================
+
+* { scrollbar-color: color-mix(in srgb, var(--secondary) 45%, transparent) transparent; }
+::-webkit-scrollbar { width: 11px; height: 11px; }
+::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--secondary) 40%, var(--lightgray));
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--secondary); background-clip: padding-box; }
+
+// =============================================================
+//  LANDING / HUB — magisches Eingangsportal
+// =============================================================
+
+.eldara-hero {
+  position: relative;
+  text-align: center;
+  padding: clamp(2rem, 7vw, 5rem) 1rem clamp(1.5rem, 4vw, 3rem);
+  margin: -0.5rem 0 1.5rem;
+}
+.eldara-hero__kicker {
+  font-family: var(--bodyFont);
+  font-style: italic;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  color: var(--gray);
+}
+.eldara-hero__title {
+  font-family: var(--headerFont);
+  font-size: clamp(2.6rem, 9vw, 5.5rem);
+  line-height: 1.04;
+  letter-spacing: 0.04em;
+  margin: 0.35em 0 0.2em;
+  color: var(--dark);
+  text-shadow:
+    0 0 2px color-mix(in srgb, var(--secondary) 70%, transparent),
+    0 0 26px color-mix(in srgb, var(--secondary) 40%, transparent),
+    0 0 60px color-mix(in srgb, var(--tertiary) 20%, transparent);
+  animation: arcane-flicker 6s ease-in-out infinite;
+}
+@keyframes arcane-flicker {
+  0%, 100% { text-shadow: 0 0 2px color-mix(in srgb, var(--secondary) 70%, transparent), 0 0 26px color-mix(in srgb, var(--secondary) 40%, transparent), 0 0 60px color-mix(in srgb, var(--tertiary) 20%, transparent); }
+  48%      { text-shadow: 0 0 2px color-mix(in srgb, var(--secondary) 80%, transparent), 0 0 34px color-mix(in srgb, var(--secondary) 52%, transparent), 0 0 78px color-mix(in srgb, var(--tertiary) 28%, transparent); }
+  52%      { text-shadow: 0 0 2px color-mix(in srgb, var(--secondary) 62%, transparent), 0 0 20px color-mix(in srgb, var(--secondary) 34%, transparent), 0 0 48px color-mix(in srgb, var(--tertiary) 16%, transparent); }
+}
+.eldara-hero__sub {
+  max-width: 46ch;
+  margin: 0.6em auto 0;
+  color: color-mix(in srgb, var(--darkgray) 88%, var(--secondary));
+  font-size: 1.1rem;
+  font-style: italic;
+}
+.eldara-hero__rule {
+  width: min(420px, 70%);
+  height: 1px;
+  margin: 1.4rem auto 0;
+  border: 0;
+  background: linear-gradient(90deg, transparent, var(--secondary), transparent);
+  position: relative;
+}
+.eldara-hero__rule::after {
+  content: var(--rune);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--secondary);
+  background: var(--light);
+  padding: 0 0.5rem;
+  font-size: 0.9rem;
+  text-shadow: 0 0 12px color-mix(in srgb, var(--secondary) 60%, transparent);
+}
+
+// Portal-Tore (Eingangs-Navigation) — bewusst NICHT identische Karten:
+// breites Featured-Tor + Reihe schlanker Tore.
+.eldara-portals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.6rem 0;
+}
+.eldara-portal {
+  display: block;
+  position: relative;
+  padding: 1.2rem 1.3rem;
+  border: 1px solid var(--hairline);
+  border-radius: 12px;
+  background:
+    linear-gradient(160deg,
+      color-mix(in srgb, var(--lightgray) 32%, transparent),
+      color-mix(in srgb, var(--lightgray) 10%, transparent));
+  color: var(--darkgray);
+  overflow: hidden;
+  transition: transform .25s cubic-bezier(.2,.7,.2,1), box-shadow .25s ease, border-color .25s ease;
+}
+.eldara-portal::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(120% 80% at 50% 0%, color-mix(in srgb, var(--secondary) 16%, transparent), transparent 60%);
+  opacity: 0;
+  transition: opacity .25s ease;
+}
+.eldara-portal:hover {
+  transform: translateY(-4px);
+  border-color: var(--ring);
+  box-shadow: 0 0 0 1px var(--ring), 0 22px 50px -30px rgba(0,0,0,0.85), 0 0 30px -10px color-mix(in srgb, var(--secondary) 50%, transparent);
+}
+.eldara-portal:hover::after { opacity: 1; }
+.eldara-portal--wide { grid-column: 1 / -1; }
+.eldara-portal__rune {
+  font-size: 1.7rem;
+  line-height: 1;
+  color: var(--secondary);
+  text-shadow: 0 0 16px color-mix(in srgb, var(--secondary) 45%, transparent);
+}
+.eldara-portal__title {
+  font-family: var(--headerFont);
+  font-size: 1.25rem;
+  letter-spacing: 0.04em;
+  margin: 0.45rem 0 0.25rem;
+  color: var(--dark);
+}
+.eldara-portal__desc { font-size: 0.95rem; color: color-mix(in srgb, var(--darkgray) 82%, var(--gray)); margin: 0; }
+.eldara-portal__tag {
+  display: inline-block;
+  margin-top: 0.7rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  border: 1px solid var(--ring);
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+}
+
+// Sanftes, gestaffeltes Erscheinen (verstärkt einen bereits sichtbaren Default)
+.eldara-portal { animation: portal-rise .6s cubic-bezier(.2,.7,.2,1) both; }
+.eldara-portals .eldara-portal:nth-child(1) { animation-delay: .02s; }
+.eldara-portals .eldara-portal:nth-child(2) { animation-delay: .09s; }
+.eldara-portals .eldara-portal:nth-child(3) { animation-delay: .16s; }
+.eldara-portals .eldara-portal:nth-child(4) { animation-delay: .23s; }
+.eldara-portals .eldara-portal:nth-child(5) { animation-delay: .30s; }
+@keyframes portal-rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+// Auf der Startseite ersetzt das Hero den Default-Titel/Breadcrumb
+body[data-slug="index"] .breadcrumb-container,
+body[data-slug="index"] .article-title,
+body[data-slug="index"] .content-meta { display: none; }
+body[data-slug="index"] .center { border: none; background: transparent; box-shadow: none; backdrop-filter: none; }
+
+// =============================================================
+//  Reduced motion — alles Bewegte ruhigstellen
+// =============================================================
+@media (prefers-reduced-motion: reduce) {
+  body::after { animation: none; }
+  .eldara-hero__title { animation: none; }
+  .eldara-portal { animation: none; }
+  * { scroll-behavior: auto !important; }
+}
+
+// =============================================================
+//  Mobile-Feinschliff
+// =============================================================
+@media all and ($mobile) {
+  #quartz-root > .page .center { border-radius: 8px; padding: 1rem; }
+  .eldara-hero { padding-top: 1.5rem; }
 }

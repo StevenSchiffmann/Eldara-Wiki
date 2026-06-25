@@ -1,4 +1,3 @@
-
 Das Große Hospital ist das Herzstück der [[Weiße Hand]] und die bekannteste medizinische Einrichtung Andurins.
 
 Tausende Patienten werden hier jedes Jahr behandelt. Hunderte Ärzte, Heiler und Chirurgen arbeiten Tag und Nacht daran, Krankheiten zu erforschen und Leben zu retten.

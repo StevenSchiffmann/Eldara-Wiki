@@ -42,6 +42,20 @@ jobs:
       - name: Install Quartz plugins
         run: npx quartz plugin install
 
+      # Die Explorer-Komponente scrollt das aktive Element via scrollIntoView in
+      # den Blick. Mit dem Default (block:"start") scrollt auf tiefen Seiten das
+      # GANZE Fenster ~700px nach unten (Seite lädt mitten im Artikel). Wir
+      # erzwingen block:"nearest". .quartz/ ist .gitignore't, daher hier in CI
+      # nach der Installation patchen (deterministisch, reicht zuverlässig in den Build).
+      - name: Patch explorer scroll behavior
+        run: |
+          for f in .quartz/plugins/explorer/dist/components/index.js .quartz/plugins/explorer/dist/index.js; do
+            if [ -f "$f" ]; then
+              sed -i 's/scrollIntoView({behavior:"smooth"})/scrollIntoView({behavior:"smooth",block:"nearest"})/g' "$f"
+            fi
+          done
+          grep -rl 'block:"nearest"' .quartz/plugins/explorer/dist/ || (echo "Patch failed" && exit 1)
+
       - name: Build
         run: npx quartz build
 

@@ -1,14 +1,6 @@
 ---
-tags:
-  - major
-  - innerer-zirkel
-  - twist
-  - wiederkehrend
-  - kampf
+
 ---
-
-# [[Varrek Goldenberg]]
-
 ## Kurzbeschreibung
 
 Ein wohlhabender Händler, Sammler und Netzwerker aus [[Kharvos]]. Viele halten ihn nur für einen erfolgreichen Geschäftsmann, doch Varrek weiß zu viel über die dunkle Seite der Stadt.

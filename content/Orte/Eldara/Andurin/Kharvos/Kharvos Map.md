@@ -1,31 +1,5 @@
 
-
-
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
-<div class="eldara-map-wrap">
-<div id="leaflet-map-kharvos" style="height:800px;width:100%;border:1px solid var(--gray);border-radius:4px;"></div>
-</div>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script>
-(function(){
-  function initMap(){
-    var el=document.getElementById('leaflet-map-kharvos');
-    if(!el||el._lInit)return;
-    el._lInit=true;
-    var bounds=[[0,0],[1024,1536]];
-    var basepath=(document.body.getAttribute('data-basepath')||'');
-    var m=L.map('leaflet-map-kharvos',{crs:L.CRS.Simple,minZoom:-2,maxZoom:4});
-    L.imageOverlay(basepath+'/Pics/kharvosmap.png',bounds).addTo(m);
-    m.fitBounds(bounds);
-    m.setZoom(-1);
-  }
-  if(document.readyState==='loading'){
-    document.addEventListener('DOMContentLoaded',initMap);
-  } else { initMap(); }
-  document.addEventListener('nav',function(){
-    var el=document.getElementById('leaflet-map-kharvos');
-    if(el)el._lInit=false;
-    initMap();
-  });
-})();
-</script>
+<figure class="eldara-map">
+  <iframe class="eldara-map__frame" src="https://stevenschiffmann.github.io/Eldara-Wiki/static/maps/kharvos.html" title="Karte: kharvos" loading="lazy" style="height:800px;"></iframe>
+  <figcaption class="eldara-map__hint">Ziehen zum Bewegen · Scrollen zum Zoomen</figcaption>
+</figure>

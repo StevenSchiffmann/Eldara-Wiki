@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Karte: kharvos</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+<style>
+  html,body{margin:0;height:100%;background:#0b0a12;overflow:hidden;}
+  #map{position:absolute;inset:0;background:#0b0a12;cursor:grab;}
+  #map:active{cursor:grabbing;}
+  .leaflet-container{background:#0b0a12;font-family:inherit;}
+  .leaflet-control-zoom a{
+    background:#15121f;color:#e8dcc0;border-color:#3a2f1a;
+    font-weight:700;text-shadow:0 0 6px rgba(212,175,55,.4);
+  }
+  .leaflet-control-zoom a:hover{background:#221b30;color:#f3d98a;}
+  .leaflet-bar{box-shadow:0 0 0 1px rgba(212,175,55,.25),0 4px 16px rgba(0,0,0,.6);}
+  .leaflet-image-layer{
+    image-rendering:auto;
+    filter:drop-shadow(0 0 24px rgba(212,175,55,.18));
+  }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script>
+  (function(){
+    var bounds = [[0,0],[1024,1536]];
+    var map = L.map('map', { crs: L.CRS.Simple, minZoom: -2, maxZoom: 4, attributionControl: false, zoomControl: true });
+    L.imageOverlay('kharvos.png', bounds).addTo(map);
+    map.fitBounds(bounds);
+    map.setMaxBounds(bounds);
+    var dz = -1;
+    if (!isNaN(dz)) { setTimeout(function(){ map.setZoom(dz); }, 0); }
+  })();
+</script>
+</body>
+</html>

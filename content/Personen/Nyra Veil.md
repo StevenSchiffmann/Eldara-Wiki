@@ -1,15 +1,6 @@
 ---
 
-tags:
-  - major
-  - graue-vollstrecker
-  - wiederkehrend
-  - kampf
-  - twist
 ---
-
-# [[Nyra Veil]]
-
 ## Kurzbeschreibung
 
 Eine schlanke Assassinin mit schwarzer Kristallmaske. Kaum jemand kennt ihr wahres Gesicht.

@@ -1,13 +1,6 @@
 ---
 
-tags:
-  - major
-  - innerer-zirkel
-  - kampf
 ---
-
-# [[Malrec Syn]]
-
 ## Kurzbeschreibung
 
 Kundschafter und Jäger des [[Innerer Zirkel|Inneren Zirkels]]. Er wird entsandt, wenn Personen gefunden, verfolgt oder beseitigt werden müssen.

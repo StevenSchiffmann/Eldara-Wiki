@@ -1,4 +1,3 @@
-
 Bewaffnet mit mehr Zuversicht als Stoff – die Anzüge passten bestenfalls »mit Wohlwollen«, aber das Türpersonal des [[Zum Goldenen Reh]] ließ Geld überzeugender sprechen als Schneiderkunst – gelangten *Ophiria Lunara* und *Ikan Breathe* schließlich ins Innere. *Mr. Arnold* und *Saki Maki* warteten derweil draußen.
 
 Drinnen war es so, wie man es von einem Haus dieser Kategorie erwartet: wohlhabende Menschen, die einander in kunstvollem Smalltalk überboten, umgeben von Kerzenhaltern, die wahrscheinlich teurer waren als manche Mietwohnungen in [[Kharvos]].
@@ -13,4 +12,4 @@ Die Werkstatt empfing sie mit etwa acht entlaufenen [[Modron]]s verschiedenster 
 
 - Quest begonnen: *Modron Problem*
 
-#onlinesession
+

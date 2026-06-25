@@ -1,12 +1,6 @@
 ---
 
-tags:
-  - major
-  - twist
 ---
-
-# [[Baltimore]]
-
 ## Kurzbeschreibung
 
 Ein verhüllter Mann befreit die SCs aus dem *Unterirdisches Gefängnis* und drängt zur sofortigen Flucht. Er wirkt wie ein kalter Gegner des Systems.
@@ -76,6 +70,10 @@ Ein verhüllter Mann befreit die SCs aus dem *Unterirdisches Gefängnis* und dr�
 - Tötet die Wachen ohne Reue.
     
 - Verschwindet nach dem Start der Suche.
+
+- **Nach Kharvos:** Taucht wieder auf. Lädt Spieler zu einem Treffen mit anderen [[Kristallträger]]n ein → [[Aufstand der Kristalltraeger]].
+    
+- Organisiert gemeinsamen Überfall auf ein [[Arbeitslager]] — erstes großes Vertrauens-Event.
     
 
 ---

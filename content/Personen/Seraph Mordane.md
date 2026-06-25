@@ -1,13 +1,6 @@
 ---
 
-tags:
-  - minor
-  - graue-vollstrecker
-  - kampf
 ---
-
-# [[Seraph Mordane]]
-
 ## Kurzbeschreibung
 
 Eine fanatische Kristallmagierin der [[Grauen Vollstrecker|Grauen Vollstrecker]]. Die Luft um sie flimmert wie vor einem Brand.

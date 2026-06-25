@@ -1,13 +1,6 @@
 ---
 
-tags:
-  - major
-  - innerer-zirkel
-  - twist
 ---
-
-# [[Caelum Virex]]
-
 ## Kurzbeschreibung
 
 Der gefürchtete Kopf hinter dem Kristallsystem und dem [[Axiom-Konklave]]. Viele halten ihn für einen Tyrannen, doch in Wahrheit bereitet er einen letzten Versuch gegen den wahren Feind vor.

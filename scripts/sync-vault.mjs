@@ -22,6 +22,12 @@ const ROOT = join(__dirname, '..')
 const VAULT_DM   = join(ROOT, '..', 'DnD-Obsidian', 'DnD', 'DM')
 const VAULT_PICS = join(ROOT, '..', 'DnD-Obsidian', 'DnD', 'Pics')
 const CONTENT    = join(ROOT, 'content')
+// Self-contained Leaflet-Karten landen hier; Quartz kopiert quartz/static/ → public/static/
+const STATIC_MAPS = join(ROOT, 'quartz', 'static', 'maps')
+// Öffentliche Basis-URL (muss zu quartz.config.yaml `baseUrl` passen).
+// Wird als absolute iframe-src genutzt, damit Quartz' CrawlLinks die src NICHT
+// umschreibt (transformiert nur RELATIVE src von img/video/audio/iframe).
+const SITE_BASE = 'https://stevenschiffmann.github.io/Eldara-Wiki'
 
 // --- Ausschlusslisten ---
 
@@ -47,6 +53,9 @@ const PRIVATE_PROPERTIES = new Set([
   'ort',
   'fraktion',
   'rasse',
+  'tags',     // DM-Meta-Tags (major, twist, innerer-zirkel ...) = Spoiler → niemals zeigen
+  'cssclass',
+  'cssclasses',
 ])
 
 // Ordner ohne Emoji-Prefix für saubere URLs
@@ -163,6 +172,35 @@ function stripPrivateProperties(content) {
   return newFm + content.slice(fmMatch.index + fmMatch[0].length)
 }
 
+// --- Doppelten Selbst-Titel entfernen ---
+// Viele Vault-Dateien beginnen mit `# [[Dateiname]]`. Quartz zeigt den Titel
+// bereits über die article-title-Komponente → die führende H1 ist redundant.
+function stripSelfTitleHeading(content, srcPath) {
+  const name = basename(srcPath, '.md')
+  const fm = content.match(/^---\n[\s\S]*?\n---\n/)
+  const head = fm ? fm[0] : ''
+  let body = fm ? content.slice(fm[0].length) : content
+  body = body.replace(/^\s*#\s+(?:\[\[([^\]|]+)(?:\|[^\]]+)?\]\]|([^\n]+))\n/, (m, wl, plain) => {
+    const target = (wl ?? plain ?? '').trim()
+    const base = target.split('#')[0].split('/').pop().trim()
+    return base.toLowerCase() === name.toLowerCase() ? '' : m
+  })
+  return head + body.replace(/^\n+/, '')
+}
+
+// --- Inline-#Tags aus dem Fließtext entfernen ---
+// Obsidian-Inline-Tags (#premiumsession, #major ...) sind DM-Meta/Spoiler und
+// erzeugen sonst sichtbare „#"-Pillen + Tag-Seiten. Überschriften (`# `, `## `)
+// bleiben unangetastet (dort folgt auf # ein Leerzeichen, kein Buchstabe).
+function stripInlineTags(content) {
+  // Frontmatter unangetastet lassen, nur den Body behandeln.
+  const fm = content.match(/^---\n[\s\S]*?\n---\n/)
+  const head = fm ? fm[0] : ''
+  let body = fm ? content.slice(fm[0].length) : content
+  body = body.replace(/(^|[\s(])#([A-Za-zÄÖÜäöü][\wÄÖÜäöüß/-]*)/gu, (_m, pre) => pre)
+  return head + body
+}
+
 // --- Broken Wikilinks → Plaintext ---
 // [[Target]] oder [[Target|Display]] oder [[Target#Section|Display]]
 // Wenn Target nicht in validFiles → gibt nur den Display-Text aus
@@ -207,55 +245,103 @@ function parseLeafletConfig(raw) {
   return cfg
 }
 
-function convertLeafletBlocks(content) {
+// Baut die self-contained Leaflet-HTML-Datei (läuft in eigenem iframe-Dokument →
+// immun gegen Quartz' SPA-Navigation, die injizierte <script>-Tags NICHT ausführt).
+function buildStandaloneMapHTML({ imgName, boundsStr, minZoom, maxZoom, defZoom, title }) {
+  return `<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>${title}</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+<style>
+  html,body{margin:0;height:100%;background:#0b0a12;overflow:hidden;}
+  #map{position:absolute;inset:0;background:#0b0a12;cursor:grab;}
+  #map:active{cursor:grabbing;}
+  .leaflet-container{background:#0b0a12;font-family:inherit;}
+  .leaflet-control-zoom a{
+    background:#15121f;color:#e8dcc0;border-color:#3a2f1a;
+    font-weight:700;text-shadow:0 0 6px rgba(212,175,55,.4);
+  }
+  .leaflet-control-zoom a:hover{background:#221b30;color:#f3d98a;}
+  .leaflet-bar{box-shadow:0 0 0 1px rgba(212,175,55,.25),0 4px 16px rgba(0,0,0,.6);}
+  .leaflet-image-layer{
+    image-rendering:auto;
+    filter:drop-shadow(0 0 24px rgba(212,175,55,.18));
+  }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script>
+  (function(){
+    var bounds = ${boundsStr};
+    var map = L.map('map', { crs: L.CRS.Simple, minZoom: ${minZoom}, maxZoom: ${maxZoom}, attributionControl: false, zoomControl: true });
+    L.imageOverlay('${imgName}', bounds).addTo(map);
+    map.fitBounds(bounds);
+    map.setMaxBounds(bounds);
+    var dz = ${defZoom};
+    if (!isNaN(dz)) { setTimeout(function(){ map.setZoom(dz); }, 0); }
+  })();
+</script>
+</body>
+</html>
+`
+}
+
+// Wandelt ```leaflet-Blöcke in einen eingebetteten iframe um, der auf eine
+// eigenständige, selbst-genügsame Karten-HTML in quartz/static/maps/ zeigt.
+// pageRelPrefix = "../../../" o.ä., abhängig von der Ordnertiefe der Quellseite.
+function convertLeafletBlocks(content, pageRelPrefix) {
   return content.replace(/```leaflet\n([\s\S]*?)```/g, (_, raw) => {
     const cfg = parseLeafletConfig(raw)
 
-    const id      = cfg['id'] ?? 'map'
+    const id      = (cfg['id'] ?? 'map').toLowerCase().replace(/\s+/g, '-')
     const imgRaw  = cfg['image'] ?? ''
     const imgFile = imgRaw.replace(/^\[\[/, '').replace(/\]\]$/, '').trim()
-    // Quartz lowercases asset filenames and replaces spaces with dashes
-    const imgPath = `/Pics/${imgFile.toLowerCase().replace(/\s+/g, '-')}`
-    const height  = cfg['height'] ?? '600px'
+    const height  = cfg['height'] ?? '640px'
     const minZoom = parseFloat(cfg['minZoom'] ?? '-2')
     const maxZoom = parseFloat(cfg['maxZoom'] ?? '4')
-    const defZoom = parseFloat(cfg['defaultZoom'] ?? '-1')
+    const defZoom = parseFloat(cfg['defaultZoom'] ?? cfg['minZoom'] ?? '-1')
+    const boundsStr = (cfg['bounds'] ?? '[[0,0],[1024,1536]]').replace(/\s/g, '')
+    const title = `Karte: ${id}`
 
-    let boundsStr = (cfg['bounds'] ?? '[[0,0],[1024,1536]]').replace(/\s/g, '')
+    // Bild neben die Karten-HTML kopieren → vollständig self-contained (kein basepath nötig)
+    const mapImgName = `${id}.png`
+    mkdirSync(STATIC_MAPS, { recursive: true })
+    const srcImg = join(VAULT_PICS, imgFile)
+    if (existsSync(srcImg)) {
+      copyFileSync(srcImg, join(STATIC_MAPS, mapImgName))
+    } else {
+      console.log(`  ! Karten-Bild nicht gefunden: ${imgFile}`)
+    }
 
-    const divId = `leaflet-map-${id}`
+    // Standalone-HTML schreiben
+    const html = buildStandaloneMapHTML({ imgName: mapImgName, boundsStr, minZoom, maxZoom, defZoom, title })
+    writeFileSync(join(STATIC_MAPS, `${id}.html`), html, 'utf8')
+    console.log(`  MAP  static/maps/${id}.html  (+${mapImgName})`)
 
+    // Absolute URL → CrawlLinks lässt die src unangetastet (sonst .html-Strip + Pfad-Mangling).
+    // Das Standalone-HTML referenziert sein Bild same-dir-relativ → kein Hardcode im File selbst.
+    const src = `${SITE_BASE}/static/maps/${id}.html`
     return `
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
-<div class="eldara-map-wrap">
-<div id="${divId}" style="height:${height};width:100%;border:1px solid var(--gray);border-radius:4px;"></div>
-</div>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script>
-(function(){
-  function initMap(){
-    var el=document.getElementById('${divId}');
-    if(!el||el._lInit)return;
-    el._lInit=true;
-    var bounds=${boundsStr};
-    var basepath=(document.body.getAttribute('data-basepath')||'');
-    var m=L.map('${divId}',{crs:L.CRS.Simple,minZoom:${minZoom},maxZoom:${maxZoom}});
-    L.imageOverlay(basepath+'${imgPath}',bounds).addTo(m);
-    m.fitBounds(bounds);
-    m.setZoom(${defZoom});
-  }
-  if(document.readyState==='loading'){
-    document.addEventListener('DOMContentLoaded',initMap);
-  } else { initMap(); }
-  document.addEventListener('nav',function(){
-    var el=document.getElementById('${divId}');
-    if(el)el._lInit=false;
-    initMap();
-  });
-})();
-</script>
+<figure class="eldara-map">
+  <iframe class="eldara-map__frame" src="${src}" title="${title}" loading="lazy" style="height:${height};"></iframe>
+  <figcaption class="eldara-map__hint">Ziehen zum Bewegen · Scrollen zum Zoomen</figcaption>
+</figure>
 `
   })
+}
+
+// Ermittelt das relative Pfad-Präfix von einer Inhaltsseite zum Site-Root,
+// basierend auf der Ordnertiefe (Quartz emittiert flache .html-Dateien).
+function relPrefixForDest(destPath) {
+  const rel = relative(CONTENT, destPath)
+  const dir = dirname(rel)
+  const depth = dir === '.' ? 0 : dir.split(/[\\/]/).filter(Boolean).length
+  return depth === 0 ? './' : '../'.repeat(depth)
 }
 
 // --- Folder-Index-Alias ---
@@ -286,13 +372,20 @@ function processFile(srcPath, destPath, validFiles) {
 
   if (isDMOnlyFile(content)) {
     console.log(`  EXCL ${relative(VAULT_DM, srcPath)} (tag: geheim)`)
+    // Falls eine alte Kopie im content/ liegt → entfernen, sonst leakt sie in den Build
+    if (existsSync(destPath)) {
+      rmSync(destPath)
+      console.log(`  PURGE ${relative(CONTENT, destPath)} (war geheim)`)
+    }
     return false
   }
 
   content = stripDMArea(content)
   content = stripPrivateProperties(content)
+  content = stripSelfTitleHeading(content, srcPath)
   content = addFolderIndexAlias(content, srcPath)
-  content = convertLeafletBlocks(content)
+  content = convertLeafletBlocks(content, relPrefixForDest(destPath))
+  content = stripInlineTags(content)
   content = stripBrokenWikilinks(content, validFiles)
 
   mkdirSync(dirname(destPath), { recursive: true })

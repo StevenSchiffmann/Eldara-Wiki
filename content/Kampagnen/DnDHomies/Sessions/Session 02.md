@@ -23,4 +23,4 @@ Die Spieler versammeln sich anschließend beim [[Zum Goldenen Reh]] und planen d
 
 
 
-#premiumsession
+

@@ -1,13 +1,6 @@
 ---
-tags:
-  - major
-  - innerer-zirkel
-  - weisse-hand
-  - twist
+
 ---
-
-# [[Lyrien Vos]]
-
 ## Kurzbeschreibung
 
 Leiterin der [[Weiße Hand|Weißen Hand]] und öffentlich gefeierte Heilerin. Für viele gilt sie als Wohltäterin und Retterin zahlloser Leben.

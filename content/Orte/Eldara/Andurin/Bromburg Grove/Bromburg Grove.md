@@ -3,7 +3,6 @@ aliases:
   - bromburg-grove
 ---
 
-
 ## Allgemein
 
 [[Bromburg Grove]] ist ein abgeschiedener, uralter Wald in [[Andurin]]. Für Fremde wirkt er still, dunkel und schwer zugänglich. Für seine Bewohner war er jedoch Heimat, Schutzraum und heiliger Ort zugleich.

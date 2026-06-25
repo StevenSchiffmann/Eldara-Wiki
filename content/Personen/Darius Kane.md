@@ -1,14 +1,6 @@
 ---
 
-tags:
-  - minor
-  - graue-vollstrecker
-  - wiederkehrend
-  - kampf
 ---
-
-# [[Darius Kane]]
-
 ## Kurzbeschreibung
 
 Ein massiger Frontkämpfer der [[Grauen Vollstrecker|Grauen Vollstrecker]] mit kristallverstärktem Körper. Wird oft geschickt, um Städte einzuschüchtern.

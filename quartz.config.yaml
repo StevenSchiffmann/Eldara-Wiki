@@ -21,26 +21,30 @@ configuration:
       body: "Crimson Text"
       code: "IBM Plex Mono"
     colors:
+      # Candlelit Obsidian — warmes dunkles Grimoire (Toggle-Variante, bleibt dunkel
+      # & arkan, damit das Erlebnis auf JEDEM System dunkel ist — unabhängig vom
+      # System-Theme, ohne Eingriff in installierte Plugins).
       lightMode:
-        light: "#f5e6c8"
-        lightgray: "#e0cfa0"
-        gray: "#9b8765"
-        darkgray: "#3d2b1f"
-        dark: "#1a0f0a"
-        secondary: "#8b1a1a"
-        tertiary: "#b07d10"
-        highlight: "rgba(139, 26, 26, 0.12)"
-        textHighlight: "#d4a01788"
+        light: "#14100a"
+        lightgray: "#2a2014"
+        gray: "#9c8a6a"
+        darkgray: "#ece0c8"
+        dark: "#f7eccf"
+        secondary: "#e0b54a"
+        tertiary: "#e2603a"
+        highlight: "rgba(224, 181, 74, 0.13)"
+        textHighlight: "#e0b54a55"
+      # Midnight Obsidian — das arkane Grimoire (Standard-Erlebnis)
       darkMode:
-        light: "#1a1209"
-        lightgray: "#2d2015"
-        gray: "#6b5a45"
-        darkgray: "#c4b49a"
-        dark: "#f0e0c0"
-        secondary: "#c4603a"
-        tertiary: "#d4a017"
-        highlight: "rgba(196, 96, 58, 0.15)"
-        textHighlight: "#b3a40488"
+        light: "#0e0b16"
+        lightgray: "#241d33"
+        gray: "#9a8cc0"
+        darkgray: "#ece2c8"
+        dark: "#f6ecc9"
+        secondary: "#d8b44a"
+        tertiary: "#e2603a"
+        highlight: "rgba(216, 180, 74, 0.14)"
+        textHighlight: "#d8b44a55"
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
@@ -77,7 +81,9 @@ plugins:
   - source: github:quartz-community/crawl-links
     enabled: true
     options:
-      markdownLinkResolution: absolute
+      # Obsidian-Stil: [[Kristallimplantat]] findet die Datei egal wie tief verschachtelt.
+      # "absolute" löste alles nach /Root auf → 404 für verschachtelte Seiten.
+      markdownLinkResolution: shortest
     order: 60
   - source: github:quartz-community/description
     enabled: true
@@ -120,6 +126,30 @@ plugins:
       priority: 50
   - source: github:quartz-community/graph
     enabled: true
+    options:
+      # Sidebar zeigt IMMER das komplette Beziehungsnetz (depth -1 = ganzer Graph)
+      localGraph:
+        depth: -1
+        scale: 1.05
+        repelForce: 0.55
+        centerForce: 0.32
+        linkDistance: 34
+        fontSize: 0.32
+        opacityScale: 1.1
+        showTags: false
+        focusOnHover: true
+        enableRadial: false
+      globalGraph:
+        depth: -1
+        scale: 0.9
+        repelForce: 0.5
+        centerForce: 0.3
+        linkDistance: 32
+        fontSize: 0.42
+        opacityScale: 1
+        showTags: false
+        focusOnHover: true
+        enableRadial: true
     layout:
       position: right
       priority: 10
@@ -172,8 +202,13 @@ plugins:
   - source: github:quartz-community/footer
     enabled: true
     options:
+      # Persistente Schnell-Links auf JEDER Seite. Volle URLs sind subpath-sicher
+      # (kein 404 unter /Eldara-Wiki/), funktionieren von jeder Seitentiefe aus.
       links:
-        DnDHomies: "/Kampagnen/DnDHomies"
+        "✦ Start": "https://stevenschiffmann.github.io/Eldara-Wiki/"
+        "📜 Kampagne": "https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/dndhomies"
+        "🗺 Weltkarte": "https://stevenschiffmann.github.io/Eldara-Wiki/orte/eldara/andurin/andurin-map"
+        "👥 Personen": "https://stevenschiffmann.github.io/Eldara-Wiki/personen"
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer

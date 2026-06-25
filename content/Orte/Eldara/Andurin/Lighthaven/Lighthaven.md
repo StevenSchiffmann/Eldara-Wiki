@@ -3,8 +3,6 @@ aliases:
   - lighthaven
 ---
 
-# Lighthaven
-
 Lighthaven ist eine mittelgroße Stadt im Südwesten Andurins und gilt als Zentrum für Heilkunst, Bildung und medizinische Forschung. Obwohl sie deutlich kleiner als [[Kharvos]] ist, besitzt sie enormen Einfluss, da sich hier der Hauptsitz der [[Weiße Hand]] befindet.
 
 Die Stadt liegt in einer besonders fruchtbaren Region. Große Parks, Heilergärten und von Bäumen gesäumte Straßen prägen das Stadtbild. Zwischen den Gebäuden fließen kleine Kanäle und Bäche, während überall Blumenbeete, Gewächshäuser und öffentliche Grünflächen zu finden sind. Viele Besucher beschreiben Lighthaven als die lebenswerteste Stadt Andurins.

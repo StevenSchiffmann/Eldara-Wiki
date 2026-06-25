@@ -1,11 +1,6 @@
 ---
 
-tags:
-  - tot
 ---
-
-# [[Hendrick Gogolo]]
-
 ## Kurzbeschreibung
 
 Ein toter Serienmörder aus der Nähe von [[Kharvos]]. Auf ihn war ein Kopfgeld von 50 G ausgesetzt.

@@ -1,12 +1,6 @@
 ---
-tags:
-  - major
-  - innerer-zirkel
-  - twist
+
 ---
-
-# [[Eldric Morvain]]
-
 ## Kurzbeschreibung
 
 Ein uralter Mann sitzt freiwillig im Kerker und weigert sich, gerettet zu werden. Er ist der lebende Schlüssel zum letzten Zugang nach [[Caelum Virex]].

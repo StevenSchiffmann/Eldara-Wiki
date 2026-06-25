@@ -1,14 +1,6 @@
 ---
 
-tags:
-  - minor
-  - graue-vollstrecker
-  - wiederkehrend
-  - kampf
 ---
-
-# [[Viktor Hain]]
-
 ## Kurzbeschreibung
 
 Ein dürrer Kettenmeister der [[Grauen Vollstrecker|Grauen Vollstrecker]]. Er nimmt Ziele lieber lebend als tot.

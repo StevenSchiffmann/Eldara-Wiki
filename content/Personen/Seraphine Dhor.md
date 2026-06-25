@@ -1,11 +1,6 @@
 ---
-tags:
-  - major
-  - innerer-zirkel
+
 ---
-
-# [[Seraphine Dhor]]
-
 ## Kurzbeschreibung
 
 Mitglied des [[Innerer Zirkel|Inneren Zirkels]]. Details noch nicht ausgearbeitet.

@@ -1,12 +1,6 @@
 ---
 
-tags:
-  - minor
-  - twist
 ---
-
-# [[Elidran Vox]]
-
 ## Kurzbeschreibung
 
 Ein älterer, nervöser Gelehrter mit teurer, aber ungepflegter Kleidung. Er wirkt fehl am Platz, schreibt ständig Notizen und stellt seltsame Prüfungsfragen.

@@ -11,3 +11,8 @@ private/
 replit.nix
 .quartz/
 quartz/cli/tui/dist/
+
+# lokale Verifikations-Helfer (nicht committen)
+_shots/
+_srv.mjs
+_measure.mjs

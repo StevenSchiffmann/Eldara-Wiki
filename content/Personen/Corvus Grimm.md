@@ -1,14 +1,6 @@
 ---
 
-tags:
-  - major
-  - graue-vollstrecker
-  - wiederkehrend
-  - kampf
 ---
-
-# [[Corvus Grimm]]
-
 ## Kurzbeschreibung
 
 Anführer der [[Grauen Vollstrecker|Grauen Vollstrecker]] und persönlicher Leiter der Entführung der SCs. Ruhig, respektvoll und unerbittlich.

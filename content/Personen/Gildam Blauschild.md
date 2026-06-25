@@ -1,10 +1,6 @@
 ---
-tags:
-  - tot
+
 ---
-
-# [[Gildam Blauschild]]
-
 ## Kurzbeschreibung
 
 Ein wichtiger Händler aus [[Kharvos]] und geladener Gast des Banketts. Wurde nach einem Gnollüberfall von der Gruppe verbrannt.
