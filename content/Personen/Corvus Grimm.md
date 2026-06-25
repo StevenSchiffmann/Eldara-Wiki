@@ -1,18 +1,10 @@
 ---
 
-typ: npc  
-rolle: fraktionsführer  
-status: lebend  
-ort:  
-fraktion: Graue Vollstrecker  
-kampagne: DnDHomies  
-rasse: Mensch  
 tags:
   - major
   - graue-vollstrecker
   - wiederkehrend
   - kampf
-
 ---
 
 # [[Corvus Grimm]]
@@ -86,7 +78,7 @@ Anführer der [[Grauen Vollstrecker|Grauen Vollstrecker]] und persönlicher Leit
     
 - [[Caelum Virex]] – loyaler Vollstrecker
     
-- [[SCs]] – ehemalige Entführungsziele
+- *SCs* – ehemalige Entführungsziele
     
 
 ---

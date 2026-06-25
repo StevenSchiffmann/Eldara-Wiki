@@ -1,16 +1,8 @@
 ---
 
-typ: npc  
-rolle: magier  
-status: lebend  
-ort: Kharvos  
-fraktion:  
-kampagne: DnDHomies  
-rasse: Mensch  
 tags:
   - minor
   - twist
-
 ---
 
 # [[Elidran Vox]]
@@ -76,9 +68,9 @@ Ein älterer, nervöser Gelehrter mit teurer, aber ungepflegter Kleidung. Er wir
     
 - [[Zum Goldenen Reh]] – Ort der ersten Begegnung mit den SCs
     
-- [[Autonome Konstrukte]] – sein Fachgebiet
+- *Autonome Konstrukte* – sein Fachgebiet
     
-- [[Arkanmechanik]] – frühere Arbeit
+- *Arkanmechanik* – frühere Arbeit
     
 
 ---
@@ -111,4 +103,4 @@ _(leiser)_
 ---
 
 ## Quests
-- [[Modron Problem]]
+- *Modron Problem*

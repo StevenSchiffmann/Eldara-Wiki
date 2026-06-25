@@ -28,17 +28,17 @@ Wissen wurde nicht streng gehortet, sondern weitergegeben. Kinder lernten früh,
 
 ## Wichtige Charaktere
 
-### [[Ophiria Lunara]]
+### *Ophiria Lunara*
 
 Eine junge Druiden-Schülerin aus [[Bromburg Grove]]. Sie wuchs im Schutz des Waldes auf, wurde jedoch durch das Verschwinden der Gemeinschaft aus ihrer Heimat gerissen.
 
-### [[Der Fremde]]
+### *Der Fremde*
 
-Eine namenlose Gestalt, die [[Ophiria Lunara]] allein im Wald begegnete. Er warnte sie vor dem Weg, den sie eingeschlagen hatte. Kurz danach verschwand [[Bromburg Grove]].
+Eine namenlose Gestalt, die *Ophiria Lunara* allein im Wald begegnete. Er warnte sie vor dem Weg, den sie eingeschlagen hatte. Kurz danach verschwand [[Bromburg Grove]].
 
-### [[Die Druiden von Bromburg Grove]]
+### *Die Druiden von Bromburg Grove*
 
-Die ehemalige Gemeinschaft des Waldes. Sie vertrauten [[Ophiria Lunara]], bemerkten jedoch möglicherweise, dass sie sich gefährlichen Grenzen näherte.
+Die ehemalige Gemeinschaft des Waldes. Sie vertrauten *Ophiria Lunara*, bemerkten jedoch möglicherweise, dass sie sich gefährlichen Grenzen näherte.
 
 ---
 
@@ -54,7 +54,7 @@ Keine Leichen.
 
 Nur Abwesenheit.
 
-Bis heute ist unklar, ob [[Ophiria Lunara]], [[Der Fremde]] oder eine tiefere Macht des Waldes mit dem Verschwinden verbunden ist.
+Bis heute ist unklar, ob *Ophiria Lunara*, *Der Fremde* oder eine tiefere Macht des Waldes mit dem Verschwinden verbunden ist.
 
 ---
 

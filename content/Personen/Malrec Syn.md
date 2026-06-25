@@ -1,17 +1,9 @@
 ---
 
-typ: npc  
-rolle: antagonist  
-status: lebend  
-ort: unbekannt  
-fraktion: Innerer Zirkel  
-kampagne: DnDHomies  
-rasse: Mensch  
 tags:
   - major
   - innerer-zirkel
   - kampf
-
 ---
 
 # [[Malrec Syn]]

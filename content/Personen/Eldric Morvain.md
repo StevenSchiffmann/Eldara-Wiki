@@ -1,11 +1,4 @@
 ---
-typ: npc
-rolle: questgeber
-status: gefangen
-ort: Kerker
-fraktion: Innerer Zirkel
-kampagne: DnDHomies
-rasse: Mensch
 tags:
   - major
   - innerer-zirkel
@@ -60,7 +53,7 @@ Ein uralter Mann sitzt freiwillig im Kerker und weigert sich, gerettet zu werden
 
 ### Versteckt
 
-- Ist der [[Lebende Anker]].
+- Ist der *Lebende Anker*.
     
 - Ohne seine freiwillige Zustimmung öffnet sich kein stabiler Zugang.
     
@@ -73,7 +66,7 @@ Ein uralter Mann sitzt freiwillig im Kerker und weigert sich, gerettet zu werden
     
 - [[Caelum Virex]] – an ihn gebundener Zugang
     
-- [[Projekt Caelum Virex]] – sein größter Fehler
+- *Projekt Caelum Virex* – sein größter Fehler
     
 
 

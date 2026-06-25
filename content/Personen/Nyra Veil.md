@@ -1,19 +1,11 @@
 ---
 
-typ: npc  
-rolle: krimineller  
-status: lebend  
-ort:  
-fraktion: Graue Vollstrecker  
-kampagne: DnDHomies  
-rasse: Mensch  
 tags:
   - major
   - graue-vollstrecker
   - wiederkehrend
   - kampf
   - twist
-
 ---
 
 # [[Nyra Veil]]

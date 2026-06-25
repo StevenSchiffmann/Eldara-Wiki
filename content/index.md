@@ -1,63 +1,36 @@
 ---
 title: Eldara — Das Kompendium
-description: Das Spieler-Wiki für die DnDHomies-Kampagne
+description: Das Wiki für alle DnD-Kampagnen in der Welt von Eldara
 ---
 
 # Willkommen in Eldara
 
-> *"Folgt dem Blut, folgt der Wahrheit — doch fragt euch, ob ihr wirklich wissen wollt, wohin es führt."*
+> *"Die Welt ist groß — und jede Gruppe schreibt ihre eigene Geschichte."*
 
-Dieses Kompendium versammelt alles, was eure Gruppe bisher über die Welt von Eldara herausgefunden hat: Orte, Personen, Fraktionen und Lore.
-
----
-
-## Schnellnavigation
-
-### Orte
-
-| Ort | Beschreibung |
-|---|---|
-| [[Andurin]] | Die große Stadt — eure Basis |
-| [[Kharvos]] | Dunkle Handelsstadt im Süden |
-| [[Lighthaven]] | Seehafenstadt |
-| [[Bromburg Grove]] | Kleines Dorf im Wald |
-
-### Fraktionen
-
-| Fraktion | Rolle |
-|---|---|
-| [[Axiom-Konklave]] | ??? |
-| [[Innerer Zirkel]] | Mächtige Schattenorganisation |
-| [[Graue Vollstrecker]] | Durchsetzer der Ordnung |
-| [[Weiße Hand]] | ??? |
-
-### Personen
-
-Alle bekannten NPCs findet ihr unter [[Personen]].
-
-### Karten
-
-- [[Andurin Map]] — Stadtplan Andurin
-- [[Kharvos Map]] — Stadtplan Kharvos  
-- [[Lighthaven Map]] — Stadtplan Lighthaven
+Wählt eure Kampagne, um zu euren Sessions, Orten, Personen und Fraktionen zu gelangen.
 
 ---
 
-## Eure Gruppe
+## Kampagnen
 
-| Charakter | Spieler |
-|---|---|
-| [[Ophiria Lunara]] | — |
-| [[Ikan Breathe]] | — |
-| [[Saki Maki]] | — |
-| [[Mr. Arnold]] | — |
+### [[Kampagnen/DnDHomies|DnDHomies]]
 
----
+> Kharvos. Das Blutturnier. Die Axiom-Konklave.
 
-## Letzte Sessions
+Die erste aktive Kampagne. Vier Abenteurer erwachen ohne Erinnerungen in einem Kerker — und entdecken eine Verschwörung, die tiefer geht als erwartet.
 
-→ [[Sessions]] — alle Sitzungsberichte
+**Status:** Aktiv · [[Kampagnen/DnDHomies|→ Zur Kampagne]]
 
 ---
 
-*Eldara-Kompendium · DnDHomies-Kampagne*
+### MainHomies
+
+> *Bald verfügbar.*
+
+Eine weitere Kampagne in der Welt von Eldara. Details folgen.
+
+**Status:** In Vorbereitung
+
+---
+
+*Eldara-Kompendium · Spieler-Wiki*

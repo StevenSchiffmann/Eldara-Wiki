@@ -1,11 +1,4 @@
 ---
-typ: npc
-rolle: unbekannt
-status: lebend
-ort: unbekannt
-fraktion: Innerer Zirkel
-kampagne: DnDHomies
-rasse: unbekannt
 tags:
   - major
   - innerer-zirkel

@@ -1,11 +1,4 @@
 ---
-typ: npc
-rolle: fraktionsführer
-status: lebend
-ort: unbekannt
-fraktion: Weiße Hand, innerer Zirkel
-kampagne: DnDHomies
-rasse: Mensch
 tags:
   - major
   - innerer-zirkel
@@ -91,7 +84,7 @@ Leiterin der [[Weiße Hand|Weißen Hand]] und öffentlich gefeierte Heilerin. F�
     
 - [[Caelum Virex]] – enger Verbündeter
     
-- [[Kristall-Implantat]] – Entwicklung und Einsatz
+- *Kristall-Implantat* – Entwicklung und Einsatz
     
 
 ---

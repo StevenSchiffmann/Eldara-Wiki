@@ -1,15 +1,7 @@
 ---
 
-typ: npc  
-rolle: krimineller  
-status: tot  
-ort: [[Kharvos]]  
-fraktion:  
-kampagne: DnDHomies  
-rasse: Mensch  
 tags:
   - tot
-
 ---
 
 # [[Hendrick Gogolo]]
@@ -47,7 +39,7 @@ Ein toter Serienmörder aus der Nähe von [[Kharvos]]. Auf ihn war ein Kopfgeld 
 
 ### Öffentlich
 
-- Wurde in der [[Gilde von Kharvos]] gesucht.
+- Wurde in der *Gilde von Kharvos* gesucht.
     
 - Kopfgeld: 50 G.
     
@@ -60,7 +52,7 @@ Ein toter Serienmörder aus der Nähe von [[Kharvos]]. Auf ihn war ein Kopfgeld 
 
 - [[Kharvos]] – Tatgebiet
     
-- [[Gilde von Kharvos]] – zahlte Kopfgeld
+- *Gilde von Kharvos* – zahlte Kopfgeld
     
 
 ---

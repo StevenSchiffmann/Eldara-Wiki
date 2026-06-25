@@ -1,6 +1,6 @@
 „Wenn du den Weg hierher gefunden hast… wolltest du es so.“
 
-Wird von [[Nippin Zwieback]] geführt, ist [[Pippin Zwieback]] Bruder.
+Wird von *Nippin Zwieback* geführt, ist [[Pippin Zwieback]] Bruder.
 
 - Ist die Hardcode Black Market Version von seinem Bruder
 

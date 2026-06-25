@@ -17,7 +17,7 @@ Geschäfte im Ort:
 
 ## Geschäfte im Schwarzmarkt
 
-### [[Fleshforge]]
+### *Fleshforge*
 
 **NPC:** Dr. Varek  
 **Art:** Ripperdoc / Implantate  
@@ -28,7 +28,7 @@ Geschäfte im Ort:
 
 ---
 
-### [[Seelenhandel Grix]]
+### *Seelenhandel Grix*
 
 **NPC:** Grix  
 **Art:** Seelen- und Erinnerungshandel  
@@ -39,7 +39,7 @@ Geschäfte im Ort:
 
 ---
 
-### [[Der Knochenhändler]]
+### *Der Knochenhändler*
 
 **NPC:** Marrow  
 **Art:** Verfluchte Relikte / Knochenwaren  
@@ -61,7 +61,7 @@ Geschäfte im Ort:
 
 ---
 
-### [[Schlangenzunge]]
+### *Schlangenzunge*
 
 **NPC:** Sereth  
 **Art:** Info Broker  
@@ -72,7 +72,7 @@ Geschäfte im Ort:
 
 ---
 
-### [[Die Sammlerin]]
+### *Die Sammlerin*
 
 **NPC:** Mutter Vell  
 **Art:** Sammlerin von Gefühlen und Körperteilen  

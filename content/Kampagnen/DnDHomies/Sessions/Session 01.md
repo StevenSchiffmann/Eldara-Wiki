@@ -31,7 +31,7 @@ Familie wird abgeschlachtet und Kinder mitgenommen, die aber in einer Nacht spur
 Auf dem Weg führen Spuren eines Wagens weg vom Weg, Teile liegen rum und ein toter Gnoll liegt auf dem Weg. Beim Folgen der Spuren sieht die Gruppe eine schön geschmückte Kutsche  und 5 Gnolle, die die Tür aufreißen und einen reichen Mann hinauszerren. Der Mann [[Gildam Blauschild]] fleht um Hilfe.
 Sie haben ihn getötet und versuchen die Spuren zu verwischen indem sie den Karren verbrennen.
 
-[[Ikan Breathe]] hat rausbekommen wo das [[Bankett]] stattfindet von einem fahrenden östlichen Händler. Findet 18:00 in 3 Tagen in [[Zum Goldenen Reh]] statt.
+*Ikan Breathe* hat rausbekommen wo das [[Bankett]] stattfindet von einem fahrenden östlichen Händler. Findet 18:00 in 3 Tagen in [[Zum Goldenen Reh]] statt.
 
 
 

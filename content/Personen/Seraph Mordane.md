@@ -1,17 +1,9 @@
 ---
 
-typ: npc  
-rolle: magier  
-status: lebend  
-ort:  
-fraktion: Graue Vollstrecker  
-kampagne: DnDHomies  
-rasse: Mensch  
 tags:
   - minor
   - graue-vollstrecker
   - kampf
-
 ---
 
 # [[Seraph Mordane]]

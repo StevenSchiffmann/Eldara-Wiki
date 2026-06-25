@@ -1,17 +1,9 @@
 ---
 
-typ: npc  
-rolle: fraktionsführer  
-status: lebend  
-ort: Axiom-Konklave  
-fraktion: Axiom-Konklave
-kampagne: DnDHomies  
-rasse: Mensch  
 tags:
   - major
   - innerer-zirkel
   - twist
-
 ---
 
 # [[Caelum Virex]]
@@ -57,7 +49,7 @@ Der gefürchtete Kopf hinter dem Kristallsystem und dem [[Axiom-Konklave]]. Viel
 
 - Führungsfigur des [[Axiom-Konklave]].
     
-- Initiator des [[Kristallprojekt]].
+- Initiator des *Kristallprojekt*.
     
 - Gilt als Mann, der Menschen für ewiges Leben aussaugt.
     
@@ -77,11 +69,11 @@ Der gefürchtete Kopf hinter dem Kristallsystem und dem [[Axiom-Konklave]]. Viel
 
 - [[Axiom-Konklave]] – seine Organisation
     
-- [[Kristallprojekt]] – sein Werkzeug
+- *Kristallprojekt* – sein Werkzeug
     
 - [[Eldric Morvain]] – kennt den letzten Zugang
     
-- [[Wahrer Antagonist]] – eigentliches Ziel
+- *Wahrer Antagonist* – eigentliches Ziel
     
 
 ---

@@ -1,18 +1,10 @@
 ---
 
-typ: npc  
-rolle: soldat  
-status: lebend  
-ort:  
-fraktion: Graue Vollstrecker  
-kampagne: DnDHomies  
-rasse: Mensch  
 tags:
   - minor
   - graue-vollstrecker
   - wiederkehrend
   - kampf
-
 ---
 
 # [[Darius Kane]]

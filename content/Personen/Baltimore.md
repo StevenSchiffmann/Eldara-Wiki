@@ -1,23 +1,15 @@
 ---
 
-typ: npc  
-rolle: verbündeter  
-status: lebend  
-ort: Unterirdisches Gefängnis 
-fraktion:  
-kampagne: DnDHomies  
-rasse: Mensch  
 tags:
   - major
   - twist
-
 ---
 
 # [[Baltimore]]
 
 ## Kurzbeschreibung
 
-Ein verhüllter Mann befreit die SCs aus dem [[Unterirdisches Gefängnis]] und drängt zur sofortigen Flucht. Er wirkt wie ein kalter Gegner des Systems.
+Ein verhüllter Mann befreit die SCs aus dem *Unterirdisches Gefängnis* und drängt zur sofortigen Flucht. Er wirkt wie ein kalter Gegner des Systems.
 
 ---
 
@@ -44,7 +36,7 @@ Ein verhüllter Mann befreit die SCs aus dem [[Unterirdisches Gefängnis]] und d
 
 ## Motivation
 
-**Will:** Die SCs schnell aus dem Gefängnis bringen und auf die Spur der [[Fünf Männer]] setzen.
+**Will:** Die SCs schnell aus dem Gefängnis bringen und auf die Spur der *Fünf Männer* setzen.
 
 **Will auf keinen Fall:** Zeit verlieren oder unnötige Fragen beantworten.
 
@@ -61,7 +53,7 @@ Ein verhüllter Mann befreit die SCs aus dem [[Unterirdisches Gefängnis]] und d
 
 - Weiß mehr über die Organisation, als er zugibt.
     
-- Kennt mögliche Spuren zu den [[Fünf Männer]].
+- Kennt mögliche Spuren zu den *Fünf Männer*.
     
 
 ---
@@ -70,9 +62,9 @@ Ein verhüllter Mann befreit die SCs aus dem [[Unterirdisches Gefängnis]] und d
 
 - [[Axiom-Konklave]] – offener Feind
     
-- [[Fünf Männer]] – Ziel der Suche
+- *Fünf Männer* – Ziel der Suche
     
-- [[Unterirdisches Gefängnis]] – Ort der Befreiung
+- *Unterirdisches Gefängnis* – Ort der Befreiung
     
 
 ---

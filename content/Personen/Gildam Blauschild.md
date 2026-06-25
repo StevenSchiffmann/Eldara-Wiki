@@ -1,11 +1,4 @@
 ---
-typ: npc
-rolle: händler
-status: tot
-ort: Kharvos
-fraktion:
-kampagne: DnDHomies
-rasse: Mensch
 tags:
   - tot
 ---

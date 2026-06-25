@@ -11,6 +11,8 @@ configuration:
     - private
     - templates
     - .obsidian
+    - Kampagnen/DnDHomies/Spieler
+    - Kampagnen/MainHomies/Spieler
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
@@ -171,7 +173,7 @@ plugins:
     enabled: true
     options:
       links:
-        Kampagne DnDHomies: "#"
+        DnDHomies: "/Kampagnen/DnDHomies"
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
@@ -187,27 +189,8 @@ plugins:
     options: {}
     order: 50
   - source: github:quartz-community/note-properties
-    enabled: true
-    options:
-      includeAll: false
-      includedProperties:
-        - status
-        - rolle
-        - ort
-        - fraktion
-        - rasse
-        - tags
-      excludedProperties:
-        - typ
-        - kampagne
-      hidePropertiesView: false
-      delimiters: ---
-      language: yaml
+    enabled: false
     order: 5
-    layout:
-      position: beforeBody
-      priority: 15
-      display: all
   - source: github:quartz-community/unlisted-pages
     enabled: true
     options: {}

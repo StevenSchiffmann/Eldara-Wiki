@@ -20,9 +20,9 @@ Während an der Oberfläche Leben gerettet werden, werden in den Tiefen der Stad
     
 - [[Schwarze Station]]
     
-- [[Heilergärten]]
+- *Heilergärten*
     
-- [[Akademie der Anatomie]]
+- *Akademie der Anatomie*
     
 
 ## Ruf

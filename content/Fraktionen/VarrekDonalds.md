@@ -1,6 +1,4 @@
 ---
-typ: ort
-kampagne: DnDHomies
 tags:
   - kharvos
   - varrek

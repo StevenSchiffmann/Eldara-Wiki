@@ -1,11 +1,4 @@
 ---
-typ: npc
-rolle: antagonist
-status: lebend
-ort: Kharvos
-fraktion: Innerer Zirkel
-kampagne: DnDHomies
-rasse: Mensch
 tags:
   - major
   - innerer-zirkel
