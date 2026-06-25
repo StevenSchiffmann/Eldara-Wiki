@@ -11,7 +11,7 @@
  */
 
 import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync, readdirSync, statSync, rmSync } from 'fs'
-import { join, dirname, extname, relative } from 'path'
+import { join, dirname, basename, extname, relative } from 'path'
 import { fileURLToPath } from 'url'
 import { execSync } from 'child_process'
 
@@ -156,8 +156,28 @@ function convertLeafletBlocks(content) {
   })
 }
 
-// --- Wikilinks in Map-Dateien: [[AndurinMap.png]] → angepassten Link ---
-// (wird direkt im HTML durch Leaflet ersetzt, kein weiterer Schritt nötig)
+// --- Folder-Index-Alias ---
+// Quartz speichert Datei.md in Ordner "Datei/" intern als "ordner/datei/index".
+// Der Link-Resolver findet sie dann nicht unter "datei" → kaputte Links.
+// Fix: alias "datei" ins Frontmatter eintragen → Quartz generiert Redirect.
+
+function addFolderIndexAlias(content, filePath) {
+  const fileName  = basename(filePath, '.md')
+  const parentDir = basename(dirname(filePath))
+  if (fileName.toLowerCase() !== parentDir.toLowerCase()) return content
+
+  const alias = fileName.toLowerCase().replace(/\s+/g, '-')
+
+  const fmMatch = content.match(/^---\n([\s\S]*?)\n---\n/)
+  if (fmMatch) {
+    if (fmMatch[1].includes('aliases:')) return content  // bereits vorhanden
+    const end = fmMatch.index + fmMatch[0].length
+    const newFm = `---\n${fmMatch[1]}\naliases:\n  - ${alias}\n---\n`
+    return newFm + content.slice(end)
+  }
+  // Kein Frontmatter: eines anlegen
+  return `---\naliases:\n  - ${alias}\n---\n\n${content}`
+}
 
 // --- Datei verarbeiten ---
 
@@ -171,6 +191,7 @@ function processFile(srcPath, destPath) {
   }
 
   content = stripDMArea(content)
+  content = addFolderIndexAlias(content, srcPath)
   content = convertLeafletBlocks(content)
   mkdirSync(dirname(destPath), { recursive: true })
   writeFileSync(destPath, content, 'utf8')

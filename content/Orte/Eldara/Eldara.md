@@ -1,3 +1,8 @@
+---
+aliases:
+  - eldara
+---
+
 **Eldara** ist eine klassische Fantasywelt voller alter Königreiche, wilder Grenzlande und vergessener Ruinen. Mächtige Städte, kleine Dörfer, dunkle Wälder, hohe Gebirge und gefährliche Sümpfe prägen das Land. Magie ist bekannt, aber nicht überall alltäglich, und viele Menschen begegnen ihr mit Ehrfurcht oder Misstrauen.
 
 In Eldara leben Menschen, Elfen, Zwerge, Halblinge, Gnome, Orks und viele weitere Völker nebeneinander – mal friedlich, mal in alten Konflikten verstrickt. Götter, Naturgeister, Drachen, Dämonen und uralte Mächte beeinflussen das Schicksal der Welt im Hintergrund.
