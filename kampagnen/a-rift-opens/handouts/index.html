@@ -19,12 +19,12 @@
   <meta name="twitter:description" content="Das öffentliche Archiv der Welt Eldara — Personen, Orte, Fraktionen und die Chroniken der laufenden Kampagnen.">
   <meta name="twitter:image" content="https://stevenschiffmann.github.io/Eldara-Wiki/assets/hero/landing-hero.webp">
   <link rel="icon" type="image/png" href="https://stevenschiffmann.github.io/Eldara-Wiki/assets/favicon/favicon.png">
-  <link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/tokens.css?v=bf37bb2d8d">
-  <link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/layout.css?v=bf37bb2d8d">
-  <link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/fantasy.css?v=bf37bb2d8d">
-  <script defer src="https://stevenschiffmann.github.io/Eldara-Wiki/static/js/hover-preview.js?v=bf37bb2d8d"></script>
+  <link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/tokens.css?v=2ff4556012">
+  <link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/layout.css?v=2ff4556012">
+  <link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/fantasy.css?v=2ff4556012">
+  <script defer src="https://stevenschiffmann.github.io/Eldara-Wiki/static/js/hover-preview.js?v=2ff4556012"></script>
   
-<link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/collections.css?v=bf37bb2d8d">
+<link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/collections.css?v=2ff4556012">
 
 </head>
 <body>
@@ -52,7 +52,7 @@
       
     </ul>
   </nav>
-  <link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/search.css?v=bf37bb2d8d">
+  <link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/search.css?v=2ff4556012">
 <div class="site-search" data-search-root data-base-url="https://stevenschiffmann.github.io/Eldara-Wiki/" data-index-url="https://stevenschiffmann.github.io/Eldara-Wiki/search-index.json">
   <form class="search-form" role="search" action="" method="get">
     <label class="visually-hidden" for="site-search-input">Archiv durchsuchen</label>
@@ -65,7 +65,7 @@
        hidden></div>
 </div>
 <script defer src="https://stevenschiffmann.github.io/Eldara-Wiki/static/vendor/flexsearch.bundle.js"></script>
-<script defer src="https://stevenschiffmann.github.io/Eldara-Wiki/static/js/search.js?v=bf37bb2d8d"></script>
+<script defer src="https://stevenschiffmann.github.io/Eldara-Wiki/static/js/search.js?v=2ff4556012"></script>
 </div>
     
     
@@ -94,6 +94,20 @@
   
 </div>
 
+<dialog class="sheet-gate" data-sheet-gate aria-labelledby="sheet-gate-title">
+  <form method="dialog" class="sheet-gate-inner">
+    <p class="sheet-gate-sigil" aria-hidden="true">&#10022;</p>
+    <h2 id="sheet-gate-title">Bist du wirklich <span data-sheet-gate-name>&hellip;</span>?</h2>
+    <p class="sheet-gate-copy">
+      Der Chronist gibt die Aufzeichnungen einer Person nur an sie selbst heraus.
+    </p>
+    <div class="sheet-gate-actions">
+      <button type="submit" value="nein" class="sheet-gate-button sheet-gate-button--deny">Nein</button>
+      <button type="submit" value="ja" class="sheet-gate-button sheet-gate-button--confirm" data-sheet-gate-confirm>Ja, das bin ich</button>
+    </div>
+  </form>
+</dialog>
+
   </main>
 
   
@@ -106,8 +120,8 @@
   </button>
   <p class="d20-result" id="d20-result" role="status" aria-live="polite"></p>
 </div>
-<link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/atmosphere.css?v=bf37bb2d8d">
-<script defer src="https://stevenschiffmann.github.io/Eldara-Wiki/static/js/d20.js?v=bf37bb2d8d"></script>
+<link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/atmosphere.css?v=2ff4556012">
+<script defer src="https://stevenschiffmann.github.io/Eldara-Wiki/static/js/d20.js?v=2ff4556012"></script>
   <p class="footer-meta">Eldara &ndash; Das Archiv von Eldara</p>
   <p class="footer-legal">
     <a href="https://stevenschiffmann.github.io/Eldara-Wiki/impressum/">Impressum</a>
@@ -117,5 +131,7 @@
 </footer>
 
   
+<script defer src="https://stevenschiffmann.github.io/Eldara-Wiki/static/js/sheet-gate.js?v=2ff4556012"></script>
+
 </body>
 </html>

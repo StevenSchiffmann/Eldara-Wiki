@@ -23,6 +23,22 @@
     "excerpt": "Ein Turnier, welches alle 4 Jahre in Kharvos stattfindet. Es ist eine große Festivität, zu der alle mögliche Händler und Interessenten anreisen und ein Vermögen ausgeben, um als Zuschauer oder Betreib",
     "title": "Blutturnier"
   },
+  "kampagnen/krystal-saga/handouts/beroea": {
+    "excerpt": "",
+    "title": "Beröa"
+  },
+  "kampagnen/krystal-saga/handouts/ikan-breathe": {
+    "excerpt": "",
+    "title": "Ikan Breathe"
+  },
+  "kampagnen/krystal-saga/handouts/mr-arnold-character-sheet-ausgefuellt": {
+    "excerpt": "",
+    "title": "Mr. Arnold"
+  },
+  "kampagnen/krystal-saga/handouts/saki-maki": {
+    "excerpt": "",
+    "title": "Saki Maki"
+  },
   "kampagnen/krystal-saga/quests/modron-problem": {
     "excerpt": "Elidran Vox' Werkstatt Hinter den verschlossenen Toren von Elidran Vox' Werkstatt rattern Zahnräder, schlagen Metallarme auf Ambosse und ziehen Funken durch die dunklen Fertigungshallen. Was als Versu",
     "title": "Modron Problem"
@@ -40,7 +56,7 @@
     "title": "Session 03"
   },
   "kampagnen/krystal-saga/spieler/beroea": {
-    "excerpt": "beröa.pdf Beröa Ein ruhiger elfischer Mönch aus den Wäldern von Varyss, der seine Umgebung aufmerksam beobachtet und versucht, unnötiges Leid zu vermeiden. Beschreibung Beröa ist ein 31 Jahre alter El",
+    "excerpt": "Beröa Ein ruhiger elfischer Mönch aus den Wäldern von Varyss, der seine Umgebung aufmerksam beobachtet und versucht, unnötiges Leid zu vermeiden. Beschreibung Beröa ist ein 31 Jahre alter Elf mit schw",
     "title": "Beröa"
   },
   "kampagnen/krystal-saga/spieler/ikan-breathe": {
@@ -48,7 +64,7 @@
     "title": "Ikan Breathe"
   },
   "kampagnen/krystal-saga/spieler/mr-arnold": {
-    "excerpt": "Mr. Arnold Character-Sheet Ausgefüllt.pdf Items: - Brooch of Shielding - 🧠 Resistance gegen Force Damage - 🧙 Immunität gegen Magic Missile (alle Geschosse) - Circlet of Blasting - Wand of Magic Missil",
+    "excerpt": "Mr. Arnold Ein Steingoliath aus dem Felsenreich Stonearch, der nach langen Jahren als Einsiedler nach Kharvos aufbrach. Dort sucht er nach seinem verschwundenen Gefährten Guliver und nach einer Spur z",
     "title": "Mr. Arnold"
   },
   "kampagnen/krystal-saga/spieler/ophiria-lunara": {
@@ -232,7 +248,7 @@
     "title": "Der Fall der Zivilisation"
   },
   "zeitlinie/der-schwarze-regen": {
-    "excerpt": "Jahr 1432 ndFdZ Der Schwarze Regen Im Jahr 1432 ndFdZ zogen tiefschwarze Wolken über den Westen Eldaras. Der Regen, der aus ihnen fiel, war mit instabilem Mana durchsetzt und veränderte Landschaften, ",
+    "excerpt": "Der Schwarze Regen Im Jahr 1432 ndFdZ zogen tiefschwarze Wolken über den Westen Eldaras. Der Regen, der aus ihnen fiel, war mit instabilem Mana durchsetzt und veränderte Landschaften, Lebewesen und ga",
     "title": "Der Schwarze Regen"
   },
   "zeitlinie/siebenjaehriger-krieg-von-andurin": {

@@ -194,3 +194,107 @@
 @media (max-width: 30rem) {
   .collection-grid--party { grid-template-columns: 1fr; }
 }
+
+/* --- Character sheets --------------------------------------------------------------- */
+
+.handout-owner {
+  margin: calc(-1 * var(--space-2)) 0 var(--space-3);
+  color: var(--color-ink-muted);
+  font-size: var(--font-size-sm);
+}
+
+/* The sheet offered on the character's own page, in the article rail. */
+.sheet-offer {
+  padding: var(--space-3);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-base);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.sheet-offer h2 {
+  margin-bottom: var(--space-2);
+  font-size: var(--font-size-md);
+}
+
+.sheet-offer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-focus);
+  font-family: var(--font-display);
+  font-size: var(--font-size-sm);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+
+.sheet-offer-link:hover,
+.sheet-offer-link:focus-visible { text-decoration: underline; text-underline-offset: 0.2em; }
+
+/* --- Identity prompt ---------------------------------------------------------------- */
+
+.sheet-gate {
+  max-width: min(30rem, calc(100vw - 2rem));
+  padding: 0;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-base);
+  background: var(--color-surface);
+  color: var(--color-ink);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.6);
+}
+
+.sheet-gate::backdrop {
+  background: rgba(8, 6, 4, 0.78);
+}
+
+.sheet-gate-inner {
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  text-align: center;
+}
+
+.sheet-gate-sigil {
+  margin: 0 0 var(--space-2);
+  color: var(--color-accent);
+  font-size: var(--font-size-xl);
+  line-height: 1;
+}
+
+.sheet-gate h2 {
+  margin-bottom: var(--space-2);
+  font-size: var(--font-size-lg);
+}
+
+.sheet-gate-copy {
+  margin: 0 0 var(--space-4);
+  color: var(--color-ink-muted);
+  font-style: italic;
+}
+
+.sheet-gate-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: center;
+}
+
+.sheet-gate-button {
+  padding: 0.6rem 1.4rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  background: var(--color-bg-alt);
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-size: var(--font-size-base);
+  cursor: pointer;
+}
+
+.sheet-gate-button--confirm {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: var(--color-accent-contrast);
+}
+
+.sheet-gate-button:hover,
+.sheet-gate-button:focus-visible { border-color: var(--color-accent); }
+.sheet-gate-button--confirm:hover,
+.sheet-gate-button--confirm:focus-visible { filter: brightness(1.08); }
