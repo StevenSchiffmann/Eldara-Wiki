@@ -6,6 +6,45 @@
    wins, (3) `[data-theme="dark"]` — explicit manual override regardless of system preference.
    `theme.js` only ever sets/removes the `data-theme` attribute; it never touches these values. */
 
+/* --- Self-hosted faces (site/static/fonts/, no CDN) ---------------------------------
+   These files shipped with B10 but were never declared, so every page in the archive has
+   been rendering in the Times New Roman fallback. `swap` because the text matters more
+   than the face: the chronicle is readable from the first paint either way.
+
+   Cinzel is vendored at 600 only. Headings therefore ask for 600 rather than 700 — a
+   700 request against a 600-only family makes the browser synthesise a smeared faux-bold. */
+@font-face {
+  font-family: "Cinzel";
+  src: url("../fonts/Cinzel-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("../fonts/EBGaramond-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("../fonts/EBGaramond-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("../fonts/EBGaramond-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* --- Color tokens: parchment-chronicle light mode --- */
   --color-bg: #f0e6d2;

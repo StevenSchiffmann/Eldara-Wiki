@@ -13,11 +13,11 @@
   <meta property="og:title" content="Das Archiv von Eldara">
   <meta property="og:description" content="Das öffentliche Archiv der Welt Eldara — Personen, Orte, Fraktionen und die Chroniken der laufenden Kampagnen.">
   <meta property="og:url" content="https://stevenschiffmann.github.io/Eldara-Wiki/">
-  <meta property="og:image" content="https://stevenschiffmann.github.io/Eldara-Wiki/assets/hero/landing-hero.jpg">
+  <meta property="og:image" content="https://stevenschiffmann.github.io/Eldara-Wiki/assets/hero/landing-hero.webp">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Das Archiv von Eldara">
   <meta name="twitter:description" content="Das öffentliche Archiv der Welt Eldara — Personen, Orte, Fraktionen und die Chroniken der laufenden Kampagnen.">
-  <meta name="twitter:image" content="https://stevenschiffmann.github.io/Eldara-Wiki/assets/hero/landing-hero.jpg">
+  <meta name="twitter:image" content="https://stevenschiffmann.github.io/Eldara-Wiki/assets/hero/landing-hero.webp">
   <link rel="icon" type="image/png" href="https://stevenschiffmann.github.io/Eldara-Wiki/assets/favicon/favicon.png">
   <link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/tokens.css">
   <link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/layout.css">
@@ -74,22 +74,24 @@
   <main id="main-content" class="site-main site-main--landing">
     
 
-<section id="archive-portals" class="landing-book" aria-labelledby="archive-title">
-  <div class="landing-book-scene">
-    <div class="landing-book-layer" aria-hidden="true">
-      <img src="https://stevenschiffmann.github.io/Eldara-Wiki/assets/hero/landing-book-open.webp" alt="" width="2560" height="1440" fetchpriority="high" decoding="async">
-    </div>
-    <div class="landing-book-vignette" aria-hidden="true"></div>
+<section id="archive-portals" class="hero" aria-labelledby="archive-title">
+  <div class="hero-scene">
+    <img class="hero-image"
+         src="https://stevenschiffmann.github.io/Eldara-Wiki/assets/hero/landing-hero.webp"
+         alt="Eine in den Fels geschlagene Archivhalle. Regale voller Bücher und Schriftrollen verlieren sich in der Dunkelheit; ein Lichtschacht fällt auf ein steinernes Lesepult mit aufgeschlagenem Buch und einer brennenden Kerze."
+         width="1672" height="941" fetchpriority="high" decoding="async">
+    <div class="hero-shaft" aria-hidden="true"></div>
+    <div class="hero-motes" aria-hidden="true"></div>
+    <div class="hero-veil" aria-hidden="true"></div>
+  </div>
 
-    <div class="book-page book-page--left">
-      <p class="section-kicker">Eine illuminierte Chronik</p>
-      <h1 id="archive-title">Das Archiv von Eldara</h1>
-      <p class="book-page-lede">Hier bewahrt der Chronist die Wege, Taten und Wendungen von Eldara.</p>
-    </div>
+  <div class="hero-content">
+    <p class="hero-kicker">Eine illuminierte Chronik</p>
+    <h1 id="archive-title">Das Archiv<br>von Eldara</h1>
+    <p class="hero-lede">Hier bewahrt der Chronist die Wege, Taten und Wendungen von Eldara.</p>
 
-    
-    <nav class="book-page book-page--right" aria-label="Wege ins Archiv">
-      <ul class="book-ways">
+    <nav class="hero-index" aria-label="Wege ins Archiv">
+      <ul>
         <li><a href="https://stevenschiffmann.github.io/Eldara-Wiki/welt/">Die Welt</a></li>
         <li><a href="https://stevenschiffmann.github.io/Eldara-Wiki/personen/">Die Personen</a></li>
         
@@ -99,6 +101,11 @@
       </ul>
     </nav>
   </div>
+
+  <a class="hero-scroll" href="#campaigns">
+    <span>Tiefer ins Archiv</span>
+    <span class="hero-scroll-arrow" aria-hidden="true">&darr;</span>
+  </a>
 </section>
 
 <section id="campaigns" class="campaign-section" aria-labelledby="campaign-heading">

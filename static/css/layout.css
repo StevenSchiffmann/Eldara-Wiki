@@ -21,6 +21,9 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
+  /* Matches the one weight Cinzel is vendored at; asking for 700 would make the browser
+     synthesise a faux-bold instead of using the real face. */
+  font-weight: 600;
   line-height: var(--line-height-tight);
   margin: 0 0 var(--space-3);
 }

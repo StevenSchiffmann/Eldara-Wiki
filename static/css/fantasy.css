@@ -162,7 +162,7 @@ body {
   background-color: #17120d;
   background-image:
     linear-gradient(180deg, rgba(23, 18, 13, 0.94) 0%, rgba(23, 18, 13, 0.28) 46%, rgba(23, 18, 13, 0.94) 100%),
-    url("../../assets/hero/landing-hero.jpg");
+    url("../../assets/hero/landing-hero.webp");
   background-position: center, center 58%;
   background-size: cover, cover;
   box-shadow: 0 1rem 2.5rem rgba(23, 18, 13, 0.3);
