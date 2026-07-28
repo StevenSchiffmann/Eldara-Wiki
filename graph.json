@@ -1,0 +1,126 @@
+{
+  "edges": [
+    {
+      "label": null,
+      "source": "personen/caelum-virex",
+      "target": "fraktionen/axiom-konklave"
+    },
+    {
+      "label": null,
+      "source": "personen/eldric-morvain",
+      "target": "fraktionen/innerer-zirkel"
+    },
+    {
+      "label": null,
+      "source": "personen/varrek-goldenberg",
+      "target": "fraktionen/innerer-zirkel"
+    }
+  ],
+  "nodes": [
+    {
+      "campaign": null,
+      "fraktion": null,
+      "id": "fraktionen/axiom-konklave",
+      "title": "Axiom-Konklave",
+      "type": "faction"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
+      "id": "fraktionen/innerer-zirkel",
+      "title": "Innerer Zirkel",
+      "type": "faction"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
+      "id": "fraktionen/varrekdonalds",
+      "title": "VarrekDonalds",
+      "type": "faction"
+    },
+    {
+      "campaign": null,
+      "fraktion": "unbekannt",
+      "id": "personen/baltimore",
+      "title": "Baltimore",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": "Axiom-Konklave",
+      "id": "personen/caelum-virex",
+      "title": "Caelum Virex",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": "Innerer Zirkel",
+      "id": "personen/eldric-morvain",
+      "title": "Eldric Morvain",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
+      "id": "personen/elidran-vox",
+      "title": "Elidran Vox",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
+      "id": "personen/gildam-blauschild",
+      "title": "Gildam Blauschild",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
+      "id": "personen/hendrick-gogolo",
+      "title": "Hendrick Gogolo",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
+      "id": "personen/magdilda",
+      "title": "Magdilda",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
+      "id": "personen/nippin-zwieback",
+      "title": "Nippin Zwieback",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
+      "id": "personen/pippin-zwieback",
+      "title": "Pippin Zwieback",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": "Haus Dhor",
+      "id": "personen/seraphine-dhor",
+      "title": "Seraphine Dhor",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": "Innerer Zirkel",
+      "id": "personen/varrek-goldenberg",
+      "title": "Varrek Goldenberg",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": "Graue Vollstrecker",
+      "id": "personen/viktor-hain",
+      "title": "Viktor Hain",
+      "type": "npc"
+    }
+  ]
+}

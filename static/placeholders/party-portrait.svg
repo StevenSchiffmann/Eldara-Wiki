@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" role="img" aria-hidden="true">
+  <!-- Eldara Wiki — party (protagonist) portrait placeholder (B09): shield silhouette like
+       npc-portrait.svg plus a small laurel/star accent above the shoulders to mark these as
+       the heroes' cards in the compendium grid. Single-color line art, transparent
+       background, no text baked in; parchment/candlelight theme pass (B10) may re-skin. -->
+  <path d="M100 16
+           L168 40
+           V116
+           C168 168 140 204 100 224
+           C60 204 32 168 32 116
+           V40
+           Z"
+        fill="none" stroke="#b3b3ad" stroke-width="3"/>
+  <circle cx="100" cy="104" r="34" fill="none" stroke="#b3b3ad" stroke-width="3"/>
+  <path d="M52 188
+           C52 148 72 128 100 128
+           C128 128 148 148 148 188
+           L148 200
+           C148 204 144 208 140 208
+           L60 208
+           C56 208 52 204 52 200
+           Z"
+        fill="none" stroke="#b3b3ad" stroke-width="3"/>
+  <path d="M100 44 L104 54 L115 55 L107 62 L109 73 L100 67 L91 73 L93 62 L85 55 L96 54 Z"
+        fill="#b3b3ad"/>
+</svg>

@@ -1,0 +1,105 @@
+/* The archive entrance: the open book carries the content on its own pages. */
+.landing-book {
+  position: relative;
+  margin: calc(-1 * clamp(2rem, 5vw, 4rem)) calc(50% - 50vw) clamp(3rem, 8vw, 6rem);
+  background: #17120d;
+}
+
+/* Uncropped 16:9 so the page coordinates below stay true — with object-fit: cover the
+   parchment would drift out from under the text on off-ratio viewports. */
+.landing-book-scene {
+  position: relative;
+  aspect-ratio: 2560 / 1440;
+  overflow: hidden;
+}
+
+.landing-book-layer, .landing-book-vignette { position: absolute; inset: 0; }
+.landing-book-layer img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+
+/* Darkens the room, not the pages: the parchment sits around 46–76% of the height, so the
+   gradient stays heavy top and bottom and lets the middle burn through. */
+.landing-book-vignette {
+  background: linear-gradient(180deg, rgba(23,18,13,.72) 0%, rgba(23,18,13,.08) 44%, rgba(23,18,13,.08) 80%, rgba(23,18,13,.88) 100%);
+  pointer-events: none;
+}
+
+/* Page coordinates measured off the rendered scene: the parchment spans 45.7%–79% of the
+   height; insetting to 50%–76% keeps the ink clear of the illuminated border. Content is
+   centred in that box so a shorter or longer index stays on the page. */
+.book-page {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 49%;
+  height: 23.5%;
+  color: #3a2c17;
+  font-size: 0.88vw;
+}
+
+.book-page--left  { left: 23.5%; width: 23%; }
+.book-page--right { left: 53%; width: 22.5%; }
+
+/* A soft pool of candlelight on the open page. Kept gentle on purpose: pushed far enough
+   to rescue small text it stopped reading as light and became a white shape pasted on the
+   book, so the type carries the contrast instead (everything here is large text, ≥3:1). */
+.book-page::before {
+  position: absolute;
+  z-index: -1;
+  inset: -20% -15%;
+  border-radius: 44% 46% 42% 48%;
+  background: radial-gradient(ellipse at center,
+    rgba(255, 243, 219, 0.80) 0%,
+    rgba(255, 240, 212, 0.62) 46%,
+    rgba(252, 234, 202, 0) 82%);
+  content: "";
+  pointer-events: none;
+}
+
+.book-page .section-kicker { margin-bottom: 0.45em; color: #47230a; font-size: 1em; letter-spacing: 0.14em; }
+.book-page h1 { margin: 0 0 0.35em; color: inherit; font-size: 2.6em; line-height: 1.02; text-wrap: balance; }
+.book-page-lede { margin: 0; font-size: 1.2em; line-height: 1.4; }
+
+.book-ways { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5em; }
+.book-ways a {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.5em;
+  line-height: 1.1;
+  text-decoration: none;
+  color: inherit;
+  /* Reading a line of the index: a quill stroke is drawn under it. */
+  box-shadow: inset 0 -0.05em rgba(124, 74, 28, 0);
+  transition: box-shadow 220ms cubic-bezier(0.22, 1, 0.36, 1), color 220ms ease;
+}
+.book-ways a:hover,
+.book-ways a:focus-visible { color: #7c1f1f; box-shadow: inset 0 -0.05em rgba(124, 31, 31, 0.85); }
+
+@media (prefers-reduced-motion: reduce) {
+  .book-ways a { transition: none; }
+}
+
+/* Below this width the photograph is too short to hold readable type: the pages leave the
+   book and stack underneath it as ordinary parchment blocks. */
+@media (max-width: 52rem) {
+  .landing-book-scene { aspect-ratio: auto; }
+  .landing-book-layer { position: relative; }
+  .landing-book-layer img { aspect-ratio: 16 / 9; height: auto; }
+  .landing-book-vignette { inset: 0 0 auto; height: 56vw; }
+  .book-page {
+    position: static;
+    left: auto; top: auto; width: auto;
+    padding: var(--space-4) var(--space-4) 0;
+    color: var(--color-ink);
+    font-size: 1rem;
+    background: var(--color-surface);
+  }
+  .book-page--right { padding-bottom: var(--space-4); }
+  .book-page .section-kicker { color: var(--color-focus); }
+  .book-page h1 { font-size: var(--font-size-2xl); }
+  .book-page-lede { color: var(--color-ink-muted); }
+  .book-ways a { font-size: var(--font-size-lg); }
+  .book-ways a:hover,
+  .book-ways a:focus-visible { color: var(--color-accent); box-shadow: none; text-decoration: underline; }
+}

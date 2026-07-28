@@ -1,0 +1,101 @@
+/* Eldara Wiki — design tokens (epic-fantasy theme pass, B10; structure by B04)
+   Custom-property NAMES are frozen (B04 contract) — this pass only re-values them with the
+   parchment/candlelight palette from ASSET-MANIFEST.md §2 (MASTERPLAN D13). Three layers,
+   in cascade order: (1) `:root` light defaults, (2) `prefers-color-scheme: dark` — system
+   preference, guarded by `:not([data-theme="light"])` so an explicit manual choice always
+   wins, (3) `[data-theme="dark"]` — explicit manual override regardless of system preference.
+   `theme.js` only ever sets/removes the `data-theme` attribute; it never touches these values. */
+
+:root {
+  /* --- Color tokens: parchment-chronicle light mode --- */
+  --color-bg: #f0e6d2;
+  --color-bg-alt: #e6d5ae;
+  --color-surface: #f8f1e0;
+  --color-ink: #3b2f1e;
+  --color-ink-muted: #5c4a2e;
+  --color-accent: #e5a34d;
+  --color-accent-contrast: #3b2f1e;
+  --color-border: #d8c2a0;
+  --color-focus: #7c1f1f;
+
+  /* Status vocabulary for NPC/player lookup. Always paired with the status word itself —
+     never the only carrier of the meaning. Tuned for >=4.5:1 on --color-surface. */
+  --color-status-alive: #3a6130;
+  --color-status-gone: #8c2323;
+  --color-status-warn: #8a5a12;
+
+  /* --- Type tokens: self-hosted serif pair (site/static/fonts/, no CDN) --- */
+  --font-display: "Cinzel", "Times New Roman", serif;
+  --font-body: "EB Garamond", "Iowan Old Style", "Georgia", serif;
+
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.375rem;
+  --font-size-xl: 1.875rem;
+  --font-size-2xl: 2.5rem;
+
+  --line-height-tight: 1.2;
+  --line-height-base: 1.6;
+
+  /* --- Spacing scale --- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+
+  /* --- Structural misc --- */
+  --radius-base: 4px;
+  --radius-lg: 8px;
+  --border-width: 1px;
+  --max-width-content: 72rem;
+  --max-width-prose: 42rem;
+  --focus-ring: 2px solid var(--color-focus);
+  --shadow-card: 0 1px 3px rgba(59, 47, 30, 0.16);
+
+  /* Semantic stacking order, low to high. Replaces the ad-hoc 20/30/100/1000 values that
+     could not be reasoned about together. */
+  --z-sticky: 100;      /* site header */
+  --z-popover: 200;     /* hover previews, search result panel */
+  --z-modal: 300;       /* map lightbox */
+  --z-skip-link: 400;   /* must sit above everything it skips past */
+}
+
+/* System preference: candlelight dark mode — skipped when the visitor has explicitly picked
+   light via the toggle (data-theme="light" persisted by theme.js). */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #17120d;
+    --color-bg-alt: #241b12;
+    --color-surface: #2a2015;
+    --color-ink: #f0e6d2;
+    --color-ink-muted: #bbaa88;
+    --color-accent: #e5a34d;
+    --color-accent-contrast: #17120d;
+    --color-border: #4a3b28;
+    --color-focus: #e5a34d;
+    --color-status-alive: #8fbf7a;
+    --color-status-gone: #e08a8a;
+    --color-status-warn: #e5a34d;
+    --shadow-card: 0 1px 4px rgba(0, 0, 0, 0.6);
+  }
+}
+
+/* Manual override: the toggle sets this regardless of system preference. */
+[data-theme="dark"] {
+  --color-bg: #17120d;
+  --color-bg-alt: #241b12;
+  --color-surface: #2a2015;
+  --color-ink: #f0e6d2;
+  --color-ink-muted: #bbaa88;
+  --color-accent: #e5a34d;
+  --color-accent-contrast: #17120d;
+  --color-border: #4a3b28;
+  --color-focus: #e5a34d;
+  --color-status-alive: #8fbf7a;
+  --color-status-gone: #e08a8a;
+  --color-status-warn: #e5a34d;
+  --shadow-card: 0 1px 4px rgba(0, 0, 0, 0.6);
+}

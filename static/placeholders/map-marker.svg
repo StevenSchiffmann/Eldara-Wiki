@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 44" role="img" aria-hidden="true">
+  <!-- Eldara Wiki — map marker: a wax-seal drop pressed onto the chart rather than a
+       flat grey teardrop. Brass rim, dark centre, warm inner light so it reads as part of
+       the candlelit archive at small map scale. Colours are literal (not tokens) because
+       this file is consumed as an <img> src by Leaflet's divIcon and never inherits CSS. -->
+  <defs>
+    <radialGradient id="seal" cx="42%" cy="34%" r="72%">
+      <stop offset="0%" stop-color="#f0c477"/>
+      <stop offset="52%" stop-color="#c98a34"/>
+      <stop offset="100%" stop-color="#7a4a14"/>
+    </radialGradient>
+  </defs>
+  <path d="M16 2
+           C7.2 2 1 8.9 1 16.6
+           C1 27.3 16 42 16 42
+           C16 42 31 27.3 31 16.6
+           C31 8.9 24.8 2 16 2 Z"
+        fill="url(#seal)" stroke="#4a2c0c" stroke-width="1.4"/>
+  <circle cx="16" cy="16.4" r="6.6" fill="#2a1c0c" opacity="0.88"/>
+  <circle cx="16" cy="16.4" r="3.1" fill="#f4d089"/>
+</svg>

@@ -1,0 +1,284 @@
+/* Eldara Wiki — structural layout (B04)
+   Layout/geometry only; no color values beyond var(--color-*) references, so the
+   epic-fantasy theme pass (B10) can re-skin without touching this file. */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  line-height: var(--line-height-tight);
+  margin: 0 0 var(--space-3);
+}
+
+img {
+  max-width: 100%;
+  /* Without `height: auto` the presentational `height` attribute (set on every <img> for
+     layout stability) wins over `aspect-ratio`, which made the article portrait render at
+     its full 960px instead of the intended 4:5 box. */
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+/* --- Accessibility helpers --- */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: var(--z-skip-link);
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-surface);
+  color: var(--color-ink);
+  border: var(--border-width) solid var(--color-border);
+}
+
+.skip-link:focus {
+  left: var(--space-2);
+  top: var(--space-2);
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* --- Site header --- */
+
+.site-header {
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.header-bar {
+  max-width: var(--max-width-content);
+  margin: 0 auto;
+  padding: var(--space-3) var(--space-4);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-display);
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+}
+
+.breadcrumbs {
+  max-width: var(--max-width-content);
+  margin: 0 auto;
+  padding: 0 var(--space-4) var(--space-2);
+  font-size: var(--font-size-sm);
+  color: var(--color-ink-muted);
+}
+
+.breadcrumbs ol {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content: "\2039";
+  display: inline-block;
+  margin-left: var(--space-1);
+}
+
+/* --- Main content wrapper --- */
+
+.site-main {
+  max-width: var(--max-width-content);
+  margin: 0 auto;
+  padding: var(--space-5) var(--space-4);
+  min-height: 60vh;
+}
+
+/* --- Landing: campaign chooser --- */
+
+.landing-hero {
+  text-align: center;
+  max-width: var(--max-width-prose);
+  margin: 0 auto var(--space-6);
+}
+
+.landing-hero h1 {
+  font-size: var(--font-size-2xl);
+}
+
+.landing-intro {
+  color: var(--color-ink-muted);
+}
+
+.campaign-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: var(--space-4);
+}
+
+.campaign-card {
+  display: flex;
+  flex-direction: column;
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  text-decoration: none;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.campaign-card-cover {
+  aspect-ratio: 16 / 9;
+  background-color: var(--color-bg-alt);
+  overflow: hidden;
+}
+
+.campaign-card-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.campaign-card-body {
+  padding: var(--space-3) var(--space-4) var(--space-4);
+}
+
+.campaign-card-body h2 {
+  font-size: var(--font-size-md);
+  margin-bottom: var(--space-2);
+}
+
+.campaign-card-tagline {
+  color: var(--color-ink-muted);
+  font-size: var(--font-size-sm);
+}
+
+.empty-state {
+  color: var(--color-ink-muted);
+  font-style: italic;
+}
+
+/* --- Campaign hub layout (structure only; chronicle list markup lands once the
+   session-list data source is confirmed, see B04 escalation) --- */
+
+.hub-header {
+  margin-bottom: var(--space-5);
+}
+
+.hub-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(16rem, 1fr);
+  gap: var(--space-5);
+  align-items: start;
+}
+
+@media (max-width: 48rem) {
+  .hub-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hub-chronicle h2 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-4);
+}
+
+.chronicle-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.chronicle-entry {
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-base);
+  padding: var(--space-3) var(--space-4);
+}
+
+.hub-aside {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.hub-aside section {
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-base);
+  padding: var(--space-3);
+}
+
+.hub-aside h3 {
+  font-size: var(--font-size-base);
+  margin-bottom: var(--space-2);
+}
+
+.hub-empty-state {
+  text-align: center;
+  padding: var(--space-6) var(--space-4);
+  color: var(--color-ink-muted);
+  font-style: italic;
+}
+
+/* --- Site footer --- */
+
+.site-footer {
+  border-top: var(--border-width) solid var(--color-border);
+  max-width: var(--max-width-content);
+  margin: var(--space-6) auto 0;
+  padding: var(--space-4);
+  text-align: center;
+  color: var(--color-ink-muted);
+  font-size: var(--font-size-sm);
+}
+
+.chronicler-line {
+  font-style: italic;
+}
+
+.footer-legal a {
+  text-decoration: underline;
+}

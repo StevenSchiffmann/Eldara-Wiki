@@ -1,0 +1,135 @@
+{
+  "andurin": {
+    "height": 1024,
+    "image": "assets/maps/andurin.png",
+    "markers": [
+      {
+        "label": "Zur Karte von Kharvos",
+        "target_map": "kharvos",
+        "target_slug": null,
+        "x": 752.5,
+        "y": 537.578125
+      },
+      {
+        "label": "Arbeitslager",
+        "target_map": null,
+        "target_slug": "lore/arbeitslager",
+        "x": 892.0,
+        "y": 585.0
+      },
+      {
+        "label": "Zur Karte von Lighthaven",
+        "target_map": "lighthaven",
+        "target_slug": null,
+        "x": 440.0,
+        "y": 479.5
+      },
+      {
+        "label": "Zur Karte von Eldara",
+        "target_map": "eldara",
+        "target_slug": null,
+        "x": 450.5,
+        "y": 16.578125
+      },
+      {
+        "label": "Zur Karte von Waldorf",
+        "target_map": "waldorf",
+        "target_slug": null,
+        "x": 550.5,
+        "y": 569.578125
+      }
+    ],
+    "width": 1535
+  },
+  "eldara": {
+    "height": 941,
+    "image": "assets/maps/eldara.png",
+    "markers": [
+      {
+        "label": "Zur Karte von Andurin",
+        "target_map": "andurin",
+        "target_slug": null,
+        "x": 322.5,
+        "y": 729.578125
+      }
+    ],
+    "width": 1672
+  },
+  "kharvos": {
+    "height": 1086,
+    "image": "assets/maps/kharvos.png",
+    "markers": [
+      {
+        "label": "Schwarzmarkt",
+        "target_map": null,
+        "target_slug": "orte/schwarzmarkt",
+        "x": 788.0,
+        "y": 206.0
+      },
+      {
+        "label": "Marktviertel",
+        "target_map": null,
+        "target_slug": "orte/marktviertel",
+        "x": 675.5,
+        "y": 690.578125
+      },
+      {
+        "label": "Zum Goldenen Reh",
+        "target_map": null,
+        "target_slug": "orte/zum-goldenen-reh",
+        "x": 589.5,
+        "y": 520.578125
+      },
+      {
+        "label": "Arena",
+        "target_map": null,
+        "target_slug": "orte/arena",
+        "x": 497.5,
+        "y": 828.578125
+      },
+      {
+        "label": "Zur Karte von Andurin",
+        "target_map": "andurin",
+        "target_slug": null,
+        "x": 216.5,
+        "y": 57.578125
+      }
+    ],
+    "width": 1448
+  },
+  "lighthaven": {
+    "height": 1024,
+    "image": "assets/maps/lighthaven.png",
+    "markers": [
+      {
+        "label": "Zur Karte von Andurin",
+        "target_map": "andurin",
+        "target_slug": null,
+        "x": 790.5,
+        "y": 65.578125
+      },
+      {
+        "label": "Großes Hospital",
+        "target_map": null,
+        "target_slug": "orte/grosses-hospital",
+        "x": 780.5,
+        "y": 713.578125
+      }
+    ],
+    "width": 1536
+  },
+  "waldorf": {
+    "height": 1086,
+    "image": "assets/maps/waldorf.png",
+    "markers": [
+      {
+        "label": "Zur Karte von Andurin",
+        "target_map": "andurin",
+        "target_slug": null,
+        "x": 162.5,
+        "y": 263.578125
+      }
+    ],
+    "width": 1448
+  }
+}

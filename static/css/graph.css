@@ -1,0 +1,90 @@
+/* B19 relationship-graph constellation. Candle-amber glow in dark mode via var(--color-accent). */
+
+.graph-panel {
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: var(--border-width) solid var(--color-border);
+}
+
+.graph-panel h2 {
+  font-family: var(--font-display);
+  font-size: var(--font-size-xl);
+  color: var(--color-ink);
+  margin-bottom: var(--space-3);
+}
+
+.graph-panel-fallback {
+  color: var(--color-ink-muted);
+  font-style: italic;
+}
+
+.graph-panel-canvas {
+  width: 100%;
+  min-height: 420px;
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  overflow: hidden;
+}
+
+.graph-panel-canvas svg {
+  display: block;
+  width: 100%;
+  height: 420px;
+}
+
+.graph-node circle {
+  fill: var(--color-accent);
+  stroke: var(--color-bg);
+  stroke-width: 1.5px;
+  cursor: pointer;
+}
+
+.graph-node.graph-node--faction circle {
+  fill: var(--color-ink-muted);
+}
+
+.graph-node text {
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  fill: var(--color-ink);
+  pointer-events: none;
+}
+
+.graph-edge {
+  stroke: var(--color-border);
+  stroke-width: 1px;
+}
+
+.graph-edge.graph-edge--highlight {
+  stroke: var(--color-accent);
+  stroke-width: 2px;
+}
+
+.graph-edge-label {
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  fill: var(--color-accent);
+  pointer-events: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .graph-node circle {
+    filter: drop-shadow(0 0 4px var(--color-accent));
+  }
+}
+
+.graph-fade-in {
+  animation: graph-fade-in 400ms ease-out;
+}
+
+@keyframes graph-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .graph-fade-in {
+    animation: none;
+  }
+}

@@ -1,1 +1,0 @@
-Arme Seelen, die von der [[Axiom-Konklave]] ein [[Kristallimplantat]] erhalten haben. 

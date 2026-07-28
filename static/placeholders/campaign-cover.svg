@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-hidden="true">
+  <!-- Eldara Wiki — campaign cover placeholder (B09): a simple unrolled-scroll/banner line
+       icon, 16:9 to match the real cover aspect (1600x900). Single-color line art,
+       transparent background, no text baked in. -->
+  <rect x="90" y="46" width="140" height="88" rx="6"
+        fill="none" stroke="#b3b3ad" stroke-width="3"/>
+  <path d="M90 46 C78 46 70 54 70 66 V114 C70 126 78 134 90 134"
+        fill="none" stroke="#b3b3ad" stroke-width="3"/>
+  <path d="M230 46 C242 46 250 54 250 66 V114 C250 126 242 134 230 134"
+        fill="none" stroke="#b3b3ad" stroke-width="3"/>
+  <line x1="108" y1="72" x2="212" y2="72" stroke="#b3b3ad" stroke-width="3"/>
+  <line x1="108" y1="90" x2="212" y2="90" stroke="#b3b3ad" stroke-width="3"/>
+  <line x1="108" y1="108" x2="182" y2="108" stroke="#b3b3ad" stroke-width="3"/>
+</svg>

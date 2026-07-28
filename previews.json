@@ -1,0 +1,242 @@
+{
+  "artefakte/kristallimplantat": {
+    "excerpt": "Ein schmerzhafter Kristall ist in die rechte Hand der SCs eingesetzt. Er wirkt frisch, reagiert auf Stress und kann nicht entfernt werden. Ein Entfernungsversuch führt zu einer tödlichen Explosion. In",
+    "title": "Kristallimplantat"
+  },
+  "fraktionen/axiom-konklave": {
+    "excerpt": "Eine im Verborgenen operierende Organisation, von der die Öffentlichkeit nichts weiß. Ihr Name taucht nur im Untergrund, in Fragmenten von Symbolen, Gerüchten und alten Aufzeichnungen auf. Sie kontrol",
+    "title": "Axiom-Konklave"
+  },
+  "fraktionen/innerer-zirkel": {
+    "excerpt": "- Varrek Goldenberg - Lyrien Vos - Malrec Syn - Seraphine Dhor - Eldric Morvain",
+    "title": "Innerer Zirkel"
+  },
+  "fraktionen/varrekdonalds": {
+    "excerpt": "VarrekDonalds Eine Fastfood-Kette, die in ganz Kharvos verbreitet ist und zur Marke Varrek Goldenbergs gehört. Günstig, allgegenwärtig, beliebt bei der Unterschicht. Aussehen: Einfaches Holzschild mit",
+    "title": "VarrekDonalds"
+  },
+  "kampagnen/krystal-saga/events/bankett": {
+    "excerpt": "Bankett wird veranstaltet für reiche und einflussreiche Personen. Es finden Festivitäten statt. Sie feiern das diesjährige Blutturnier und den erfolgreichen Ertrag dieses Jahres.",
+    "title": "Bankett"
+  },
+  "kampagnen/krystal-saga/events/blutturnier": {
+    "excerpt": "Ein Turnier, welches alle 4 Jahre in Kharvos stattfindet. Es ist eine große Festivität, zu der alle mögliche Händler und Interessenten anreisen und ein Vermögen ausgeben, um als Zuschauer oder Betreib",
+    "title": "Blutturnier"
+  },
+  "kampagnen/krystal-saga/quests/modron-problem": {
+    "excerpt": "Elidran Vox' Werkstatt Hinter den verschlossenen Toren von Elidran Vox' Werkstatt rattern Zahnräder, schlagen Metallarme auf Ambosse und ziehen Funken durch die dunklen Fertigungshallen. Was als Versu",
+    "title": "Modron Problem"
+  },
+  "kampagnen/krystal-saga/sessions/session-01": {
+    "excerpt": "Beginn der Kampagne im Kerker Spieler erwachen in einem unterirdischen Gefängnis ohne Erinnerungen an den Vortag. Sie bemerken einen schmerzhaften Kristall in der rechten Hand, frisch implantiert. Sie",
+    "title": "Session 01"
+  },
+  "kampagnen/krystal-saga/sessions/session-02": {
+    "excerpt": "Saki ging in goldenen Reh und wurde rausgekickt, da er nicht auf der Liste stand. Sie gehen in einen VarrekDonalds. Bestellen essen und fangen eine Prügelei an, bei der viele sterben. Leichen werden i",
+    "title": "Session 02"
+  },
+  "kampagnen/krystal-saga/sessions/session-03": {
+    "excerpt": "Bewaffnet mit mehr Zuversicht als Stoff – die Anzüge passten bestenfalls »mit Wohlwollen«, aber das Türpersonal des Zum Goldenen Reh ließ Geld überzeugender sprechen als Schneiderkunst – gelangten Oph",
+    "title": "Session 03"
+  },
+  "kampagnen/krystal-saga/spieler/beroea": {
+    "excerpt": "beröa.pdf Beröa Ein ruhiger elfischer Mönch aus den Wäldern von Varyss, der seine Umgebung aufmerksam beobachtet und versucht, unnötiges Leid zu vermeiden. Beschreibung Beröa ist ein 31 Jahre alter El",
+    "title": "Beröa"
+  },
+  "kampagnen/krystal-saga/spieler/ikan-breathe": {
+    "excerpt": "IkanBreathe.pdf Ikan Breathe Grunddaten Name: Ikan Breathe Volk: High Elf Klasse: Wizard Hintergrund: Noble Gesinnung: Neutral Good Alter: über 150 Jahre --- Aussehen - Blonde Haare - Blau-grüne Augen",
+    "title": "Ikan Breathe"
+  },
+  "kampagnen/krystal-saga/spieler/mr-arnold": {
+    "excerpt": "Mr. Arnold Character-Sheet Ausgefüllt.pdf Items: - Brooch of Shielding - 🧠 Resistance gegen Force Damage - 🧙 Immunität gegen Magic Missile (alle Geschosse) - Circlet of Blasting - Wand of Magic Missil",
+    "title": "Mr. Arnold"
+  },
+  "kampagnen/krystal-saga/spieler/ophiria-lunara": {
+    "excerpt": "Hier sauber für Obsidian umgearbeitet: Background Story – Ophiria Lunara Kindheit in Bromburg Grove Ophiria Lunara wuchs in Bromburg Grove auf, einem abgeschiedenen, uralten Wald voller stiller Würde.",
+    "title": "Ophiria Lunara"
+  },
+  "kampagnen/krystal-saga/spieler/saki-maki": {
+    "excerpt": "SakiMaki.pdf Hier sauber im gleichen Stil: Saki Maki Grunddaten Name: Saki Maki Volk: Elf Klasse: Rogue Hintergrund: Custom Background Gesinnung: Chaotic Evil Alter: 167 Jahre Herkunft: Grath --- Auss",
+    "title": "Saki Maki"
+  },
+  "kreaturen/kristalltraeger": {
+    "excerpt": "Arme Seelen, die von der Axiom-Konklave ein Kristallimplantat erhalten haben.",
+    "title": "Kristallträger"
+  },
+  "kreaturen/modron": {
+    "excerpt": "Erfindung von Elidran Vox. Sind außer Kontrolle geraten. Kommen in Quest Modron Problem vor. !394",
+    "title": "Modron"
+  },
+  "lore/ancient-tongue": {
+    "excerpt": "[!quote] Aus dem verbotenen Traktat Über das Erste Wort „Ehe es Stein gab, ehe das Licht einen Namen trug und ehe die Zeit zu fließen begann, wurde ein Wort gesprochen. Die Welt ist nichts als sein fo",
+    "title": "Ancient Tongue"
+  },
+  "lore/arbeitslager": {
+    "excerpt": "Kristallträger werden in Arbeitslager gesammelt und überwacht. Es ist die einfachste Möglichkeit sie zu kontrollieren und auf sie aufzupassen. Um keine Aufstände zu verursachen, werden die Kristallträ",
+    "title": "Arbeitslager"
+  },
+  "lore/mana": {
+    "excerpt": "Mana [!quote] Aus den Schriften des Arkanisten Vaelor „Mana ist weder Feuer noch Licht, weder Leben noch Tod. Es ist das, woraus all diese Dinge werden können.“ Mana ist eine unsichtbare Energie, die ",
+    "title": "Mana"
+  },
+  "lore/relikte": {
+    "excerpt": "Relikte [!quote] Aus dem Kodex der Reliktforscher „Ein Relikt ist kein Schatz. Es ist eine Frage, deren Antwort mehr als ein Menschenleben kosten kann.“ Als Relikte werden Gegenstände aus der Zeit vor",
+    "title": "Relikte"
+  },
+  "lore/runen": {
+    "excerpt": "[!quote] Aus den Fragmenten des Runenmeisters Talvaren „Mana besitzt weder Gestalt noch Willen. Erst das Zeichen weist ihm den Weg, und erst die Hand des Kundigen zwingt es, diesen zu beschreiten.“ Ru",
+    "title": "Runen"
+  },
+  "lore/the-old-ones": {
+    "excerpt": "The old Ones [!quote] Inschrift am Tor von Il'Shar „Nennt sie nicht Götter. Götter verlangen Verehrung. Die Alten verlangten, dass wir verstanden.“ The old Ones sind Wesen unbekannter Herkunft, die be",
+    "title": "The old Ones"
+  },
+  "orte/aldaren": {
+    "excerpt": "Aldaren Der ehemalige Königssitz Andurins liegt nördlich von Kharvos und gilt bis heute als politisches und geschichtliches Zentrum des Landes. Breite Straßen, alte Amtsgebäude und befestigte Adelshäu",
+    "title": "Aldaren"
+  },
+  "orte/andurin": {
+    "excerpt": "Andurin Andurin ist ein weitläufiges Land in Eldara, geprägt von fruchtbaren Ebenen, alten Wäldern, befestigten Städten und zahlreichen kleinen Dörfern. Seit dem Zerfall der früheren Königsherrschaft ",
+    "title": "Andurin"
+  },
+  "orte/arcadium-nebulus": {
+    "excerpt": "„Wenn du den Weg hierher gefunden hast… wolltest du es so.“ Wird von Nippin Zwieback geführt, ist Pippin Zwieback Bruder. - Ist die Hardcode Black Market Version von seinem Bruder Man gelangt durch da",
+    "title": "Arcadium Nebulus"
+  },
+  "orte/arcadium-umbra": {
+    "excerpt": "„Wenn du den Weg hierher gefunden hast… wolltest du es so.“ Wird von Pippin Zwieback geführt, ist Nippin Zwiebacks Bruder. - Ist die Hardcode Black Market Version von seinem Bruder Man gelangt durch d",
+    "title": "Arcadium Umbra"
+  },
+  "orte/arena": {
+    "excerpt": "Ort für große Festivitäten. Das Blutturnier wird darin abgehalten.",
+    "title": "Arena"
+  },
+  "orte/bromburg-grove": {
+    "excerpt": "Allgemein Bromburg Grove ist ein abgeschiedener, uralter Wald in Andurin. Für Fremde wirkt er still, dunkel und schwer zugänglich. Für seine Bewohner war er jedoch Heimat, Schutzraum und heiliger Ort ",
+    "title": "Bromburg Grove"
+  },
+  "orte/das-rote-fass": {
+    "excerpt": "Einzige Taverne im Schwarzmarkt von Kharvos. Besitzerin ist Mara. Die Getränke sind ungenießbar, da sie mit Blut gestreckt werden. \"Bei einer Übernachtung wird empfohlen ein Schreiben mit eigenem Blut",
+    "title": "Das Rote Fass"
+  },
+  "orte/eldara": {
+    "excerpt": "Eldara Eldara ist die bekannte Welt, in der zahlreiche Reiche, Völker und Kulturen zwischen den Ruinen einer untergegangenen Zivilisation entstanden sind. Auf den ersten Blick wirkt sie wie eine klass",
+    "title": "Eldara"
+  },
+  "orte/grosses-hospital": {
+    "excerpt": "Das Große Hospital ist das Herzstück der Weiße Hand und die bekannteste medizinische Einrichtung Andurins. Tausende Patienten werden hier jedes Jahr behandelt. Hunderte Ärzte, Heiler und Chirurgen arb",
+    "title": "Großes Hospital"
+  },
+  "orte/kharvos": {
+    "excerpt": "Kharvos Eine der größten und einflussreichsten Städte Andurins. Kharvos ist ein Zentrum des Handels, der Unterhaltung und politischer Macht, in dem beinahe alles einen Preis und jeder Erfolg eine Gege",
+    "title": "Kharvos"
+  },
+  "orte/lighthaven": {
+    "excerpt": "Lighthaven Lighthaven ist eine mittelgroße Stadt im Südwesten Andurins und gilt als Zentrum für Heilkunst, Bildung und medizinische Forschung. Obwohl sie deutlich kleiner als Kharvos ist, besitzt sie ",
+    "title": "Lighthaven"
+  },
+  "orte/marktviertel": {
+    "excerpt": "Hier für den normalen Markt als Ortsbeschreibung: Normaler Markt von Kharvos Allgemein Der normale Markt ist das lebendige Handelszentrum von Kharvos. Hier kaufen Bürger, Reisende, Händler und Abenteu",
+    "title": "Marktviertel"
+  },
+  "orte/moosgrund": {
+    "excerpt": "Im Zentrum von Bromburg Grove lag der Moosgrund. Der Moosgrund war eine weiche, offene Lichtung und das Herz der Gemeinschaft. Dort wurde gelernt, gegessen, beraten und gemeinsam geschwiegen. Für Ophi",
+    "title": "Moosgrund"
+  },
+  "orte/schwarze-station": {
+    "excerpt": "Die Schwarze Station existiert offiziell nicht. Tief unter ausgewählten Einrichtungen in Lighhtaven der Weiße Hand befinden sich verborgene Operationssäle, Forschungslabore und Verwahrungsbereiche. Nu",
+    "title": "Schwarze Station"
+  },
+  "orte/schwarzmarkt": {
+    "excerpt": "Hier direkt für Obsidian: Schwarzmarkt von Kharvos Tief unter Kharvos liegt ein Ort, den keine Stadtwache betritt und über den niemand bei Tageslicht spricht. Der Schwarzmarkt ist kein normaler Markt,",
+    "title": "Schwarzmarkt"
+  },
+  "orte/steinrat-von-xenthar": {
+    "excerpt": "Der Steinrat von Xenthar ist keine dauerhafte Regierung. Er tritt zusammen, wenn Entscheidungen mehrere Clans oder das gesamte Land betreffen. Jeder bedeutende Clan entsendet einen Sprecher nach Khar-",
+    "title": "Steinrat von Xenthar"
+  },
+  "orte/tor-vhar": {
+    "excerpt": "Handel mit dem Haus Dhor Das Haus Dhor besitzt keinen Anspruch auf die Minen Xenthars. Der Handel beruht auf Verträgen mit einzelnen Clans und dem Steinrat. Der größte Austausch findet in Tor Vhar sta",
+    "title": "Tor Vhar"
+  },
+  "orte/waldorf": {
+    "excerpt": "Waldorf Ein kleines Dorf in den ausgedehnten Wäldern westlich von Kharvos. Die Bewohner leben zurückgezogen, versorgen sich weitgehend selbst und betrachten den Schutz des Waldes als gemeinsame Verant",
+    "title": "Waldorf"
+  },
+  "orte/xenthar": {
+    "excerpt": "Xenthar Ein karges Land aus steinigen Ebenen, tiefen Schluchten und trockenen Gebirgen östlich von Andurin. Xenthar wird von Orks bewohnt, deren Kultur ohne eigene Magie entstand und deren Reichtum au",
+    "title": "Xenthar"
+  },
+  "orte/xentharid": {
+    "excerpt": "Da die Orks Xenthars das Mana des Landes nicht weben, wird es über lange Zeit von Erde und Gestein aufgenommen. An Orten mit besonders hoher Manadichte bilden sich schließlich Kristalle. Diese werden ",
+    "title": "Xentharid"
+  },
+  "orte/zum-goldenen-reh": {
+    "excerpt": "Das vorzüglichste Etablissement in ganz Kharvos. Ein Aufenthalt wird der Luxuslounge beim Blutturnier dazugebucht. Es werden darin Wetten, sowie Geschäft abgeschlossen. Außerhalb der Turnierfestivität",
+    "title": "Zum Goldenen Reh"
+  },
+  "personen/baltimore": {
+    "excerpt": "Baltimore Ein verhüllter Mann, der Gefangene des Axiom-Konklave befreit und sie gegen das bestehende System aufbringt. Seine Hilfe ist wertvoll, doch seine Absichten bleiben undurchsichtig. Beschreibu",
+    "title": "Baltimore"
+  },
+  "personen/caelum-virex": {
+    "excerpt": "Caelum Virex Der gefürchtete Anführer des Axiom-Konklave und Schöpfer des Kristallprojekt. Für die meisten Menschen ist er ein Tyrann, der unzählige Leben einem unbekannten Ziel opfert. Beschreibung C",
+    "title": "Caelum Virex"
+  },
+  "personen/eldric-morvain": {
+    "excerpt": "Eldric Morvain Ein uralter Mann, der freiwillig im Kerker verbleibt und jede Rettung ablehnt. Er ist der lebende Schlüssel zum letzten stabilen Zugang zu Caelum Virex. Beschreibung Eldric ist ein ausg",
+    "title": "Eldric Morvain"
+  },
+  "personen/elidran-vox": {
+    "excerpt": "Elidran Vox Ein nervöser Gelehrter und ehemaliger Arkanmechaniker, der die Gruppe mit seltsamen Fragen prüft. Hinter seinem zerstreuten Auftreten steckt ein scharfer Verstand und ein tiefes Misstrauen",
+    "title": "Elidran Vox"
+  },
+  "personen/gildam-blauschild": {
+    "excerpt": "Gildam Blauschild Ein einflussreicher Händler aus Kharvos, der als Gast zum Bankett eingeladen war. Während eines Gnollüberfalls wurden seine Wachen überwältigt; Gildam kam in den Flammen ums Leben. B",
+    "title": "Gildam Blauschild"
+  },
+  "personen/hendrick-gogolo": {
+    "excerpt": "Hendrick Gogolo Ein gesuchter Serienmörder aus der Umgebung von Kharvos. Auf seinen Kopf war eine Belohnung von 50 Gold ausgesetzt. Beschreibung Hendrick Gogolo war ein hagerer und verwahrloster Mann ",
+    "title": "Hendrick Gogolo"
+  },
+  "personen/magdilda": {
+    "excerpt": "Zahnlose Kräuterfrau Eine ältere, zahnlose Frau, die allein in einer kleinen Hütte am Weg nach Kharvos lebt. Reisenden bietet sie Kräuter, Unterkunft und gegen Bezahlung auch intimere Dienste an. Besc",
+    "title": "Magdilda"
+  },
+  "personen/nippin-zwieback": {
+    "excerpt": "Nippin Zwieback Besitzer des Arcadium Nebulus, eines versteckten Geschäfts auf dem Schwarzmarkt von Kharvos. Er ist der Bruder von Pippin Zwieback. Rolle in Kharvos Nippin führt das Arcadium Nebulus, ",
+    "title": "Nippin Zwieback"
+  },
+  "personen/pippin-zwieback": {
+    "excerpt": "Pippin Zwieback Besitzer des Arcadium Umbra in Kharvos und Bruder von Nippin Zwieback. Rolle in Kharvos Pippin Zwieback führt das Arcadium Umbra in Kharvos. Sein Bruder Nippin Zwieback betreibt mit de",
+    "title": "Pippin Zwieback"
+  },
+  "personen/seraphine-dhor": {
+    "excerpt": "Seraphine Dhor Die Herrin des Hauses Dhor und eine der einflussreichsten Diplomatinnen des östlichen Andurin. Seraphine kontrolliert den Handel mit den magischen Kristallen aus Xenthar und besitzt die",
+    "title": "Seraphine Dhor"
+  },
+  "personen/varrek-goldenberg": {
+    "excerpt": "Varrek Goldenberg Ein wohlhabender Händler, Sammler und Netzwerker aus Kharvos. Hinter seinem öffentlichen Erfolg verbirgt sich ein Mann, der große Teile der Stadt durch Handel, Informationen und Abhä",
+    "title": "Varrek Goldenberg"
+  },
+  "personen/viktor-hain": {
+    "excerpt": "Viktor Hain Ein dürrer Kettenmeister der Grauen Vollstrecker, der auf die Gefangennahme und den sicheren Transport lebender Ziele spezialisiert ist. Beschreibung Viktor Hain ist ein dürrer, blasser Ma",
+    "title": "Viktor Hain"
+  },
+  "zeitlinie/bekannte-zeitachse": {
+    "excerpt": "Zeitachse Andurins Eine Übersicht über die bekannten Epochen, Kriege und Katastrophen der Weltgeschichte. Jeder Eintrag verweist auf eine eigene Seite, auf der das Ereignis später ausführlicher beschr",
+    "title": "Bekannte Zeitachse"
+  },
+  "zeitlinie/der-fall-der-zivilisation": {
+    "excerpt": "Der Fall der Zivilisation [!quote] Aus den Chroniken des Aschengrauen Zeitalters „Die Welt endete nicht an einem einzigen Tag. Doch es gab einen Tag, nach dem sie niemals wieder dieselbe war.“ Der Fal",
+    "title": "Der Fall der Zivilisation"
+  },
+  "zeitlinie/der-schwarze-regen": {
+    "excerpt": "Jahr 1432 ndFdZ Der Schwarze Regen Im Jahr 1432 ndFdZ zogen tiefschwarze Wolken über den Westen Eldaras. Der Regen, der aus ihnen fiel, war mit instabilem Mana durchsetzt und veränderte Landschaften, ",
+    "title": "Der Schwarze Regen"
+  },
+  "zeitlinie/siebenjaehriger-krieg-von-andurin": {
+    "excerpt": "Siebenjähriger Krieg von Andurin Der Siebenjährige Krieg beendete den letzten ernsthaften Versuch, Andurin unter einer gemeinsamen Krone zu vereinen. Aus dem Konflikt ging kein Sieger hervor, sondern ",
+    "title": "Siebenjähriger Krieg von Andurin"
+  }
+}

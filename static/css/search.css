@@ -1,0 +1,69 @@
+/* Eldara Wiki — search panel (B12), using the frozen theme tokens. */
+.site-search {
+  position: relative;
+  z-index: 40;
+  flex: 1 1 18rem;
+  max-width: 28rem;
+}
+
+.search-form {
+  display: flex;
+  gap: var(--space-1);
+}
+
+.search-form input {
+  min-width: 0;
+  flex: 1;
+  padding: var(--space-1) var(--space-2);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-base);
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font: inherit;
+}
+
+.search-form button {
+  padding: var(--space-1) var(--space-2);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-base);
+  background: var(--color-accent);
+  color: var(--color-accent-contrast);
+  font: inherit;
+  cursor: pointer;
+}
+
+.search-results {
+  position: absolute;
+  z-index: 100;
+  top: calc(100% + var(--space-1));
+  left: 0;
+  right: 0;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: var(--space-2);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-base);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.search-form input::placeholder {
+  color: var(--color-ink-muted);
+  opacity: 1;
+}
+
+.search-group + .search-group { margin-top: var(--space-2); }
+.search-group h2 { margin: 0 0 var(--space-1); font-size: var(--font-size-sm); color: var(--color-ink-muted); }
+.search-group ul { list-style: none; margin: 0; padding: 0; }
+.search-result { display: block; padding: var(--space-2); text-decoration: none; border-radius: var(--radius-base); }
+.search-result:hover, .search-result:focus-visible { background: var(--color-bg-alt); }
+.search-result strong, .search-result-type, .search-result-snippet { display: block; }
+.search-result-type { color: var(--color-ink-muted); font-size: var(--font-size-sm); }
+.search-result-snippet { overflow: hidden; color: var(--color-ink-muted); font-size: var(--font-size-sm); text-overflow: ellipsis; white-space: nowrap; }
+.search-empty { margin: var(--space-2); color: var(--color-ink-muted); }
+.search-results mark { background: var(--color-accent); color: var(--color-accent-contrast); }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+@media (max-width: 42rem) {
+  .site-search { flex-basis: 100%; max-width: none; }
+}

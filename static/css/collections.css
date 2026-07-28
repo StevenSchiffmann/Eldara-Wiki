@@ -1,0 +1,196 @@
+/* B15 — shared collection cards for quests, party, and handouts. Theme values come from
+   B10 tokens so light and candlelight-dark modes use the same geometry. */
+
+.collection-page {
+  max-width: var(--max-width-content);
+  margin: 0 auto;
+}
+
+.collection-header {
+  margin-bottom: var(--space-5);
+}
+
+.collection-kicker {
+  margin: 0 0 var(--space-1);
+  color: var(--color-ink-muted);
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.collection-header h1 {
+  font-size: var(--font-size-2xl);
+}
+
+.collection-sections {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.collection-section h2 {
+  margin-bottom: var(--space-4);
+  font-size: var(--font-size-xl);
+}
+
+.collection-grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.collection-grid--quests,
+.collection-grid--handouts {
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.collection-grid--party {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.collection-card {
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-base);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.quest-card,
+.handout-card {
+  padding: var(--space-4);
+}
+
+.quest-card-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.collection-card h2,
+.collection-card h3 {
+  margin: 0;
+}
+
+.collection-card h3 {
+  font-size: var(--font-size-lg);
+}
+
+.collection-card-excerpt {
+  margin-top: var(--space-3);
+  color: var(--color-ink-muted);
+}
+
+.collection-card-excerpt p {
+  margin: 0;
+}
+
+.status-badge {
+  flex: 0 0 auto;
+  padding: var(--space-1) var(--space-2);
+  border: var(--border-width) solid var(--color-focus);
+  border-radius: 999px;
+  color: var(--color-focus);
+  font-size: var(--font-size-sm);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.status-badge--completed {
+  border-color: var(--color-ink-muted);
+  color: var(--color-ink-muted);
+}
+
+.party-card {
+  overflow: hidden;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.party-card:hover,
+.party-card:focus-within {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 1rem 2rem rgba(23, 18, 13, 0.24);
+}
+
+.party-portrait {
+  display: block;
+  aspect-ratio: 4 / 5;
+  background: var(--color-bg-alt);
+}
+
+.party-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.party-card-body {
+  padding: var(--space-3) var(--space-3) var(--space-4);
+  background: var(--color-surface);
+}
+
+.party-card-body h2 {
+  font-size: var(--font-size-lg);
+}
+
+.party-role {
+  margin: var(--space-1) 0 0;
+  color: var(--color-ink-muted);
+  font-size: var(--font-size-sm);
+}
+
+.handout-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: var(--space-3);
+  row-gap: var(--space-2);
+  border-left: 3px solid var(--color-accent);
+  background: linear-gradient(105deg, var(--color-surface), var(--color-bg-alt));
+}
+
+.handout-icon {
+  grid-row: span 2;
+  display: grid;
+  justify-items: center;
+  gap: var(--space-1);
+  color: var(--color-focus);
+  font-family: var(--font-display);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.handout-icon svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.handout-download {
+  color: var(--color-focus);
+  font-size: var(--font-size-sm);
+}
+
+.collection-empty {
+  color: var(--color-ink-muted);
+  font-style: italic;
+}
+
+.collection-empty--page {
+  padding: var(--space-6) var(--space-4);
+  border: var(--border-width) dashed var(--color-border);
+  text-align: center;
+}
+
+@media (max-width: 42rem) {
+  .collection-grid--party { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .quest-card-heading {
+    display: block;
+  }
+
+  .quest-card-heading .status-badge {
+    display: inline-block;
+    margin-bottom: var(--space-2);
+  }
+}
+
+@media (max-width: 30rem) {
+  .collection-grid--party { grid-template-columns: 1fr; }
+}

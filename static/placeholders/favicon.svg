@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-hidden="true">
+  <!-- Eldara Wiki — favicon placeholder (B09): a plain round seal, no text baked in (kept
+       legible at 16x16 as a single dark disc with a lighter ring, not an "E" glyph — glyph
+       rendering at 16px is unreliable; the real favicon.png supplies the illuminated "E").
+       Single-color, transparent background. -->
+  <circle cx="32" cy="32" r="28" fill="#b3b3ad"/>
+  <circle cx="32" cy="32" r="19" fill="none" stroke="#f2f2f0" stroke-width="3"/>
+</svg>

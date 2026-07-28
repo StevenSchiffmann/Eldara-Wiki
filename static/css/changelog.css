@@ -1,0 +1,55 @@
+/* B22 changelog panel — quiet chronicle-margin-note look, both modes via tokens.css vars. */
+
+.changelog-panel {
+  font-size: var(--font-size-sm);
+}
+
+.changelog-heading {
+  font-family: var(--font-display);
+  font-size: var(--font-size-base);
+  color: var(--color-ink);
+  margin: 0 0 var(--space-2);
+}
+
+.changelog-subline,
+.changelog-empty {
+  color: var(--color-ink-muted);
+  font-style: italic;
+  margin: 0;
+}
+
+.changelog-group {
+  margin-bottom: var(--space-3);
+}
+
+.changelog-group h4 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  color: var(--color-ink-muted);
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0 0 var(--space-1);
+}
+
+.changelog-group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.changelog-group li {
+  border-left: 2px solid var(--color-border);
+  padding-left: var(--space-2);
+  margin-bottom: var(--space-1);
+}
+
+.changelog-group a {
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.changelog-group a:hover,
+.changelog-group a:focus-visible {
+  color: var(--color-accent);
+}

@@ -1,1 +1,0 @@
-Ort für große Festivitäten. Das [[Blutturnier]] wird darin abgehalten.

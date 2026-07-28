@@ -1,0 +1,365 @@
+{
+  "additions": [
+    {
+      "campaign": null,
+      "slug": "artefakte/kristallimplantat",
+      "title": "Kristallimplantat",
+      "type": "artifact"
+    },
+    {
+      "campaign": null,
+      "slug": "fraktionen/axiom-konklave",
+      "title": "Axiom-Konklave",
+      "type": "faction"
+    },
+    {
+      "campaign": null,
+      "slug": "fraktionen/innerer-zirkel",
+      "title": "Innerer Zirkel",
+      "type": "faction"
+    },
+    {
+      "campaign": null,
+      "slug": "fraktionen/varrekdonalds",
+      "title": "VarrekDonalds",
+      "type": "faction"
+    },
+    {
+      "campaign": "krystal-saga",
+      "slug": "kampagnen/krystal-saga/events/bankett",
+      "title": "Bankett",
+      "type": "event"
+    },
+    {
+      "campaign": "krystal-saga",
+      "slug": "kampagnen/krystal-saga/events/blutturnier",
+      "title": "Blutturnier",
+      "type": "event"
+    },
+    {
+      "campaign": "krystal-saga",
+      "slug": "kampagnen/krystal-saga/quests/modron-problem",
+      "title": "Modron Problem",
+      "type": "quest"
+    },
+    {
+      "campaign": "krystal-saga",
+      "slug": "kampagnen/krystal-saga/sessions/session-01",
+      "title": "Session 01",
+      "type": "session"
+    },
+    {
+      "campaign": "krystal-saga",
+      "slug": "kampagnen/krystal-saga/sessions/session-02",
+      "title": "Session 02",
+      "type": "session"
+    },
+    {
+      "campaign": "krystal-saga",
+      "slug": "kampagnen/krystal-saga/sessions/session-03",
+      "title": "Session 03",
+      "type": "session"
+    },
+    {
+      "campaign": "krystal-saga",
+      "slug": "kampagnen/krystal-saga/spieler/beroea",
+      "title": "Beröa",
+      "type": "player"
+    },
+    {
+      "campaign": "krystal-saga",
+      "slug": "kampagnen/krystal-saga/spieler/ikan-breathe",
+      "title": "Ikan Breathe",
+      "type": "player"
+    },
+    {
+      "campaign": "krystal-saga",
+      "slug": "kampagnen/krystal-saga/spieler/mr-arnold",
+      "title": "Mr. Arnold",
+      "type": "player"
+    },
+    {
+      "campaign": "krystal-saga",
+      "slug": "kampagnen/krystal-saga/spieler/ophiria-lunara",
+      "title": "Ophiria Lunara",
+      "type": "player"
+    },
+    {
+      "campaign": "krystal-saga",
+      "slug": "kampagnen/krystal-saga/spieler/saki-maki",
+      "title": "Saki Maki",
+      "type": "player"
+    },
+    {
+      "campaign": null,
+      "slug": "kreaturen/kristalltraeger",
+      "title": "Kristallträger",
+      "type": "creature"
+    },
+    {
+      "campaign": null,
+      "slug": "kreaturen/modron",
+      "title": "Modron",
+      "type": "creature"
+    },
+    {
+      "campaign": null,
+      "slug": "lore/ancient-tongue",
+      "title": "Ancient Tongue",
+      "type": "lore"
+    },
+    {
+      "campaign": null,
+      "slug": "lore/arbeitslager",
+      "title": "Arbeitslager",
+      "type": "lore"
+    },
+    {
+      "campaign": null,
+      "slug": "lore/mana",
+      "title": "Mana",
+      "type": "lore"
+    },
+    {
+      "campaign": null,
+      "slug": "lore/relikte",
+      "title": "Relikte",
+      "type": "lore"
+    },
+    {
+      "campaign": null,
+      "slug": "lore/runen",
+      "title": "Runen",
+      "type": "lore"
+    },
+    {
+      "campaign": null,
+      "slug": "lore/the-old-ones",
+      "title": "The old Ones",
+      "type": "lore"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/aldaren",
+      "title": "Aldaren",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/andurin",
+      "title": "Andurin",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/arcadium-nebulus",
+      "title": "Arcadium Nebulus",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/arcadium-umbra",
+      "title": "Arcadium Umbra",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/arena",
+      "title": "Arena",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/bromburg-grove",
+      "title": "Bromburg Grove",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/das-rote-fass",
+      "title": "Das Rote Fass",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/eldara",
+      "title": "Eldara",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/grosses-hospital",
+      "title": "Großes Hospital",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/kharvos",
+      "title": "Kharvos",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/lighthaven",
+      "title": "Lighthaven",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/marktviertel",
+      "title": "Marktviertel",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/moosgrund",
+      "title": "Moosgrund",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/schwarze-station",
+      "title": "Schwarze Station",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/schwarzmarkt",
+      "title": "Schwarzmarkt",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/steinrat-von-xenthar",
+      "title": "Steinrat von Xenthar",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/tor-vhar",
+      "title": "Tor Vhar",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/waldorf",
+      "title": "Waldorf",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/xenthar",
+      "title": "Xenthar",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/xentharid",
+      "title": "Xentharid",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/zum-goldenen-reh",
+      "title": "Zum Goldenen Reh",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "personen/baltimore",
+      "title": "Baltimore",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "slug": "personen/caelum-virex",
+      "title": "Caelum Virex",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "slug": "personen/eldric-morvain",
+      "title": "Eldric Morvain",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "slug": "personen/elidran-vox",
+      "title": "Elidran Vox",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "slug": "personen/gildam-blauschild",
+      "title": "Gildam Blauschild",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "slug": "personen/hendrick-gogolo",
+      "title": "Hendrick Gogolo",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "slug": "personen/magdilda",
+      "title": "Magdilda",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "slug": "personen/nippin-zwieback",
+      "title": "Nippin Zwieback",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "slug": "personen/pippin-zwieback",
+      "title": "Pippin Zwieback",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "slug": "personen/seraphine-dhor",
+      "title": "Seraphine Dhor",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "slug": "personen/varrek-goldenberg",
+      "title": "Varrek Goldenberg",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "slug": "personen/viktor-hain",
+      "title": "Viktor Hain",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "slug": "zeitlinie/bekannte-zeitachse",
+      "title": "Bekannte Zeitachse",
+      "type": "timeline"
+    },
+    {
+      "campaign": null,
+      "slug": "zeitlinie/der-fall-der-zivilisation",
+      "title": "Der Fall der Zivilisation",
+      "type": "timeline"
+    },
+    {
+      "campaign": null,
+      "slug": "zeitlinie/der-schwarze-regen",
+      "title": "Der Schwarze Regen",
+      "type": "timeline"
+    },
+    {
+      "campaign": null,
+      "slug": "zeitlinie/siebenjaehriger-krieg-von-andurin",
+      "title": "Siebenjähriger Krieg von Andurin",
+      "type": "timeline"
+    }
+  ],
+  "baseline_session": null
+}

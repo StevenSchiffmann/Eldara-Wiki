@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-hidden="true">
+  <!-- Eldara Wiki — faction emblem placeholder (B09): a plain seal/shield-in-circle line
+       icon, square to match the real emblem aspect (512x512). Single-color line art,
+       transparent background, no text baked in; must stay legible small (infobox/filter
+       chip use), so shapes are kept large and simple. -->
+  <circle cx="100" cy="100" r="82" fill="none" stroke="#b3b3ad" stroke-width="5"/>
+  <path d="M100 60
+           L134 74
+           V104
+           C134 130 120 148 100 158
+           C80 148 66 130 66 104
+           V74
+           Z"
+        fill="none" stroke="#b3b3ad" stroke-width="4"/>
+</svg>

@@ -1,0 +1,242 @@
+/* Eldara Wiki — article template structural layout (B05)
+   Two-column layout (body + infobox) on wide screens, stacked on mobile, matching the
+   hub-layout convention from layout.css. Layout/geometry + var(--color-*) references
+   only — no hardcoded color values, so the epic-fantasy theme pass (B10) can re-skin
+   without touching this file (MASTERPLAN D13). */
+
+.article-header {
+  margin-bottom: var(--space-5);
+}
+
+.article {
+  max-width: var(--max-width-content);
+}
+
+.article h1 {
+  max-width: 48rem;
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.article-category {
+  margin: 0 0 var(--space-1);
+  color: var(--color-ink-muted);
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Fact strip under the title: the archive's answer-first surface. Flex-wrap rather than a
+   grid so a note with two fields doesn't leave three empty columns. */
+.fact-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-5);
+  margin: var(--space-4) 0 0;
+  padding: var(--space-3) 0;
+  border-top: var(--border-width) solid var(--color-border);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.fact dt {
+  margin: 0;
+  color: var(--color-ink-muted);
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.02em;
+}
+
+.fact dd {
+  margin: 0.1rem 0 0;
+  font-size: var(--font-size-md);
+}
+
+/* Status is the single most-looked-up value; it gets weight, and a dot that carries a
+   text label too — never colour alone (PRODUCT.md accessibility). */
+.fact--status dd {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 600;
+}
+
+.fact--status dd::before {
+  width: 0.55rem;
+  height: 0.55rem;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  background: currentColor;
+  content: "";
+}
+
+.fact--status-lebend dd { color: var(--color-status-alive); }
+.fact--status-tot dd { color: var(--color-status-gone); }
+.fact--status-gefangen dd { color: var(--color-status-warn); }
+
+.article-layout {
+  align-items: start;
+}
+
+.article-layout--with-rail { display: grid; grid-template-columns: minmax(0, 2fr) minmax(16rem, 1fr); gap: var(--space-5); }
+.article-layout--manuscript .article-body { margin-inline: auto; }
+
+@media (max-width: 48rem) {
+  .article-layout--with-rail {
+    grid-template-columns: 1fr;
+  }
+}
+
+.article-body {
+  max-width: var(--max-width-prose);
+  font-size: 1.08rem;
+  line-height: 1.72;
+}
+
+/* The body used to carry its own divider ornament on top of the one in the page header —
+   two flourishes within 200px, the second one hanging off-centre. The header keeps it. */
+
+.article-body h2,
+.article-body h3,
+.article-body h4 {
+  margin-top: var(--space-5);
+  color: var(--color-focus);
+}
+
+.article-body p,
+.article-body ul,
+.article-body ol,
+.article-body blockquote {
+  max-width: var(--max-width-prose);
+}
+
+/* The lede quote reads as the chronicler's own gloss: a tinted panel rather than a
+   coloured side-stripe, which is the generic callout tell. */
+.article-body blockquote {
+  margin: var(--space-4) 0;
+  padding: var(--space-3) var(--space-4);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-base);
+  background: var(--color-bg-alt);
+  color: var(--color-ink);
+  font-style: italic;
+}
+
+.article-body a,
+.article-backlinks a {
+  color: var(--color-focus);
+  text-underline-offset: 0.18em;
+}
+
+.article-body > :first-child {
+  margin-top: 0;
+}
+
+/* Unresolved wikilinks: the vault links to a note that has no published page (yet). */
+.unresolved {
+  color: var(--color-ink-muted);
+  text-decoration: underline dotted;
+  cursor: help;
+}
+
+.article-rail { display: grid; gap: var(--space-4); }
+
+.infobox,
+.article-rail-context {
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-base);
+  padding: var(--space-3);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.infobox-portrait img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  margin-bottom: var(--space-3);
+}
+
+.infobox-emblem img {
+  aspect-ratio: 1;
+  object-fit: contain;
+  padding: var(--space-3);
+}
+
+.infobox-fields {
+  margin: 0;
+}
+
+.infobox-row {
+  padding: var(--space-2) 0;
+  border-top: var(--border-width) solid var(--color-border);
+}
+
+.infobox-row:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.infobox-row dt {
+  font-size: var(--font-size-sm);
+  color: var(--color-ink-muted);
+  margin: 0;
+}
+
+.infobox-row dd {
+  margin: var(--space-1) 0 0;
+}
+
+.article-rail .article-backlinks {
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: var(--border-width) solid var(--color-border);
+}
+
+.article-rail .article-backlinks h2 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-3);
+}
+
+.backlinks-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.article-rail-section { padding-bottom: var(--space-3); border-bottom: 1px solid var(--color-border); }
+.article-rail-section h2 { margin-bottom: var(--space-1); font-size: var(--font-size-lg); }
+.article-rail-section p { margin: 0; color: var(--color-ink-muted); }
+/* Per-type decoration (a coloured top rule for locations, a side stripe for creatures, a
+   box for artifacts) was arbitrary — four different treatments carrying no information the
+   breadcrumb and category label don't already state, and the creature stripe was the
+   generic-callout tell. Type is communicated in words; the page material stays one thing. */
+
+/* Sessions get a drop-cap hook (article--chronicle); actual drop-cap styling lands in B10
+   (D13) — structural marker only here. */
+.article--chronicle .article-body {
+  padding: clamp(1.25rem, 4vw, 3rem);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.article--chronicle .article-body > p:first-of-type::first-letter {
+  float: left;
+  margin: 0.15em 0.12em 0 0;
+  color: var(--color-focus);
+  font-family: var(--font-display);
+  font-size: 4.2em;
+  line-height: 0.78;
+}
+
+.article--session .article-header,
+.article--faction .article-header {
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+@media (max-width: 48rem) {
+  .article-layout { gap: var(--space-4); }
+  .article-body { font-size: 1.04rem; }
+}
