@@ -1,0 +1,305 @@
+/* Charakterschmiede — the player-facing how-to page.
+ *
+ * Different job from the rest of the archive: this page is read *while doing something*,
+ * on a second screen next to a chat window. So it leans on numbered steps with generous
+ * targets and a single loud call to action, rather than the quiet reading column the
+ * article pages use. Same materials throughout — tokens only, no new colours.
+ */
+
+.forge {
+  max-width: var(--max-width-content);
+  margin: 0 auto;
+  padding: 0 var(--space-3) var(--space-6);
+}
+
+/* --- Hero ----------------------------------------------------------------------------
+ * Establishes the setting before the instructions start. Capped in height so it never
+ * pushes the download button below the fold on a laptop — the page is a tool first.
+ */
+
+.forge-hero {
+  margin: 0 0 var(--space-4);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: var(--border-width) solid var(--color-border);
+}
+
+.forge-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 22rem;
+  object-fit: cover;
+  object-position: center 60%;
+}
+
+/* --- Header ------------------------------------------------------------------------- */
+
+.forge-header {
+  max-width: var(--max-width-prose);
+  margin: 0 auto var(--space-5);
+  text-align: center;
+}
+
+.forge-kicker {
+  font-family: var(--font-display);
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+  margin: 0 0 var(--space-2);
+}
+
+.forge-header h1 {
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-tight);
+  margin: 0 0 var(--space-3);
+}
+
+.forge-lede {
+  font-size: var(--font-size-md);
+  color: var(--color-ink-muted);
+  margin: 0;
+}
+
+/* --- Download ------------------------------------------------------------------------
+ * The one thing every visitor came for. Given the full accent treatment so it is findable
+ * without reading a word, and repeated nowhere else on the page.
+ */
+
+.forge-download {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4);
+  margin: 0 auto var(--space-6);
+  max-width: var(--max-width-prose);
+  background: var(--color-surface);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.forge-download-body {
+  flex: 1 1 18rem;
+}
+
+.forge-download-body h2 {
+  margin: 0 0 var(--space-2);
+  font-size: var(--font-size-lg);
+}
+
+.forge-download-body p {
+  margin: 0;
+  color: var(--color-ink-muted);
+  font-size: var(--font-size-sm);
+}
+
+.forge-download-button {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-accent);
+  color: var(--color-accent-contrast);
+  border-radius: var(--radius-base);
+  text-decoration: none;
+  font-family: var(--font-display);
+  text-align: center;
+  flex: 0 1 auto;
+}
+
+.forge-download-button:hover,
+.forge-download-button:focus-visible {
+  filter: brightness(1.06);
+  text-decoration: none;
+}
+
+.forge-download-label {
+  font-size: var(--font-size-md);
+}
+
+.forge-download-meta {
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  /* Sits on the accent fill, so it must not be lightened into a contrast failure. */
+  opacity: 0.8;
+}
+
+/* --- Steps ---------------------------------------------------------------------------
+ * Counter-based numerals rather than the list's own markers: the numbers are part of the
+ * page's furniture here, sized and coloured like the display type around them.
+ */
+
+.forge-steps {
+  max-width: var(--max-width-prose);
+  margin: 0 auto var(--space-6);
+}
+
+.forge-steps > h2,
+.forge-panels > h2,
+.forge-closing > h2 {
+  font-size: var(--font-size-xl);
+  margin: 0 0 var(--space-4);
+  padding-bottom: var(--space-2);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.forge-step-list {
+  list-style: none;
+  counter-reset: forge-step;
+  margin: 0;
+  padding: 0;
+}
+
+.forge-step {
+  counter-increment: forge-step;
+  position: relative;
+  padding: 0 0 var(--space-5) var(--space-5);
+  border-left: var(--border-width) solid var(--color-border);
+}
+
+.forge-step:last-child {
+  border-left-color: transparent;
+  padding-bottom: 0;
+}
+
+.forge-step::before {
+  content: counter(forge-step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(-50%);
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-size: var(--font-size-base);
+  color: var(--color-ink);
+  background: var(--color-bg);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: 50%;
+}
+
+.forge-step h3 {
+  margin: 0 0 var(--space-2);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-tight);
+}
+
+.forge-step p {
+  margin: 0 0 var(--space-2);
+}
+
+.forge-step code {
+  font-size: 0.9em;
+  padding: 0.1em 0.35em;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-base);
+}
+
+.forge-note {
+  font-size: var(--font-size-sm);
+  color: var(--color-ink-muted);
+  font-style: italic;
+}
+
+/* The literal sentence to paste into the chat. Set apart so it reads as a quotation of
+   something to be copied, not as prose about it. */
+.forge-prompt {
+  margin: var(--space-2) 0 var(--space-3);
+  padding: var(--space-3);
+  background: var(--color-bg-alt);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 0 var(--radius-base) var(--radius-base) 0;
+}
+
+.forge-prompt p {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--font-size-md);
+}
+
+/* --- Detail panels -------------------------------------------------------------------- */
+
+.forge-panels {
+  max-width: var(--max-width-content);
+  margin: 0 auto var(--space-6);
+}
+
+.forge-panel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: var(--space-3);
+}
+
+.forge-panel {
+  padding: var(--space-3);
+  background: var(--color-surface);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-base);
+}
+
+.forge-panel h3 {
+  margin: 0 0 var(--space-2);
+  font-size: var(--font-size-md);
+}
+
+.forge-panel p {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-ink-muted);
+}
+
+/* --- Closing + legal ------------------------------------------------------------------ */
+
+.forge-closing {
+  max-width: var(--max-width-prose);
+  margin: 0 auto var(--space-5);
+}
+
+.forge-closing p {
+  margin: 0;
+}
+
+.forge-legal {
+  max-width: var(--max-width-prose);
+  margin: 0 auto;
+  padding-top: var(--space-3);
+  border-top: var(--border-width) solid var(--color-border);
+}
+
+.forge-legal p {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-ink-muted);
+}
+
+/* --- Narrow screens -------------------------------------------------------------------
+ * The table is the primary reading context on a phone; the step rail would eat a quarter
+ * of the width, so the numerals move inline above their headings.
+ */
+
+@media (max-width: 30rem) {
+  .forge-step {
+    padding-left: var(--space-4);
+  }
+
+  .forge-download {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .forge-download-button {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .forge-download-button {
+    transition: filter 120ms ease-out;
+  }
+}

@@ -7,6 +7,11 @@
     },
     {
       "label": null,
+      "source": "personen/caelum-virex-sync-conflict-20260816-104830-prkcibp",
+      "target": "fraktionen/axiom-konklave"
+    },
+    {
+      "label": null,
       "source": "personen/eldric-morvain",
       "target": "fraktionen/innerer-zirkel"
     },
@@ -47,9 +52,23 @@
     },
     {
       "campaign": null,
+      "fraktion": "unbekannt",
+      "id": "personen/baltimore-sync-conflict-20260816-104831-prkcibp",
+      "title": "Baltimore.sync-conflict-20260816-104831-PRKCIBP",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
       "fraktion": "Axiom-Konklave",
       "id": "personen/caelum-virex",
       "title": "Caelum Virex",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": "Axiom-Konklave",
+      "id": "personen/caelum-virex-sync-conflict-20260816-104830-prkcibp",
+      "title": "Caelum Virex.sync-conflict-20260816-104830-PRKCIBP",
       "type": "npc"
     },
     {
@@ -76,6 +95,20 @@
     {
       "campaign": null,
       "fraktion": null,
+      "id": "personen/gildam-blauschild-sync-conflict-20260816-104831-prkcibp",
+      "title": "Gildam Blauschild.sync-conflict-20260816-104831-PRKCIBP",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
+      "id": "personen/grix",
+      "title": "Grix",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
       "id": "personen/hendrick-gogolo",
       "title": "Hendrick Gogolo",
       "type": "npc"
@@ -83,8 +116,29 @@
     {
       "campaign": null,
       "fraktion": null,
+      "id": "personen/herbert",
+      "title": "Herbert",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
+      "id": "personen/liandra-schwarzbart",
+      "title": "Liandra Schwarzbart",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
       "id": "personen/magdilda",
       "title": "Magdilda",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
+      "id": "personen/marek-schwarzbart",
+      "title": "Marek Schwarzbart",
       "type": "npc"
     },
     {
@@ -106,6 +160,20 @@
       "fraktion": "Haus Dhor",
       "id": "personen/seraphine-dhor",
       "title": "Seraphine Dhor",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
+      "id": "personen/tavor",
+      "title": "Tavor",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
+      "id": "personen/varlon",
+      "title": "Varlon",
       "type": "npc"
     },
     {

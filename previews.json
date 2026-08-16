@@ -44,16 +44,24 @@
     "title": "Modron Problem"
   },
   "kampagnen/krystal-saga/sessions/session-01": {
-    "excerpt": "Beginn der Kampagne im Kerker Spieler erwachen in einem unterirdischen Gefängnis ohne Erinnerungen an den Vortag. Sie bemerken einen schmerzhaften Kristall in der rechten Hand, frisch implantiert. Sie",
+    "excerpt": "Beginn der Kampagne im Kerker Die Gruppe erwachte in einem unterirdischen Gefängnis, ohne Erinnerung an den Vortag. In der rechten Hand steckte bei jedem ein Kristall, frisch eingesetzt und schmerzend",
     "title": "Session 01"
   },
   "kampagnen/krystal-saga/sessions/session-02": {
-    "excerpt": "Saki ging in goldenen Reh und wurde rausgekickt, da er nicht auf der Liste stand. Sie gehen in einen VarrekDonalds. Bestellen essen und fangen eine Prügelei an, bei der viele sterben. Leichen werden i",
+    "excerpt": "Saki Maki versuchte es zuerst auf dem direkten Weg und ging ins Zum Goldenen Reh. Er stand nicht auf der Liste und stand kurz darauf wieder draußen. Ein Mittagessen mit Folgen Die Gruppe kehrte in ein",
     "title": "Session 02"
   },
   "kampagnen/krystal-saga/sessions/session-03": {
     "excerpt": "Bewaffnet mit mehr Zuversicht als Stoff – die Anzüge passten bestenfalls »mit Wohlwollen«, aber das Türpersonal des Zum Goldenen Reh ließ Geld überzeugender sprechen als Schneiderkunst – gelangten Oph",
     "title": "Session 03"
+  },
+  "kampagnen/krystal-saga/sessions/session-04": {
+    "excerpt": "Ein Wagen ohne Fenster Der Planwagen war aus Holz, ringsum abgeschirmt und für Fragen nicht eingerichtet. Zwei Gefangene lagen darin, ohne Habe, ohne Erklärung. Beröa erwachte als Erster, sah sich um,",
+    "title": "Session 04"
+  },
+  "kampagnen/krystal-saga/sessions/session-05": {
+    "excerpt": "Am Morgen fand die Gruppe wieder zusammen und machte sich auf zur Werkstatt. Dort hing ein Zettel: Elidran Vox habe anderes zu erledigen. Man möge sich an Zethis Kahn wenden. Ein Dolch, der schon einm",
+    "title": "Session 05"
   },
   "kampagnen/krystal-saga/spieler/beroea": {
     "excerpt": "Beröa Ein ruhiger elfischer Mönch aus den Wäldern von Varyss, der seine Umgebung aufmerksam beobachtet und versucht, unnötiges Leid zu vermeiden. Beschreibung Beröa ist ein 31 Jahre alter Elf mit schw",
@@ -119,9 +127,17 @@
     "excerpt": "„Wenn du den Weg hierher gefunden hast… wolltest du es so.“ Wird von Nippin Zwieback geführt, ist Pippin Zwieback Bruder. - Ist die Hardcode Black Market Version von seinem Bruder Man gelangt durch da",
     "title": "Arcadium Nebulus"
   },
+  "orte/arcadium-nebulus-sync-conflict-20260816-104831-prkcibp": {
+    "excerpt": "„Wenn du den Weg hierher gefunden hast… wolltest du es so.“ Wird von Nippin Zwieback geführt, ist Pippin Zwieback Bruder. - Ist die Hardcode Black Market Version von seinem Bruder Man gelangt durch da",
+    "title": "Arcadium Nebulus.sync-conflict-20260816-104831-PRKCIBP"
+  },
   "orte/arcadium-umbra": {
     "excerpt": "„Wenn du den Weg hierher gefunden hast… wolltest du es so.“ Wird von Pippin Zwieback geführt, ist Nippin Zwiebacks Bruder. - Ist die Hardcode Black Market Version von seinem Bruder Man gelangt durch d",
     "title": "Arcadium Umbra"
+  },
+  "orte/arcadium-umbra-sync-conflict-20260816-104830-prkcibp": {
+    "excerpt": "„Wenn du den Weg hierher gefunden hast… wolltest du es so.“ Wird von Pippin Zwieback geführt, ist Nippin Zwiebacks Bruder. - Ist die Hardcode Black Market Version von seinem Bruder Man gelangt durch d",
+    "title": "Arcadium Umbra.sync-conflict-20260816-104830-PRKCIBP"
   },
   "orte/arena": {
     "excerpt": "Ort für große Festivitäten. Das Blutturnier wird darin abgehalten.",
@@ -167,6 +183,10 @@
     "excerpt": "Hier direkt für Obsidian: Schwarzmarkt von Kharvos Tief unter Kharvos liegt ein Ort, den keine Stadtwache betritt und über den niemand bei Tageslicht spricht. Der Schwarzmarkt ist kein normaler Markt,",
     "title": "Schwarzmarkt"
   },
+  "orte/schwarzmarkt-sync-conflict-20260802-121404-5hupg4d": {
+    "excerpt": "Hier direkt für Obsidian: Schwarzmarkt von Kharvos Tief unter Kharvos liegt ein Ort, den keine Stadtwache betritt und über den niemand bei Tageslicht spricht. Der Schwarzmarkt ist kein normaler Markt,",
+    "title": "Schwarzmarkt.sync-conflict-20260802-121404-5HUPG4D"
+  },
   "orte/steinrat-von-xenthar": {
     "excerpt": "Der Steinrat von Xenthar ist keine dauerhafte Regierung. Er tritt zusammen, wenn Entscheidungen mehrere Clans oder das gesamte Land betreffen. Jeder bedeutende Clan entsendet einen Sprecher nach Khar-",
     "title": "Steinrat von Xenthar"
@@ -195,9 +215,17 @@
     "excerpt": "Baltimore Ein verhüllter Mann, der Gefangene des Axiom-Konklave befreit und sie gegen das bestehende System aufbringt. Seine Hilfe ist wertvoll, doch seine Absichten bleiben undurchsichtig. Beschreibu",
     "title": "Baltimore"
   },
+  "personen/baltimore-sync-conflict-20260816-104831-prkcibp": {
+    "excerpt": "Baltimore Ein verhüllter Mann, der Gefangene des Axiom-Konklave befreit und sie gegen das bestehende System aufbringt. Seine Hilfe ist wertvoll, doch seine Absichten bleiben undurchsichtig. Beschreibu",
+    "title": "Baltimore.sync-conflict-20260816-104831-PRKCIBP"
+  },
   "personen/caelum-virex": {
     "excerpt": "Caelum Virex Der gefürchtete Anführer des Axiom-Konklave und Schöpfer des Kristallprojekt. Für die meisten Menschen ist er ein Tyrann, der unzählige Leben einem unbekannten Ziel opfert. Beschreibung C",
     "title": "Caelum Virex"
+  },
+  "personen/caelum-virex-sync-conflict-20260816-104830-prkcibp": {
+    "excerpt": "Caelum Virex Der gefürchtete Anführer des Axiom-Konklave und Schöpfer des Kristallprojekt. Für die meisten Menschen ist er ein Tyrann, der unzählige Leben einem unbekannten Ziel opfert. Beschreibung C",
+    "title": "Caelum Virex.sync-conflict-20260816-104830-PRKCIBP"
   },
   "personen/eldric-morvain": {
     "excerpt": "Eldric Morvain Ein uralter Mann, der freiwillig im Kerker verbleibt und jede Rettung ablehnt. Er ist der lebende Schlüssel zum letzten stabilen Zugang zu Caelum Virex. Beschreibung Eldric ist ein ausg",
@@ -211,13 +239,33 @@
     "excerpt": "Gildam Blauschild Ein einflussreicher Händler aus Kharvos, der als Gast zum Bankett eingeladen war. Während eines Gnollüberfalls wurden seine Wachen überwältigt; Gildam kam in den Flammen ums Leben. B",
     "title": "Gildam Blauschild"
   },
+  "personen/gildam-blauschild-sync-conflict-20260816-104831-prkcibp": {
+    "excerpt": "Gildam Blauschild Ein einflussreicher Händler aus Kharvos, der als Gast zum Bankett eingeladen war. Während eines Gnollüberfalls wurden seine Wachen überwältigt und Gildam von den Spielern verbrannt. ",
+    "title": "Gildam Blauschild.sync-conflict-20260816-104831-PRKCIBP"
+  },
+  "personen/grix": {
+    "excerpt": "Grix Ein Händler aus den tiefen Bereichen des Schwarzmarkts von Kharvos, der mit Erinnerungen, Emotionen und Seelenfragmenten handelt. Kein Gesicht, nur Schatten — und eine Stimme, die aus mehreren Ri",
+    "title": "Grix"
+  },
   "personen/hendrick-gogolo": {
     "excerpt": "Hendrick Gogolo Ein gesuchter Serienmörder aus der Umgebung von Kharvos. Auf seinen Kopf war eine Belohnung von 50 Gold ausgesetzt. Beschreibung Hendrick Gogolo war ein hagerer und verwahrloster Mann ",
     "title": "Hendrick Gogolo"
   },
+  "personen/herbert": {
+    "excerpt": "Herbert Der örtliche Trinker der Gute Stube in Kharvos. Hält Reden von bemerkenswerter Überzeugungskraft, solange jemand anderes die Rechnung übernimmt — und vergisst nie, wenn das ausbleibt. Beschrei",
+    "title": "Herbert"
+  },
+  "personen/liandra-schwarzbart": {
+    "excerpt": "Liandra Schwarzbart Wirtin der Gute Stube, einer Zwergentaverne in Kharvos, die für Zwerge gebaut wurde und das auch so meint. Verheiratet mit dem Händler Marek Schwarzbart. Beschreibung Liandra führt",
+    "title": "Liandra Schwarzbart"
+  },
   "personen/magdilda": {
     "excerpt": "Zahnlose Kräuterfrau Eine ältere, zahnlose Frau, die allein in einer kleinen Hütte am Weg nach Kharvos lebt. Reisenden bietet sie Kräuter, Unterkunft und gegen Bezahlung auch intimere Dienste an. Besc",
     "title": "Magdilda"
+  },
+  "personen/marek-schwarzbart": {
+    "excerpt": "Marek Schwarzbart Zwergischer Händler auf dem Marktplatz von Kharvos, spezialisiert auf gebrauchte Ausrüstung. Verheiratet mit Liandra Schwarzbart, der Wirtin der Gute Stube. Beschreibung Marek verkau",
+    "title": "Marek Schwarzbart"
   },
   "personen/nippin-zwieback": {
     "excerpt": "Nippin Zwieback Besitzer des Arcadium Nebulus, eines versteckten Geschäfts auf dem Schwarzmarkt von Kharvos. Er ist der Bruder von Pippin Zwieback. Rolle in Kharvos Nippin führt das Arcadium Nebulus, ",
@@ -230,6 +278,14 @@
   "personen/seraphine-dhor": {
     "excerpt": "Seraphine Dhor Die Herrin des Hauses Dhor und eine der einflussreichsten Diplomatinnen des östlichen Andurin. Seraphine kontrolliert den Handel mit den magischen Kristallen aus Xenthar und besitzt die",
     "title": "Seraphine Dhor"
+  },
+  "personen/tavor": {
+    "excerpt": "Tavor Wirt einer Schenke am Marktplatz von Kharvos. Verlangt den vollen Preis, auch um vier Uhr morgens, und hat eine Tochter, die im Haus mithilft. Beschreibung Tavor führt ein unauffälliges Haus in ",
+    "title": "Tavor"
+  },
+  "personen/varlon": {
+    "excerpt": "Varlon Ein Bauer, der als Gefangener nach Kharvos gebracht wurde und den Wagen nie verließ. Sein goldener Erbdolch überlebte ihn und tauchte kurz darauf auf dem Markt wieder auf. Beschreibung Varlon w",
+    "title": "Varlon"
   },
   "personen/varrek-goldenberg": {
     "excerpt": "Varrek Goldenberg Ein wohlhabender Händler, Sammler und Netzwerker aus Kharvos. Hinter seinem öffentlichen Erfolg verbirgt sich ein Mann, der große Teile der Stadt durch Handel, Informationen und Abhä",

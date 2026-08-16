@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/artefakte/kristallimplantat/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/charakterschmiede/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/fraktionen/axiom-konklave/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/fraktionen/innerer-zirkel/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/fraktionen/varrekdonalds/</loc></url>
@@ -18,6 +19,8 @@
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/sessions/session-01/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/sessions/session-02/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/sessions/session-03/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/sessions/session-04/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/sessions/session-05/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/spieler/beroea/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/spieler/ikan-breathe/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/spieler/</loc></url>
@@ -36,7 +39,9 @@
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/aldaren/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/andurin/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/arcadium-nebulus/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/arcadium-nebulus-sync-conflict-20260816-104831-prkcibp/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/arcadium-umbra/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/arcadium-umbra-sync-conflict-20260816-104830-prkcibp/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/arena/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/bromburg-grove/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/das-rote-fass/</loc></url>
@@ -48,6 +53,7 @@
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/moosgrund/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/schwarze-station/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/schwarzmarkt/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/schwarzmarkt-sync-conflict-20260802-121404-5hupg4d/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/steinrat-von-xenthar/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/tor-vhar/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/waldorf/</loc></url>
@@ -55,16 +61,25 @@
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/xentharid/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/zum-goldenen-reh/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/baltimore/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/baltimore-sync-conflict-20260816-104831-prkcibp/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/caelum-virex/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/caelum-virex-sync-conflict-20260816-104830-prkcibp/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/eldric-morvain/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/elidran-vox/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/gildam-blauschild/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/gildam-blauschild-sync-conflict-20260816-104831-prkcibp/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/grix/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/hendrick-gogolo/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/herbert/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/liandra-schwarzbart/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/magdilda/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/marek-schwarzbart/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/nippin-zwieback/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/pippin-zwieback/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/seraphine-dhor/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/tavor/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/varlon/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/varrek-goldenberg/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/viktor-hain/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/welt/</loc></url>
