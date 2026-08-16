@@ -19,12 +19,12 @@
   <meta name="twitter:description" content="Das öffentliche Archiv der Welt Eldara — Personen, Orte, Fraktionen und die Chroniken der laufenden Kampagnen.">
   <meta name="twitter:image" content="https://stevenschiffmann.github.io/Eldara-Wiki/assets/hero/landing-hero.webp">
   <link rel="icon" type="image/png" href="https://stevenschiffmann.github.io/Eldara-Wiki/assets/favicon/favicon.png">
-  <link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/tokens.css?v=5e3fb256fb">
-  <link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/layout.css?v=5e3fb256fb">
-  <link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/fantasy.css?v=5e3fb256fb">
-  <script defer src="https://stevenschiffmann.github.io/Eldara-Wiki/static/js/hover-preview.js?v=5e3fb256fb"></script>
+  <link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/tokens.css?v=8da67ceaa5">
+  <link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/layout.css?v=8da67ceaa5">
+  <link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/fantasy.css?v=8da67ceaa5">
+  <script defer src="https://stevenschiffmann.github.io/Eldara-Wiki/static/js/hover-preview.js?v=8da67ceaa5"></script>
   
-<link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/forge.css?v=5e3fb256fb">
+<link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/forge.css?v=8da67ceaa5">
 
 </head>
 <body>
@@ -54,7 +54,7 @@
       <li><a href="https://stevenschiffmann.github.io/Eldara-Wiki/charakterschmiede/">Charakterschmiede</a></li>
     </ul>
   </nav>
-  <link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/search.css?v=5e3fb256fb">
+  <link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/search.css?v=8da67ceaa5">
 <div class="site-search" data-search-root data-base-url="https://stevenschiffmann.github.io/Eldara-Wiki/" data-index-url="https://stevenschiffmann.github.io/Eldara-Wiki/search-index.json">
   <form class="search-form" role="search" action="" method="get">
     <label class="visually-hidden" for="site-search-input">Archiv durchsuchen</label>
@@ -67,7 +67,7 @@
        hidden></div>
 </div>
 <script defer src="https://stevenschiffmann.github.io/Eldara-Wiki/static/vendor/flexsearch.bundle.js"></script>
-<script defer src="https://stevenschiffmann.github.io/Eldara-Wiki/static/js/search.js?v=5e3fb256fb"></script>
+<script defer src="https://stevenschiffmann.github.io/Eldara-Wiki/static/js/search.js?v=8da67ceaa5"></script>
 </div>
     
     
@@ -96,10 +96,15 @@
     <p class="forge-kicker">F&uuml;r Spieler</p>
     <h1>Die Charakterschmiede</h1>
     <p class="forge-lede">
-      Ein fertiges Werkzeugpaket, mit dem ein beliebiger KI-Chatbot dich durch die
-      Charaktererschaffung f&uuml;hrt &ndash; von der ersten Idee bis zum ausgef&uuml;llten
-      Charakterbogen als PDF. Regelwerk, Zauberlisten und Bogenvorlagen sind enthalten.
-      Du brauchst nichts weiter zu installieren.
+      Ein fertiges Werkzeugpaket, mit dem ein KI-Chatbot dich durch alles f&uuml;hrt, was
+      mit deinem Charakter zu tun hat: <strong>neu erschaffen</strong>,
+      <strong>bestehende Charaktere anpassen und reparieren</strong> und
+      <strong>Stufenaufstiege durchgehen</strong>. Es ist genauso ein Level-Up-Helfer wie
+      ein Charaktergenerator &ndash; du kannst jederzeit damit wiederkommen.
+    </p>
+    <p class="forge-lede">
+      Regelwerk, Zauberlisten und Bogenvorlagen sind enthalten. Du musst nichts
+      installieren und nichts entpacken.
     </p>
   </header>
 
@@ -111,6 +116,7 @@
         Enth&auml;lt den Masterprompt, die Regelgrundlagen (SRD 5.1 und 5.2.1),
         strukturierte Zauberdaten, Charakterbogen-Vorlagen und die Arbeitsabl&auml;ufe
         f&uuml;r Erschaffung, Stufenaufstieg und Reparatur bestehender Charaktere.
+        <strong>Die ZIP kommt so wie sie ist in den Chat</strong> &ndash; nicht entpacken.
       </p>
     </div>
     <a class="forge-download-button" href="https://stevenschiffmann.github.io/Eldara-Wiki/downloads/DnD_Character_Designer_MasterPack_v1.1.zip" download>
@@ -120,81 +126,106 @@
   </section>
   
 
+  <aside class="forge-warning" role="note" aria-labelledby="warning-heading">
+    <h2 id="warning-heading">Bring Zeit und Geduld mit</h2>
+    <p>
+      Das hier ist kein Generator, der auf Knopfdruck etwas ausspuckt. Egal welchen Chatbot
+      du nimmst &ndash; er braucht <strong>deutlich l&auml;nger als gewohnt</strong>, weil
+      er ein komplettes System abarbeitet und am Ende jede einzelne Regel gegen die
+      mitgelieferten Quellen pr&uuml;ft.
+    </p>
+    <p>
+      Rechne mit einer l&auml;ngeren Sitzung und mit Antworten, die auf sich warten lassen.
+      Brich nicht ab, wenn es still wird. Daf&uuml;r bekommst du am Ende keinen
+      zusammengew&uuml;rfelten Charakter, sondern einen durchgerechneten &ndash; mit
+      fertigem Bogen und allem, was du zum Spielen brauchst. Es lohnt sich.
+    </p>
+  </aside>
+
   <section class="forge-steps" aria-labelledby="steps-heading">
     <h2 id="steps-heading">So benutzt du es</h2>
 
     <ol class="forge-step-list">
 
       <li class="forge-step">
-        <h3>Paket herunterladen und entpacken</h3>
+        <h3>Paket herunterladen &ndash; nicht entpacken</h3>
         <p>
-          Die ZIP-Datei enth&auml;lt einen Ordner mit allem, was der Chatbot braucht.
-          Entpacke ihn irgendwohin, wo du ihn wiederfindest &ndash; du wirst gleich Dateien
-          daraus hochladen.
+          Lad die ZIP-Datei einfach herunter und lass sie, wie sie ist. Du brauchst sie
+          nicht zu &ouml;ffnen und keine einzelnen Dateien herauszusuchen.
         </p>
       </li>
 
       <li class="forge-step">
-        <h3>Einen Chatbot &ouml;ffnen, der Dateien lesen kann</h3>
+        <h3>Ein Modell w&auml;hlen, das nachdenkt</h3>
         <p>
-          Das Paket funktioniert mit <strong>ChatGPT</strong>, <strong>Claude</strong> und
-          <strong>Gemini</strong>. Wichtig ist nur, dass du Dateien hochladen kannst &ndash;
-          am besten in einem Projekt beziehungsweise einem eigenen Chat, den du
-          wiederverwendest.
+          Das ist der wichtigste Schritt. Du brauchst ein
+          <strong>Reasoning-Modell</strong> &ndash; also eines, das sich Zeit nimmt, die
+          Daten wirklich liest und schrittweise arbeitet. Ein schnelles Standardmodell, das
+          sofort antwortet, &uuml;berfliegt das Paket und rechnet dir am Ende Unsinn aus.
+        </p>
+        <p>
+          In ChatGPT, Claude und Gemini w&auml;hlst du dazu im Modell-Men&uuml; die Variante
+          mit Denk- beziehungsweise Reasoning-Modus statt der schnellen Standardvariante.
+          Wie sie genau hei&szlig;t, &auml;ndert sich st&auml;ndig &ndash; nimm die, bei der
+          <em>Thinking</em>, <em>Reasoning</em> oder <em>Pro</em> dabeisteht.
         </p>
         <p class="forge-note">
-          Nutze m&ouml;glichst einen frischen Chat. Ein Chat, in dem schon viel anderes steht,
-          verwechselt sonst deine Charakterdaten mit dem, was vorher besprochen wurde.
+          Nutze au&szlig;erdem einen frischen Chat. In einem Chat voller anderer Themen
+          verwechselt der Bot sonst deine Charakterdaten mit dem, was vorher besprochen wurde.
         </p>
       </li>
 
       <li class="forge-step">
-        <h3>Die Dateien hochladen</h3>
+        <h3>Die ZIP direkt in den Chat h&auml;ngen</h3>
         <p>
-          Am einfachsten l&auml;dst du den kompletten Ordner <code>UPLOAD_SET/</code> hoch &ndash;
-          der enth&auml;lt genau das, was zur Laufzeit gebraucht wird, und sonst nichts.
-          Wenn dein Chatbot viele Dateien erlaubt, kannst du auch das ganze Paket hochladen.
-        </p>
-        <p>
-          Mindestens gebraucht werden: <code>MASTERPROMPT.txt</code>, der Ordner
-          <code>WORKFLOWS/</code>, die Regeldateien aus <code>RULEBASE/</code> und
-          die Vorlagen aus <code>CONFIG/</code> und <code>PDF/</code>.
+          Zieh die heruntergeladene ZIP-Datei als Anhang in den Chat &ndash; als Ganzes, ohne
+          sie vorher zu &ouml;ffnen. Der Bot packt sie selbst aus und findet darin alles, was
+          er braucht.
         </p>
       </li>
 
       <li class="forge-step">
         <h3>Den Startbefehl geben</h3>
-        <p>Schreib in den Chat:</p>
+        <p>Schreib dazu in den Chat:</p>
         <blockquote class="forge-prompt">
-          <p>Lies alle hochgeladenen Dateien und f&uuml;hre den MASTERPROMPT aus.</p>
+          <p>Lies alle Dateien in der ZIP und f&uuml;hre den MASTERPROMPT aus.</p>
         </blockquote>
         <p>
-          Ab hier &uuml;bernimmt der Bot. Er fragt dich nach der Idee hinter deinem Charakter,
-          schl&auml;gt Volk, Klasse und Werte vor und erkl&auml;rt jede Entscheidung, statt
-          sie dir nur hinzuwerfen.
+          Ab hier &uuml;bernimmt der Bot. Sag ihm einfach, worum es geht &ndash; neuer
+          Charakter, Stufenaufstieg oder ein bestehender Bogen, bei dem etwas nicht
+          aufgeht. Er fragt nach, schl&auml;gt vor und erkl&auml;rt jede Entscheidung,
+          statt sie dir nur hinzuwerfen.
         </p>
       </li>
 
       <li class="forge-step">
-        <h3>Bauen lassen &ndash; und am Ende pr&uuml;fen lassen</h3>
+        <h3>Warten &ndash; er pr&uuml;ft am Ende jede Regel</h3>
         <p>
-          W&auml;hrend des Gespr&auml;chs arbeitet der Bot z&uuml;gig aus seinem eigenen
-          Wissen heraus, damit du nicht nach jedem Klick warten musst. Das ist Absicht.
+          W&auml;hrend ihr baut, arbeitet der Bot z&uuml;gig aus seinem eigenen Wissen, damit
+          das Gespr&auml;ch nicht nach jeder Auswahl stockt. Das ist Absicht.
         </p>
         <p>
-          Erst wenn alle Entscheidungen stehen, f&uuml;hrt er <strong>einen</strong>
-          vollst&auml;ndigen Regelabgleich gegen die mitgelieferten Quellen durch. Findet er
-          dabei einen Fehler, zeigt er ihn dir als Korrektur an, statt ihn still zu beheben.
+          Stehen alle Entscheidungen, folgt <strong>ein</strong> vollst&auml;ndiger
+          Regelabgleich gegen die mitgelieferten Quellen. Genau der dauert &ndash; und genau
+          der ist der Grund, warum am Ende etwas Verl&auml;ssliches herauskommt. Findet er
+          einen Fehler, zeigt er ihn dir als Korrektur an, statt ihn still zu beheben.
           <strong>Erst nach diesem Abgleich sind die Werte verbindlich.</strong>
         </p>
       </li>
 
       <li class="forge-step">
-        <h3>Charakterbogen als PDF erzeugen</h3>
+        <h3>Bogen und Spielhilfen bekommen</h3>
         <p>
           Zum Schluss f&uuml;llt der Bot den Charakterbogen aus &ndash; alle Werte fertig
-          berechnet und auf deine Stufe bezogen. Bei Bedarf legt er Zusatzseiten f&uuml;r
-          Zauber und Klassenmerkmale an, damit du am Spieltisch nichts nachschlagen musst.
+          berechnet und auf deine Stufe bezogen, dazu Zusatzseiten f&uuml;r Zauber und
+          Klassenmerkmale.
+        </p>
+        <p>
+          Dazu kommt, was einen Bogen erst spielbar macht: <strong>wie du mit diesem
+          Charakter k&auml;mpfst</strong> &ndash; welche Z&uuml;ge sich lohnen, worauf du
+          dich verl&auml;sst, wo du schwach bist &ndash; und <strong>wie du ihn
+          ausspielst</strong>: Auftreten, Motive, Eigenheiten. Am Ende musst du am
+          Spieltisch nichts mehr nachschlagen.
         </p>
       </li>
 
@@ -225,20 +256,29 @@
       </article>
 
       <article class="forge-panel">
-        <h3>Bestehende Charaktere</h3>
+        <h3>Stufenaufstieg</h3>
         <p>
-          Das Paket kann mehr als neue Charaktere. Es begleitet auch Stufenaufstiege und
-          repariert Charakterb&ouml;gen, bei denen etwas nicht aufgeht. Sag dem Bot einfach,
-          worum es geht.
+          Komm mit demselben Paket wieder, wenn dein Charakter eine Stufe steigt. H&auml;ng
+          die ZIP und deinen aktuellen Bogen an und sag, auf welche Stufe es geht &ndash;
+          der Bot f&uuml;hrt dich durch die neuen Optionen und rechnet alles nach.
+        </p>
+      </article>
+
+      <article class="forge-panel">
+        <h3>Kaputte B&ouml;gen</h3>
+        <p>
+          Stimmt bei einem bestehenden Charakter etwas nicht, kann der Bot ihn pr&uuml;fen
+          und reparieren. H&auml;ng den Bogen mit an und beschreib, was dir komisch vorkommt
+          &ndash; oder lass ihn einfach komplett durchrechnen.
         </p>
       </article>
 
       <article class="forge-panel">
         <h3>Wenn es h&auml;ngt</h3>
         <p>
-          Wird der Bot langsam oder vergisst, was ihr besprochen habt, ist meist der Chat zu
-          voll. Lass dir den <em>Character State</em> ausgeben, &ouml;ffne einen neuen Chat,
-          lade die Dateien erneut hoch und f&uuml;g den Stand wieder ein.
+          Lange Pausen sind normal, das Modell denkt. Wird der Bot aber vergesslich, ist der
+          Chat zu voll: Lass dir den <em>Character State</em> ausgeben, &ouml;ffne einen
+          neuen Chat, h&auml;ng die ZIP erneut an und f&uuml;g den Stand wieder ein.
         </p>
       </article>
 
@@ -249,9 +289,12 @@
     <h2 id="closing-heading">Und dann?</h2>
     <p>
       Bring den fertigen Bogen mit &ndash; oder schick ihn mir vorher, dann schauen wir
-      gemeinsam drauf. Wer wissen will, in welche Welt sein Charakter hineingeboren wird,
-      f&auml;ngt am besten bei
-      <a href="https://stevenschiffmann.github.io/Eldara-Wiki/welt/">der Welt</a> an oder liest, was den
+      gemeinsam drauf. Und heb dir das Paket auf: beim n&auml;chsten Stufenaufstieg
+      f&auml;ngst du damit nicht von vorne an.
+    </p>
+    <p>
+      Wer wissen will, in welche Welt sein Charakter hineingeboren wird, f&auml;ngt am besten
+      bei <a href="https://stevenschiffmann.github.io/Eldara-Wiki/welt/">der Welt</a> an oder liest, was den
       <a href="https://stevenschiffmann.github.io/Eldara-Wiki/personen/">bisherigen Gef&auml;hrten</a> widerfahren ist.
     </p>
   </section>
@@ -282,8 +325,8 @@
   </button>
   <p class="d20-result" id="d20-result" role="status" aria-live="polite"></p>
 </div>
-<link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/atmosphere.css?v=5e3fb256fb">
-<script defer src="https://stevenschiffmann.github.io/Eldara-Wiki/static/js/d20.js?v=5e3fb256fb"></script>
+<link rel="stylesheet" href="https://stevenschiffmann.github.io/Eldara-Wiki/static/css/atmosphere.css?v=8da67ceaa5">
+<script defer src="https://stevenschiffmann.github.io/Eldara-Wiki/static/js/d20.js?v=8da67ceaa5"></script>
   <p class="footer-meta">Eldara &ndash; Das Archiv von Eldara</p>
   <p class="footer-legal">
     <a href="https://stevenschiffmann.github.io/Eldara-Wiki/impressum/">Impressum</a>
