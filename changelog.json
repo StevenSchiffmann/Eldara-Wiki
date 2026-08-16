@@ -1,4 +1,53 @@
 {
-  "additions": [],
+  "additions": [
+    {
+      "campaign": "krystal-saga",
+      "slug": "kampagnen/krystal-saga/spieler/ulfgar-eisenherz",
+      "title": "Ulfgar Eisenherz",
+      "type": "player"
+    },
+    {
+      "campaign": null,
+      "slug": "lore/elarion",
+      "title": "Elarion",
+      "type": "lore"
+    },
+    {
+      "campaign": null,
+      "slug": "lore/il-shar",
+      "title": "Il'Shar",
+      "type": "lore"
+    },
+    {
+      "campaign": null,
+      "slug": "lore/varyss",
+      "title": "Varyss",
+      "type": "lore"
+    },
+    {
+      "campaign": null,
+      "slug": "personen/borik-eisenherz",
+      "title": "Borik Eisenherz",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "slug": "zeitlinie/das-schweigen-von-il-shar",
+      "title": "Das Schweigen von Il'Shar",
+      "type": "timeline"
+    },
+    {
+      "campaign": null,
+      "slug": "zeitlinie/der-erste-krieg-gegen-das-tieflingische-reich",
+      "title": "Der Erste Krieg gegen das tieflingische Reich",
+      "type": "timeline"
+    },
+    {
+      "campaign": null,
+      "slug": "zeitlinie/der-tag-ohne-mana",
+      "title": "Der Tag ohne Mana",
+      "type": "timeline"
+    }
+  ],
   "baseline_session": "kampagnen/krystal-saga/sessions/session-05"
 }

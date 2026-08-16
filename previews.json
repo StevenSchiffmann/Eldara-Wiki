@@ -83,6 +83,10 @@
     "excerpt": "SakiMaki.pdf Hier sauber im gleichen Stil: Saki Maki Grunddaten Name: Saki Maki Volk: Elf Klasse: Rogue Hintergrund: Custom Background Gesinnung: Chaotic Evil Alter: 167 Jahre Herkunft: Grath --- Auss",
     "title": "Saki Maki"
   },
+  "kampagnen/krystal-saga/spieler/ulfgar-eisenherz": {
+    "excerpt": "Ulfgar Eisenherz Ein Tiefling, der von einem zwergischen Paladin Moradins aufgezogen wurde und dessen Namen weiterträgt. Er sucht keinen Ruhm, sondern den Beweis, dass Herkunft nicht bestimmt, was ein",
+    "title": "Ulfgar Eisenherz"
+  },
   "kreaturen/kristalltraeger": {
     "excerpt": "Arme Seelen, die von der Axiom-Konklave ein Kristallimplantat erhalten haben.",
     "title": "Kristallträger"
@@ -99,6 +103,14 @@
     "excerpt": "Kristallträger werden in Arbeitslager gesammelt und überwacht. Es ist die einfachste Möglichkeit sie zu kontrollieren und auf sie aufzupassen. Um keine Aufstände zu verursachen, werden die Kristallträ",
     "title": "Arbeitslager"
   },
+  "lore/elarion": {
+    "excerpt": "Elarion Ein abgeschiedenes Elfendorf tief in den Wäldern von Varyss, bewohnt von Mönchen, Gelehrten und Philosophen. In einer einzigen Nacht verschwand es — nicht zerstört, nicht verlassen, sondern fo",
+    "title": "Elarion"
+  },
+  "lore/il-shar": {
+    "excerpt": "Il'Shar Eine uralte Stadt, die schon als Ruine in der Wildnis lag, als niemand mehr wusste, warum sie verlassen worden war. Eine Expedition öffnete im Jahr 487 ndFdZ ihre Tore. Von mehreren Tausend Me",
+    "title": "Il'Shar"
+  },
   "lore/mana": {
     "excerpt": "Mana [!quote] Aus den Schriften des Arkanisten Vaelor „Mana ist weder Feuer noch Licht, weder Leben noch Tod. Es ist das, woraus all diese Dinge werden können.“ Mana ist eine unsichtbare Energie, die ",
     "title": "Mana"
@@ -114,6 +126,10 @@
   "lore/the-old-ones": {
     "excerpt": "The old Ones [!quote] Inschrift am Tor von Il'Shar „Nennt sie nicht Götter. Götter verlangen Verehrung. Die Alten verlangten, dass wir verstanden.“ The old Ones sind Wesen unbekannter Herkunft, die be",
     "title": "The old Ones"
+  },
+  "lore/varyss": {
+    "excerpt": "Varyss Ein ausgedehntes Waldgebiet, in dessen Tiefe abgeschiedene Elfensiedlungen liegen. Bekannt vor allem als Heimat Beröas — und als der Ort, an dem einst Elarion stand. Die Wälder Varyss ist alt u",
+    "title": "Varyss"
   },
   "orte/aldaren": {
     "excerpt": "Aldaren Der ehemalige Königssitz Andurins liegt nördlich von Kharvos und gilt bis heute als politisches und geschichtliches Zentrum des Landes. Breite Straßen, alte Amtsgebäude und befestigte Adelshäu",
@@ -219,6 +235,10 @@
     "excerpt": "Baltimore Ein verhüllter Mann, der Gefangene des Axiom-Konklave befreit und sie gegen das bestehende System aufbringt. Seine Hilfe ist wertvoll, doch seine Absichten bleiben undurchsichtig. Beschreibu",
     "title": "Baltimore.sync-conflict-20260816-104831-PRKCIBP"
   },
+  "personen/borik-eisenherz": {
+    "excerpt": "Borik Eisenherz Ein zwergischer Paladin Moradins, der einen Tiefling-Säugling aus den Trümmern einer überfallenen Karawane zog und ihn als seinen Sohn großzog. Ziehvater von Ulfgar Eisenherz. Beschrei",
+    "title": "Borik Eisenherz"
+  },
   "personen/caelum-virex": {
     "excerpt": "Caelum Virex Der gefürchtete Anführer des Axiom-Konklave und Schöpfer des Kristallprojekt. Für die meisten Menschen ist er ein Tyrann, der unzählige Leben einem unbekannten Ziel opfert. Beschreibung C",
     "title": "Caelum Virex"
@@ -299,6 +319,14 @@
     "excerpt": "Zeitachse Andurins Eine Übersicht über die bekannten Epochen, Kriege und Katastrophen der Weltgeschichte. Jeder Eintrag verweist auf eine eigene Seite, auf der das Ereignis später ausführlicher beschr",
     "title": "Bekannte Zeitachse"
   },
+  "zeitlinie/das-schweigen-von-il-shar": {
+    "excerpt": "Das Schweigen von Il'Shar Eine Expedition öffnete erstmals seit dem Fall die Tore der alten Stadt Il'Shar. Drei Tage später verstummte jedes Geräusch innerhalb ihrer Mauern. Von mehreren Tausend Mensc",
+    "title": "Das Schweigen von Il'Shar"
+  },
+  "zeitlinie/der-erste-krieg-gegen-das-tieflingische-reich": {
+    "excerpt": "Der Erste Krieg gegen das tieflingische Reich Nach dem Tag ohne Mana führten die Spuren zu den Tieflingen. Ein Bündnis aus Menschen, Elfen, Zwergen und vielen weiteren Reichen zog gegen ihr Reich zu F",
+    "title": "Der Erste Krieg gegen das tieflingische Reich"
+  },
   "zeitlinie/der-fall-der-zivilisation": {
     "excerpt": "Der Fall der Zivilisation [!quote] Aus den Chroniken des Aschengrauen Zeitalters „Die Welt endete nicht an einem einzigen Tag. Doch es gab einen Tag, nach dem sie niemals wieder dieselbe war.“ Der Fal",
     "title": "Der Fall der Zivilisation"
@@ -306,6 +334,10 @@
   "zeitlinie/der-schwarze-regen": {
     "excerpt": "Der Schwarze Regen Im Jahr 1432 ndFdZ zogen tiefschwarze Wolken über den Westen Eldaras. Der Regen, der aus ihnen fiel, war mit instabilem Mana durchsetzt und veränderte Landschaften, Lebewesen und ga",
     "title": "Der Schwarze Regen"
+  },
+  "zeitlinie/der-tag-ohne-mana": {
+    "excerpt": "Der Tag ohne Mana Für einen einzigen Tag versiegte in großen Teilen Eldaras das Mana. Zauber versagten, magische Artefakte wurden wertlos, selbst göttliche Magie verstummte. Am folgenden Morgen kehrte",
+    "title": "Der Tag ohne Mana"
   },
   "zeitlinie/siebenjaehriger-krieg-von-andurin": {
     "excerpt": "Siebenjähriger Krieg von Andurin Der Siebenjährige Krieg beendete den letzten ernsthaften Versuch, Andurin unter einer gemeinsamen Krone zu vereinen. Aus dem Konflikt ging kein Sieger hervor, sondern ",

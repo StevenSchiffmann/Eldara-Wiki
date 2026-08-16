@@ -59,6 +59,13 @@
     },
     {
       "campaign": null,
+      "fraktion": null,
+      "id": "personen/borik-eisenherz",
+      "title": "Borik Eisenherz",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
       "fraktion": "Axiom-Konklave",
       "id": "personen/caelum-virex",
       "title": "Caelum Virex",
