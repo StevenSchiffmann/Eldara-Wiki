@@ -143,17 +143,9 @@
     "excerpt": "„Wenn du den Weg hierher gefunden hast… wolltest du es so.“ Wird von Nippin Zwieback geführt, ist Pippin Zwieback Bruder. - Ist die Hardcode Black Market Version von seinem Bruder Man gelangt durch da",
     "title": "Arcadium Nebulus"
   },
-  "orte/arcadium-nebulus-sync-conflict-20260816-104831-prkcibp": {
-    "excerpt": "„Wenn du den Weg hierher gefunden hast… wolltest du es so.“ Wird von Nippin Zwieback geführt, ist Pippin Zwieback Bruder. - Ist die Hardcode Black Market Version von seinem Bruder Man gelangt durch da",
-    "title": "Arcadium Nebulus.sync-conflict-20260816-104831-PRKCIBP"
-  },
   "orte/arcadium-umbra": {
     "excerpt": "„Wenn du den Weg hierher gefunden hast… wolltest du es so.“ Wird von Pippin Zwieback geführt, ist Nippin Zwiebacks Bruder. - Ist die Hardcode Black Market Version von seinem Bruder Man gelangt durch d",
     "title": "Arcadium Umbra"
-  },
-  "orte/arcadium-umbra-sync-conflict-20260816-104830-prkcibp": {
-    "excerpt": "„Wenn du den Weg hierher gefunden hast… wolltest du es so.“ Wird von Pippin Zwieback geführt, ist Nippin Zwiebacks Bruder. - Ist die Hardcode Black Market Version von seinem Bruder Man gelangt durch d",
-    "title": "Arcadium Umbra.sync-conflict-20260816-104830-PRKCIBP"
   },
   "orte/arena": {
     "excerpt": "Ort für große Festivitäten. Das Blutturnier wird darin abgehalten.",
@@ -199,10 +191,6 @@
     "excerpt": "Hier direkt für Obsidian: Schwarzmarkt von Kharvos Tief unter Kharvos liegt ein Ort, den keine Stadtwache betritt und über den niemand bei Tageslicht spricht. Der Schwarzmarkt ist kein normaler Markt,",
     "title": "Schwarzmarkt"
   },
-  "orte/schwarzmarkt-sync-conflict-20260802-121404-5hupg4d": {
-    "excerpt": "Hier direkt für Obsidian: Schwarzmarkt von Kharvos Tief unter Kharvos liegt ein Ort, den keine Stadtwache betritt und über den niemand bei Tageslicht spricht. Der Schwarzmarkt ist kein normaler Markt,",
-    "title": "Schwarzmarkt.sync-conflict-20260802-121404-5HUPG4D"
-  },
   "orte/steinrat-von-xenthar": {
     "excerpt": "Der Steinrat von Xenthar ist keine dauerhafte Regierung. Er tritt zusammen, wenn Entscheidungen mehrere Clans oder das gesamte Land betreffen. Jeder bedeutende Clan entsendet einen Sprecher nach Khar-",
     "title": "Steinrat von Xenthar"
@@ -231,10 +219,6 @@
     "excerpt": "Baltimore Ein verhüllter Mann, der Gefangene des Axiom-Konklave befreit und sie gegen das bestehende System aufbringt. Seine Hilfe ist wertvoll, doch seine Absichten bleiben undurchsichtig. Beschreibu",
     "title": "Baltimore"
   },
-  "personen/baltimore-sync-conflict-20260816-104831-prkcibp": {
-    "excerpt": "Baltimore Ein verhüllter Mann, der Gefangene des Axiom-Konklave befreit und sie gegen das bestehende System aufbringt. Seine Hilfe ist wertvoll, doch seine Absichten bleiben undurchsichtig. Beschreibu",
-    "title": "Baltimore.sync-conflict-20260816-104831-PRKCIBP"
-  },
   "personen/borik-eisenherz": {
     "excerpt": "Borik Eisenherz Ein zwergischer Paladin Moradins, der einen Tiefling-Säugling aus den Trümmern einer überfallenen Karawane zog und ihn als seinen Sohn großzog. Ziehvater von Ulfgar Eisenherz. Beschrei",
     "title": "Borik Eisenherz"
@@ -242,10 +226,6 @@
   "personen/caelum-virex": {
     "excerpt": "Caelum Virex Der gefürchtete Anführer des Axiom-Konklave und Schöpfer des Kristallprojekt. Für die meisten Menschen ist er ein Tyrann, der unzählige Leben einem unbekannten Ziel opfert. Beschreibung C",
     "title": "Caelum Virex"
-  },
-  "personen/caelum-virex-sync-conflict-20260816-104830-prkcibp": {
-    "excerpt": "Caelum Virex Der gefürchtete Anführer des Axiom-Konklave und Schöpfer des Kristallprojekt. Für die meisten Menschen ist er ein Tyrann, der unzählige Leben einem unbekannten Ziel opfert. Beschreibung C",
-    "title": "Caelum Virex.sync-conflict-20260816-104830-PRKCIBP"
   },
   "personen/eldric-morvain": {
     "excerpt": "Eldric Morvain Ein uralter Mann, der freiwillig im Kerker verbleibt und jede Rettung ablehnt. Er ist der lebende Schlüssel zum letzten stabilen Zugang zu Caelum Virex. Beschreibung Eldric ist ein ausg",
@@ -258,10 +238,6 @@
   "personen/gildam-blauschild": {
     "excerpt": "Gildam Blauschild Ein einflussreicher Händler aus Kharvos, der als Gast zum Bankett eingeladen war. Während eines Gnollüberfalls wurden seine Wachen überwältigt; Gildam kam in den Flammen ums Leben. B",
     "title": "Gildam Blauschild"
-  },
-  "personen/gildam-blauschild-sync-conflict-20260816-104831-prkcibp": {
-    "excerpt": "Gildam Blauschild Ein einflussreicher Händler aus Kharvos, der als Gast zum Bankett eingeladen war. Während eines Gnollüberfalls wurden seine Wachen überwältigt und Gildam von den Spielern verbrannt. ",
-    "title": "Gildam Blauschild.sync-conflict-20260816-104831-PRKCIBP"
   },
   "personen/grix": {
     "excerpt": "Grix Ein Händler aus den tiefen Bereichen des Schwarzmarkts von Kharvos, der mit Erinnerungen, Emotionen und Seelenfragmenten handelt. Kein Gesicht, nur Schatten — und eine Stimme, die aus mehreren Ri",

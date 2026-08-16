@@ -7,11 +7,6 @@
     },
     {
       "label": null,
-      "source": "personen/caelum-virex-sync-conflict-20260816-104830-prkcibp",
-      "target": "fraktionen/axiom-konklave"
-    },
-    {
-      "label": null,
       "source": "personen/eldric-morvain",
       "target": "fraktionen/innerer-zirkel"
     },
@@ -52,13 +47,6 @@
     },
     {
       "campaign": null,
-      "fraktion": "unbekannt",
-      "id": "personen/baltimore-sync-conflict-20260816-104831-prkcibp",
-      "title": "Baltimore.sync-conflict-20260816-104831-PRKCIBP",
-      "type": "npc"
-    },
-    {
-      "campaign": null,
       "fraktion": null,
       "id": "personen/borik-eisenherz",
       "title": "Borik Eisenherz",
@@ -69,13 +57,6 @@
       "fraktion": "Axiom-Konklave",
       "id": "personen/caelum-virex",
       "title": "Caelum Virex",
-      "type": "npc"
-    },
-    {
-      "campaign": null,
-      "fraktion": "Axiom-Konklave",
-      "id": "personen/caelum-virex-sync-conflict-20260816-104830-prkcibp",
-      "title": "Caelum Virex.sync-conflict-20260816-104830-PRKCIBP",
       "type": "npc"
     },
     {
@@ -97,13 +78,6 @@
       "fraktion": null,
       "id": "personen/gildam-blauschild",
       "title": "Gildam Blauschild",
-      "type": "npc"
-    },
-    {
-      "campaign": null,
-      "fraktion": null,
-      "id": "personen/gildam-blauschild-sync-conflict-20260816-104831-prkcibp",
-      "title": "Gildam Blauschild.sync-conflict-20260816-104831-PRKCIBP",
       "type": "npc"
     },
     {
