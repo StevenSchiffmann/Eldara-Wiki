@@ -21,12 +21,16 @@
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/sessions/session-03/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/sessions/session-04/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/sessions/session-05/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/sessions/session-06/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/sessions/session-07/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/sessions/session-08/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/spieler/beroea/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/spieler/ikan-breathe/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/spieler/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/spieler/mr-arnold/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/spieler/ophiria-lunara/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/spieler/saki-maki/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/spieler/sevran-dveyl/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kampagnen/krystal-saga/spieler/ulfgar-eisenherz/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/karten/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/kreaturen/kristalltraeger/</loc></url>
@@ -48,6 +52,7 @@
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/bromburg-grove/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/das-rote-fass/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/eldara/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/gloomfen/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/grosses-hospital/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/kharvos/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/lighthaven/</loc></url>
@@ -56,6 +61,7 @@
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/schwarze-station/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/schwarzmarkt/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/steinrat-von-xenthar/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/suedhoehle/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/tor-vhar/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/waldorf/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/xenthar/</loc></url>
@@ -63,24 +69,30 @@
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/orte/zum-goldenen-reh/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/baltimore/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/borik-eisenherz/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/bram/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/caelum-virex/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/carl-blueberry/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/eldric-morvain/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/elidran-vox/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/gildam-blauschild/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/grix/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/harek/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/hendrick-gogolo/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/herbert/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/liandra-schwarzbart/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/magdilda/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/mara/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/marek-schwarzbart/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/nippin-zwieback/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/nira-glutbrand/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/pippin-zwieback/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/seraphine-dhor/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/tavor/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/varlon/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/varrek-goldenberg/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/viktor-hain/</loc></url>
+  <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/personen/wenna-hask/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/welt/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/zeitlinie/bekannte-zeitachse/</loc></url>
   <url><loc>https://stevenschiffmann.github.io/Eldara-Wiki/zeitlinie/das-schweigen-von-il-shar/</loc></url>

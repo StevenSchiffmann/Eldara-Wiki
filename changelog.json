@@ -2,6 +2,30 @@
   "additions": [
     {
       "campaign": "krystal-saga",
+      "slug": "kampagnen/krystal-saga/sessions/session-06",
+      "title": "Session 06",
+      "type": "session"
+    },
+    {
+      "campaign": "krystal-saga",
+      "slug": "kampagnen/krystal-saga/sessions/session-07",
+      "title": "Session 07",
+      "type": "session"
+    },
+    {
+      "campaign": "krystal-saga",
+      "slug": "kampagnen/krystal-saga/sessions/session-08",
+      "title": "Session 08",
+      "type": "session"
+    },
+    {
+      "campaign": "krystal-saga",
+      "slug": "kampagnen/krystal-saga/spieler/sevran-dveyl",
+      "title": "Sevran DVeyl",
+      "type": "player"
+    },
+    {
+      "campaign": "krystal-saga",
       "slug": "kampagnen/krystal-saga/spieler/ulfgar-eisenherz",
       "title": "Ulfgar Eisenherz",
       "type": "player"
@@ -26,8 +50,56 @@
     },
     {
       "campaign": null,
+      "slug": "orte/gloomfen",
+      "title": "Gloomfen",
+      "type": "location"
+    },
+    {
+      "campaign": null,
+      "slug": "orte/suedhoehle",
+      "title": "Südhöhle",
+      "type": "location"
+    },
+    {
+      "campaign": null,
       "slug": "personen/borik-eisenherz",
       "title": "Borik Eisenherz",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "slug": "personen/bram",
+      "title": "Bram",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "slug": "personen/carl-blueberry",
+      "title": "Carl Blueberry",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "slug": "personen/harek",
+      "title": "Harek",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "slug": "personen/mara",
+      "title": "Mara",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "slug": "personen/nira-glutbrand",
+      "title": "Nira Glutbrand",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "slug": "personen/wenna-hask",
+      "title": "Wenna Hask",
       "type": "npc"
     },
     {

@@ -63,6 +63,18 @@
     "excerpt": "Am Morgen fand die Gruppe wieder zusammen und machte sich auf zur Werkstatt. Dort hing ein Zettel: Elidran Vox habe anderes zu erledigen. Man möge sich an Zethis Kahn wenden. Ein Dolch, der schon einm",
     "title": "Session 05"
   },
+  "kampagnen/krystal-saga/sessions/session-06": {
+    "excerpt": "Zethis Karn gibt Quest Runen Tabellen zu besorgen die gestohlen wurden. Dafür versiegelt er die Verbindung zu der Quelle und gibt Fähigkeiten durch anbindung der Seele durch doppelten Strang. Jeder en",
+    "title": "Session 06"
+  },
+  "kampagnen/krystal-saga/sessions/session-07": {
+    "excerpt": "Mr. Arnold hatte den Zettel aus dem verlassenen Labor die ganze Rast über bei sich getragen. Als die Gruppe ihn endlich las, blieb niemand mehr sitzen. Wenn ihr das hier findet, bin ich entweder fort,",
+    "title": "Session 07"
+  },
+  "kampagnen/krystal-saga/sessions/session-08": {
+    "excerpt": "Der Morgen nach dem Erntefest in Gloomfen kam für alle zu früh. Saki Maki erwachte mit der Schmiedin des Dorfes neben sich, die in der Nacht auf ihm gelandet war. Mit einem kleinen Zauber machte er si",
+    "title": "Session 08"
+  },
   "kampagnen/krystal-saga/spieler/beroea": {
     "excerpt": "Beröa Ein ruhiger elfischer Mönch aus den Wäldern von Varyss, der seine Umgebung aufmerksam beobachtet und versucht, unnötiges Leid zu vermeiden. Beschreibung Beröa ist ein 31 Jahre alter Elf mit schw",
     "title": "Beröa"
@@ -82,6 +94,10 @@
   "kampagnen/krystal-saga/spieler/saki-maki": {
     "excerpt": "SakiMaki.pdf Hier sauber im gleichen Stil: Saki Maki Grunddaten Name: Saki Maki Volk: Elf Klasse: Rogue Hintergrund: Custom Background Gesinnung: Chaotic Evil Alter: 167 Jahre Herkunft: Grath --- Auss",
     "title": "Saki Maki"
+  },
+  "kampagnen/krystal-saga/spieler/sevran-dveyl": {
+    "excerpt": "Sevran D'Veyl Ein Gelehrter, der den Schlaf ohne Träume erforschte und dabei auf einen Gedanken stieß, der nicht seiner war. Beschreibung Sevran ist ein Mensch Anfang vierzig, etwa einen Meter achtzig",
+    "title": "Sevran DVeyl"
   },
   "kampagnen/krystal-saga/spieler/ulfgar-eisenherz": {
     "excerpt": "Ulfgar Eisenherz Ein Tiefling, der von einem zwergischen Paladin Moradins aufgezogen wurde und dessen Namen weiterträgt. Er sucht keinen Ruhm, sondern den Beweis, dass Herkunft nicht bestimmt, was ein",
@@ -163,6 +179,10 @@
     "excerpt": "Eldara Eldara ist die bekannte Welt, in der zahlreiche Reiche, Völker und Kulturen zwischen den Ruinen einer untergegangenen Zivilisation entstanden sind. Auf den ersten Blick wirkt sie wie eine klass",
     "title": "Eldara"
   },
+  "orte/gloomfen": {
+    "excerpt": "Gloomfen Ein Dorf östlich von Kharvos, hinter einem dichten Wald, der bis heute vom Schwarzen Regen gezeichnet ist. Nach ihrer Flucht aus Kharvos fand die Gruppe hier Unterschlupf. Beschreibung Gloomf",
+    "title": "Gloomfen"
+  },
   "orte/grosses-hospital": {
     "excerpt": "Das Große Hospital ist das Herzstück der Weiße Hand und die bekannteste medizinische Einrichtung Andurins. Tausende Patienten werden hier jedes Jahr behandelt. Hunderte Ärzte, Heiler und Chirurgen arb",
     "title": "Großes Hospital"
@@ -195,6 +215,10 @@
     "excerpt": "Der Steinrat von Xenthar ist keine dauerhafte Regierung. Er tritt zusammen, wenn Entscheidungen mehrere Clans oder das gesamte Land betreffen. Jeder bedeutende Clan entsendet einen Sprecher nach Khar-",
     "title": "Steinrat von Xenthar"
   },
+  "orte/suedhoehle": {
+    "excerpt": "Südhöhle Eine Höhle südlich von Gloomfen, in der sich Goblins eingenistet haben. Beschreibung Carl Blueberry beauftragte die Gruppe, die Goblins dort zu vertreiben oder zu töten. Es sollen 15 bis 20 s",
+    "title": "Südhöhle"
+  },
   "orte/tor-vhar": {
     "excerpt": "Handel mit dem Haus Dhor Das Haus Dhor besitzt keinen Anspruch auf die Minen Xenthars. Der Handel beruht auf Verträgen mit einzelnen Clans und dem Steinrat. Der größte Austausch findet in Tor Vhar sta",
     "title": "Tor Vhar"
@@ -223,9 +247,17 @@
     "excerpt": "Borik Eisenherz Ein zwergischer Paladin Moradins, der einen Tiefling-Säugling aus den Trümmern einer überfallenen Karawane zog und ihn als seinen Sohn großzog. Ziehvater von Ulfgar Eisenherz. Beschrei",
     "title": "Borik Eisenherz"
   },
+  "personen/bram": {
+    "excerpt": "Bram Ein Bewohner von Gloomfen, der die Gruppe nach ihrer Flucht aus Kharvos als Erster ins Dorf brachte. Beschreibung Bram traf die Gruppe bei einem Haus vor dem Dorf. Viele Fragen stellte er nicht: ",
+    "title": "Bram"
+  },
   "personen/caelum-virex": {
     "excerpt": "Caelum Virex Der gefürchtete Anführer des Axiom-Konklave und Schöpfer des Kristallprojekt. Für die meisten Menschen ist er ein Tyrann, der unzählige Leben einem unbekannten Ziel opfert. Beschreibung C",
     "title": "Caelum Virex"
+  },
+  "personen/carl-blueberry": {
+    "excerpt": "Carl Blueberry Ein Bewohner aus der Umgebung von Gloomfen, an den die Gruppe nach ihrer Flucht aus Kharvos verwiesen wurde. Beschreibung Carl lebt auf dem Weg zum Dorf in einer kleinen, unauffälligen ",
+    "title": "Carl Blueberry"
   },
   "personen/eldric-morvain": {
     "excerpt": "Eldric Morvain Ein uralter Mann, der freiwillig im Kerker verbleibt und jede Rettung ablehnt. Er ist der lebende Schlüssel zum letzten stabilen Zugang zu Caelum Virex. Beschreibung Eldric ist ein ausg",
@@ -243,6 +275,10 @@
     "excerpt": "Grix Ein Händler aus den tiefen Bereichen des Schwarzmarkts von Kharvos, der mit Erinnerungen, Emotionen und Seelenfragmenten handelt. Kein Gesicht, nur Schatten — und eine Stimme, die aus mehreren Ri",
     "title": "Grix"
   },
+  "personen/harek": {
+    "excerpt": "Harek Ein alter, barfüßiger Mann aus Gloomfen, den das ganze Dorf als „alten Verrückten“ kennt. Die Prophezeiung Auf dem Erntefest erschien Harek und warf drei kleine Knochenstücke auf einen Tisch, in",
+    "title": "Harek"
+  },
   "personen/hendrick-gogolo": {
     "excerpt": "Hendrick Gogolo Ein gesuchter Serienmörder aus der Umgebung von Kharvos. Auf seinen Kopf war eine Belohnung von 50 Gold ausgesetzt. Beschreibung Hendrick Gogolo war ein hagerer und verwahrloster Mann ",
     "title": "Hendrick Gogolo"
@@ -259,6 +295,10 @@
     "excerpt": "Zahnlose Kräuterfrau Eine ältere, zahnlose Frau, die allein in einer kleinen Hütte am Weg nach Kharvos lebt. Reisenden bietet sie Kräuter, Unterkunft und gegen Bezahlung auch intimere Dienste an. Besc",
     "title": "Magdilda"
   },
+  "personen/mara": {
+    "excerpt": "Mara Wirtin der Taverne „Zum roten Hirsch“ in Gloomfen, auch Tamara genannt. Rolle in Gloomfen Mara ist 50 Jahre alt und verheiratet. Sie führt den Roten Hirsch, in dem die Gruppe nach dem Erntefest e",
+    "title": "Mara"
+  },
   "personen/marek-schwarzbart": {
     "excerpt": "Marek Schwarzbart Zwergischer Händler auf dem Marktplatz von Kharvos, spezialisiert auf gebrauchte Ausrüstung. Verheiratet mit Liandra Schwarzbart, der Wirtin der Gute Stube. Beschreibung Marek verkau",
     "title": "Marek Schwarzbart"
@@ -266,6 +306,10 @@
   "personen/nippin-zwieback": {
     "excerpt": "Nippin Zwieback Besitzer des Arcadium Nebulus, eines versteckten Geschäfts auf dem Schwarzmarkt von Kharvos. Er ist der Bruder von Pippin Zwieback. Rolle in Kharvos Nippin führt das Arcadium Nebulus, ",
     "title": "Nippin Zwieback"
+  },
+  "personen/nira-glutbrand": {
+    "excerpt": "Nira Glutbrand Schmiedin von Gloomfen, die beim Erntefest das Wettsaufen gegen Saki Maki gewann. Beschreibung Nira ist klein und gedrungen und hat erkennbar zwergische Züge. Nach dem Erntefest wachte ",
+    "title": "Nira Glutbrand"
   },
   "personen/pippin-zwieback": {
     "excerpt": "Pippin Zwieback Besitzer des Arcadium Umbra in Kharvos und Bruder von Nippin Zwieback. Rolle in Kharvos Pippin Zwieback führt das Arcadium Umbra in Kharvos. Sein Bruder Nippin Zwieback betreibt mit de",
@@ -290,6 +334,10 @@
   "personen/viktor-hain": {
     "excerpt": "Viktor Hain Ein dürrer Kettenmeister der Grauen Vollstrecker, der auf die Gefangennahme und den sicheren Transport lebender Ziele spezialisiert ist. Beschreibung Viktor Hain ist ein dürrer, blasser Ma",
     "title": "Viktor Hain"
+  },
+  "personen/wenna-hask": {
+    "excerpt": "Wenna Hask Junge Witwe in Gloomfen, bei der Beröa nach dem Erntefest aufwachte. Beschreibung Wenna lebt mit ihrem neunjährigen Sohn Tam in einem Haus am Rand des Dorfes. Ihr Mann starb vor Kurzem bei ",
+    "title": "Wenna Hask"
   },
   "zeitlinie/bekannte-zeitachse": {
     "excerpt": "Zeitachse Andurins Eine Übersicht über die bekannten Epochen, Kriege und Katastrophen der Weltgeschichte. Jeder Eintrag verweist auf eine eigene Seite, auf der das Ereignis später ausführlicher beschr",

@@ -54,9 +54,23 @@
     },
     {
       "campaign": null,
+      "fraktion": null,
+      "id": "personen/bram",
+      "title": "Bram",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
       "fraktion": "Axiom-Konklave",
       "id": "personen/caelum-virex",
       "title": "Caelum Virex",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
+      "id": "personen/carl-blueberry",
+      "title": "Carl Blueberry",
       "type": "npc"
     },
     {
@@ -90,6 +104,13 @@
     {
       "campaign": null,
       "fraktion": null,
+      "id": "personen/harek",
+      "title": "Harek",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
       "id": "personen/hendrick-gogolo",
       "title": "Hendrick Gogolo",
       "type": "npc"
@@ -118,6 +139,13 @@
     {
       "campaign": null,
       "fraktion": null,
+      "id": "personen/mara",
+      "title": "Mara",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
       "id": "personen/marek-schwarzbart",
       "title": "Marek Schwarzbart",
       "type": "npc"
@@ -127,6 +155,13 @@
       "fraktion": null,
       "id": "personen/nippin-zwieback",
       "title": "Nippin Zwieback",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
+      "id": "personen/nira-glutbrand",
+      "title": "Nira Glutbrand",
       "type": "npc"
     },
     {
@@ -169,6 +204,13 @@
       "fraktion": "Graue Vollstrecker",
       "id": "personen/viktor-hain",
       "title": "Viktor Hain",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
+      "id": "personen/wenna-hask",
+      "title": "Wenna Hask",
       "type": "npc"
     }
   ]

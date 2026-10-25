@@ -37,6 +37,13 @@
         "target_slug": null,
         "x": 550.5,
         "y": 569.578125
+      },
+      {
+        "label": "Zur Karte von Gloomfen",
+        "target_map": "gloomfen",
+        "target_slug": null,
+        "x": 915.0,
+        "y": 386.0
       }
     ],
     "width": 1535
@@ -54,6 +61,27 @@
       }
     ],
     "width": 1672
+  },
+  "gloomfen": {
+    "height": 1086,
+    "image": "assets/maps/gloomfen.png",
+    "markers": [
+      {
+        "label": "Zur Karte von Andurin",
+        "target_map": "andurin",
+        "target_slug": null,
+        "x": 150.0,
+        "y": 146.0
+      },
+      {
+        "label": "Südhöhle",
+        "target_map": null,
+        "target_slug": "orte/suedhoehle",
+        "x": 1010.0,
+        "y": 136.0
+      }
+    ],
+    "width": 1448
   },
   "kharvos": {
     "height": 1086,
