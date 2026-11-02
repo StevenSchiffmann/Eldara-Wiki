@@ -75,6 +75,10 @@
     "excerpt": "Der Morgen nach dem Erntefest in Gloomfen kam für alle zu früh. Saki Maki erwachte mit der Schmiedin des Dorfes neben sich, die in der Nacht auf ihm gelandet war. Mit einem kleinen Zauber machte er si",
     "title": "Session 08"
   },
+  "kampagnen/krystal-saga/sessions/session-09": {
+    "excerpt": "Der Wachturm von Gloomfen war die Base der Gruppe, und wie jede Base brauchte er zuerst einmal Arbeit. Am schlimmsten stand es um das Klo, und dort begann der Tag. Eimer, Preise und ein Weinfass Saki ",
+    "title": "Session 09"
+  },
   "kampagnen/krystal-saga/spieler/beroea": {
     "excerpt": "Beröa Ein ruhiger elfischer Mönch aus den Wäldern von Varyss, der seine Umgebung aufmerksam beobachtet und versucht, unnötiges Leid zu vermeiden. Beschreibung Beröa ist ein 31 Jahre alter Elf mit schw",
     "title": "Beröa"
@@ -243,6 +247,14 @@
     "excerpt": "Baltimore Ein verhüllter Mann, der Gefangene des Axiom-Konklave befreit und sie gegen das bestehende System aufbringt. Seine Hilfe ist wertvoll, doch seine Absichten bleiben undurchsichtig. Beschreibu",
     "title": "Baltimore"
   },
+  "personen/bern-tolly": {
+    "excerpt": "Bern Tolly Priester in Gloomfen, der die Gruppe als Heiler zur Südhöhle begleitete. Rolle in Gloomfen Bern traf Ulfgar Eisenherz, Mr. Arnold und Sevran zusammen mit Bram in der Taverne. Dort kaufte di",
+    "title": "Bern Tolly"
+  },
+  "personen/berta": {
+    "excerpt": "Berta 89-jährige Einwohnerin von Gloomfen, die ihr Haus durch Regen verlor und nun im Wachturm der Gruppe lebt und kocht. Rolle in Gloomfen Beröa traf Berta im Rathaus und lud sie ein. Sevran begleite",
+    "title": "Berta"
+  },
   "personen/borik-eisenherz": {
     "excerpt": "Borik Eisenherz Ein zwergischer Paladin Moradins, der einen Tiefling-Säugling aus den Trümmern einer überfallenen Karawane zog und ihn als seinen Sohn großzog. Ziehvater von Ulfgar Eisenherz. Beschrei",
     "title": "Borik Eisenherz"
@@ -310,6 +322,10 @@
   "personen/nira-glutbrand": {
     "excerpt": "Nira Glutbrand Schmiedin von Gloomfen, die beim Erntefest das Wettsaufen gegen Saki Maki gewann. Beschreibung Nira ist klein und gedrungen und hat erkennbar zwergische Züge. Nach dem Erntefest wachte ",
     "title": "Nira Glutbrand"
+  },
+  "personen/orc-anfuehrer": {
+    "excerpt": "Orc-Anführer Anführer der Orcs in der Südhöhle, der dort ein Goblin-Bataillon befehligt und Ulfgar Eisenherz getötet hat. Rolle in der Südhöhle Die Gruppe traf den Anführer hinter einem Gang mit Schie",
+    "title": "Orc-Anführer"
   },
   "personen/pippin-zwieback": {
     "excerpt": "Pippin Zwieback Besitzer des Arcadium Umbra in Kharvos und Bruder von Nippin Zwieback. Rolle in Kharvos Pippin Zwieback führt das Arcadium Umbra in Kharvos. Sein Bruder Nippin Zwieback betreibt mit de",

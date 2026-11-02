@@ -48,6 +48,20 @@
     {
       "campaign": null,
       "fraktion": null,
+      "id": "personen/bern-tolly",
+      "title": "Bern Tolly",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
+      "id": "personen/berta",
+      "title": "Berta",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
       "id": "personen/borik-eisenherz",
       "title": "Borik Eisenherz",
       "type": "npc"
@@ -162,6 +176,13 @@
       "fraktion": null,
       "id": "personen/nira-glutbrand",
       "title": "Nira Glutbrand",
+      "type": "npc"
+    },
+    {
+      "campaign": null,
+      "fraktion": null,
+      "id": "personen/orc-anfuehrer",
+      "title": "Orc-Anführer",
       "type": "npc"
     },
     {

@@ -2,124 +2,28 @@
   "additions": [
     {
       "campaign": "krystal-saga",
-      "slug": "kampagnen/krystal-saga/sessions/session-06",
-      "title": "Session 06",
+      "slug": "kampagnen/krystal-saga/sessions/session-09",
+      "title": "Session 09",
       "type": "session"
     },
     {
-      "campaign": "krystal-saga",
-      "slug": "kampagnen/krystal-saga/sessions/session-07",
-      "title": "Session 07",
-      "type": "session"
-    },
-    {
-      "campaign": "krystal-saga",
-      "slug": "kampagnen/krystal-saga/sessions/session-08",
-      "title": "Session 08",
-      "type": "session"
-    },
-    {
-      "campaign": "krystal-saga",
-      "slug": "kampagnen/krystal-saga/spieler/sevran-dveyl",
-      "title": "Sevran DVeyl",
-      "type": "player"
-    },
-    {
-      "campaign": "krystal-saga",
-      "slug": "kampagnen/krystal-saga/spieler/ulfgar-eisenherz",
-      "title": "Ulfgar Eisenherz",
-      "type": "player"
-    },
-    {
       "campaign": null,
-      "slug": "lore/elarion",
-      "title": "Elarion",
-      "type": "lore"
-    },
-    {
-      "campaign": null,
-      "slug": "lore/il-shar",
-      "title": "Il'Shar",
-      "type": "lore"
-    },
-    {
-      "campaign": null,
-      "slug": "lore/varyss",
-      "title": "Varyss",
-      "type": "lore"
-    },
-    {
-      "campaign": null,
-      "slug": "orte/gloomfen",
-      "title": "Gloomfen",
-      "type": "location"
-    },
-    {
-      "campaign": null,
-      "slug": "orte/suedhoehle",
-      "title": "Südhöhle",
-      "type": "location"
-    },
-    {
-      "campaign": null,
-      "slug": "personen/borik-eisenherz",
-      "title": "Borik Eisenherz",
+      "slug": "personen/bern-tolly",
+      "title": "Bern Tolly",
       "type": "npc"
     },
     {
       "campaign": null,
-      "slug": "personen/bram",
-      "title": "Bram",
+      "slug": "personen/berta",
+      "title": "Berta",
       "type": "npc"
     },
     {
       "campaign": null,
-      "slug": "personen/carl-blueberry",
-      "title": "Carl Blueberry",
+      "slug": "personen/orc-anfuehrer",
+      "title": "Orc-Anführer",
       "type": "npc"
-    },
-    {
-      "campaign": null,
-      "slug": "personen/harek",
-      "title": "Harek",
-      "type": "npc"
-    },
-    {
-      "campaign": null,
-      "slug": "personen/mara",
-      "title": "Mara",
-      "type": "npc"
-    },
-    {
-      "campaign": null,
-      "slug": "personen/nira-glutbrand",
-      "title": "Nira Glutbrand",
-      "type": "npc"
-    },
-    {
-      "campaign": null,
-      "slug": "personen/wenna-hask",
-      "title": "Wenna Hask",
-      "type": "npc"
-    },
-    {
-      "campaign": null,
-      "slug": "zeitlinie/das-schweigen-von-il-shar",
-      "title": "Das Schweigen von Il'Shar",
-      "type": "timeline"
-    },
-    {
-      "campaign": null,
-      "slug": "zeitlinie/der-erste-krieg-gegen-das-tieflingische-reich",
-      "title": "Der Erste Krieg gegen das tieflingische Reich",
-      "type": "timeline"
-    },
-    {
-      "campaign": null,
-      "slug": "zeitlinie/der-tag-ohne-mana",
-      "title": "Der Tag ohne Mana",
-      "type": "timeline"
     }
   ],
-  "baseline_session": "kampagnen/krystal-saga/sessions/session-05"
+  "baseline_session": "kampagnen/krystal-saga/sessions/session-08"
 }
