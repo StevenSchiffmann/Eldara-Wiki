@@ -1,29 +1,4 @@
 {
-  "additions": [
-    {
-      "campaign": "krystal-saga",
-      "slug": "kampagnen/krystal-saga/sessions/session-09",
-      "title": "Session 09",
-      "type": "session"
-    },
-    {
-      "campaign": null,
-      "slug": "personen/bern-tolly",
-      "title": "Bern Tolly",
-      "type": "npc"
-    },
-    {
-      "campaign": null,
-      "slug": "personen/berta",
-      "title": "Berta",
-      "type": "npc"
-    },
-    {
-      "campaign": null,
-      "slug": "personen/orc-anfuehrer",
-      "title": "Orc-Anführer",
-      "type": "npc"
-    }
-  ],
-  "baseline_session": "kampagnen/krystal-saga/sessions/session-08"
+  "additions": [],
+  "baseline_session": "kampagnen/krystal-saga/sessions/session-09"
 }
